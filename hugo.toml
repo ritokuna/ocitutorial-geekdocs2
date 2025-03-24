@@ -1,5 +1,7 @@
 baseURL = 'http://127.0.0.1/'
-languageCode = 'ja'
+defaultContentLanguage = 'ja'
+
+# languageCode = 'ja'
 title = 'OCIチュートリアル'
 theme = "hugo-geekdoc"
 
@@ -34,6 +36,7 @@ geekdocRepo = "https://github.com/thegeeklab/hugo"
   geekdocLogo = "./img/oracle_favicon.png"
   geekdocMenuBundle = true
   geekdocPageLastmod = true
+  geekdocBreadcrumb = true
   geekdocTagsToMenu = true
   geekdocBackToTop = true                    # topへ戻るボタン
 
