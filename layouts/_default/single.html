@@ -1,25 +1,10 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-  <div class="filter-section">
-    <h3>フィルター</h3>
-    <div class="filter-buttons">
-        <button class="filter-button" data-filter="all">すべて</button>
-        <button class="filter-button" data-filter="machine-learning">機械学習</button>
-        <button class="filter-button" data-filter="compute">コンピューティング</button>
-        <button class="filter-button" data-filter="frontend">フロントエンド</button>
-    </div>
-  </div>
-
-  <article
-    class="gdoc-markdown gdoc-markdown__align--{{ default "left" (.Page.Params.geekdocAlign | lower) }}"
-  >
+  <article class="gdoc-markdown gdoc-markdown__align--{{ default "left" (.Page.Params.geekdocAlign | lower) }}">
     <h1>{{ partial "utils/title" . }}</h1>
     {{ partial "page-metadata" . }}
-    <div class="content-list">
-      {{ partial "utils/content" . }}
-    </div>
+    {{ partial "page-tags" . }}
+    {{ partial "utils/content" . }}
   </article>
-
-  <script src="{{ "js/filter.js" | relURL }}"></script>
 {{ end }}
