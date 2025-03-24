@@ -6,6 +6,7 @@
 ### ● dev containersの準備
 
 拡張機能から検索してインストール
+
 ![alt text](README_IMG/search_devcontainers.png)
 
 ### ● Rancher Desktopを用意する
@@ -27,7 +28,12 @@ git clone https://github.com/koi141/hugo-ocitutorials-poc
 出てこなければ、コマンドパレットから実行
 ![alt text](README_IMG/rebuild_container.png)
 
-無事作成できたら以下のリンクにフォワーディングされるので、アクセスするとテストページが見れる。
+無事作成できたら続くコマンドを実行
+```
+hugo server -D --poll 700
+```
+
+以下のリンクにフォワーディングされるので、アクセスするとテストページが見れる。
 
 ```
 http://127.0.0.1:1313
