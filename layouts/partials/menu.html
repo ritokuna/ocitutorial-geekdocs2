@@ -1,4 +1,4 @@
-<nav>
+<nav class="gdoc-nav-test">
   {{ partial "search" . }}
 
 
@@ -10,6 +10,20 @@
       {{ partial "menu-filetree" . }}
     {{ end }}
   </section>
+
+
+  <!-- 目次セクション -->
+  <!-- <section class="gdoc-nav--toc"> -->
+  <section>
+    <h2>{{ i18n "nav_toc" }}</h2>
+    {{ if .TableOfContents }}
+      <ul class="gdoc-nav__list">
+        {{ .TableOfContents }}
+      </ul>
+    {{ end }}
+  </section>
+  <!------------------>
+
 
   {{ if and (in (slice "posts" "tags") .Section) (default false .Site.Params.geekdocTagsToMenu) }}
     <section class="gdoc-nav--tags">

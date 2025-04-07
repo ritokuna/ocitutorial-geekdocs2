@@ -1,13 +1,13 @@
 ---
 title: OCI入門編
 type : docs
-geekdocNav: false
+geekdocNav: true
 geekdocAlign: left
 geekdocAnchor: false
 geekdocPageLastmod : true
-geekdocNav: true
 geekdocCollapseSection: true
 geekdocToC : 2
+geekdocTagsToMenu : true
 ---
 
 
