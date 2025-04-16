@@ -33,19 +33,27 @@
       {{ $navEnabled := default true .Page.Params.geekdocNav }}
       {{ partial "site-header" (dict "Root" . "MenuEnabled" $navEnabled) }}
 
+      <!-- トップページのトップバナー -->
+      {{ if .IsHome }}
+        {{ partial "home-header" . }}
+      {{ end }}
+      <!-- トップページのトップバナーここまで -->
+
 
       <main class="container flex flex-even">
+
+        <!-- サイドメニュー -->
         {{ if $navEnabled }}
           <aside class="gdoc-nav">
             {{ partial "menu" . }}
           </aside>
         {{ end }}
 
-
-        <div class="gdoc-page">
+        <!--メインコンテンツ -->
+        <div class="gdoc-page"> 
           {{ template "main" . }}
 
-
+          
           {{ $showPrevNext := (default true .Site.Params.geekdocNextPrev) }}
           {{ if $showPrevNext }}
           <div class="gdoc-page__footer flex flex-wrap justify-between">
