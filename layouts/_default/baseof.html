@@ -34,7 +34,7 @@
       {{ partial "site-header" (dict "Root" . "MenuEnabled" $navEnabled) }}
 
       <!-- トップページのトップバナー -->
-      {{ if .IsHome }}
+      {{ if eq .Kind "home" }}
         {{ partial "home-header" . }}
       {{ end }}
       <!-- トップページのトップバナーここまで -->

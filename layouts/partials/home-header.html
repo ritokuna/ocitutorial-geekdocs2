@@ -10,6 +10,17 @@
   <div class="top-page-title" style="text-align: center; padding: 2rem; color: #fdfdfd;">
     <h1>{{ partial "utils/title" . }}</h1>
 
-    {{ partial "button-in-hero" (dict "size" "large" "href" "/about" "inner" "入門編") }}
+    <div style="text-align: left;">
+      <p>
+        Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのチュートリアル集です。<br>
+        各項ごとに画面ショットなどを交えながらステップ・バイ・ステップで作業を進めて、OCIの機能についてひととおり学習することができるようになっています。
+      </p>
+
+      <div>
+        {{ partial "button-in-hero" (dict "size" "large" "href" "/about" "inner" "OCI入門編") }}
+        {{ partial "button-in-hero" (dict "size" "large" "href" "/about" "inner" "OCI応用編") }}<br>
+        {{ partial "button-in-hero" (dict "size" "large" "href" "/about" "inner" "サポート・サービス活用編") }}
+      </div>
+    </div>
   </div>
 </section>
