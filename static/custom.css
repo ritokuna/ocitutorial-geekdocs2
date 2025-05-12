@@ -167,7 +167,16 @@
   font-display: swap;
 }
 
-/* .gdoc-nav-test {
-  width: 20px;
-  color: red;
-} */
+
+/*-- メニューバー目次 --*/
+/* モバイル用のみ  overflow-x: hidden; に*/
+@media (min-width: 41rem) {
+  html, body {
+    overflow-x: visible;
+  }
+}
+aside.gdoc-nav nav {
+  position: sticky;
+  top: 0;
+}
+/*------------------*/
