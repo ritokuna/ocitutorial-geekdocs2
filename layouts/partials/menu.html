@@ -1,26 +1,34 @@
-<nav class="gdoc-nav-test">
+<nav>
+  <!-- 検索窓 -->
   <!-- {{ partial "search" . }} -->
+  <!------------------> 
 
-
-  <section class="gdoc-nav--main">
+  <!-- ナビゲーション -->
+  <!-- <section class="gdoc-nav--main">
     <h3>{{ i18n "nav_navigation" }}</h3>
     {{ if .Site.Params.geekdocMenuBundle }}
       {{ partial "menu-bundle" (dict "current" . "source" .Site.Data.menu.main.main) }}
     {{ else }}
       {{ partial "menu-filetree" . }}
     {{ end }}
-  </section>
+  </section> -->
+  <!------------------> 
 
 
   <!-- 目次セクション -->
-  <!-- <section class="gdoc-nav--toc"> -->
-  <section>
+  <section class="gdoc-nav--toc"> 
     <h3>{{ i18n "nav_toc" }}</h3>
     {{ if .TableOfContents }}
-      <ul class="gdoc-nav__list">
-        {{ .TableOfContents }}
-      </ul>
-    {{ end }}
+      {{- with .TableOfContents }}
+        {{- $toc := . -}}
+        {{- $toc = replaceRE `<nav id="TableOfContents">\s*<ul>\s*<li>\s*<ul>` `<ul>` $toc -}}
+        {{- $toc = replaceRE `</ul>\s*</li>\s*</ul>\s*</nav>` `</ul>` $toc -}}
+        <!-- <nav>を剥がす -->
+        {{- $toc = replaceRE `(?s)^<nav[^>]*>(.*?)</nav>$` `$1` $toc -}}
+        <!------------------->
+        {{- $toc | safeHTML -}}
+      {{ end }}
+    {{ end }} 
   </section>
   <!------------------>
 

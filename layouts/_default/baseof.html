@@ -71,5 +71,19 @@
     </div>
 
     {{ partial "foot" . }}
+
+    <!-- 見出しをクリックした際、メニューバーを自動でクローズする -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        document.querySelectorAll('.gdoc-nav--toc a[href^="#"]').forEach(function(a){
+          a.addEventListener('click', function(){
+            var ctrl = document.getElementById('menu-control');
+            if (ctrl) ctrl.checked = false;
+          });
+        });
+      });
+    </script>
+    <!--------------------------------------------------------->
+    
   </body>
 </html>
