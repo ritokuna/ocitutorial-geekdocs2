@@ -173,16 +173,15 @@
 @media (min-width: 41rem) {
   html, body {
     overflow-x: visible;
-    overflow-y: auto;
   }
 }
 .gdoc-nav nav {
   position: sticky;
-  overflow-y: auto;
-  max-height: 150vh;
   top: 0;
 	width: 12rem;
 	padding: 1rem 0 1rem 0;
+  max-height: calc(100vh - 2rem); /*上下padding分の2remを引いている*/
+  overflow-y: auto;
   scrollbar-width: none;
 }
 
@@ -201,6 +200,8 @@
   list-style: none;
   margin: 0 0 0 -1.2em;
   padding: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 .gdoc-nav li {
   margin: .5em 0;
