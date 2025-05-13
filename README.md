@@ -7,7 +7,7 @@
 
 拡張機能から検索してインストール
 
-![alt text](README_IMG/search_devcontainers.png)
+![alt text](content/images/README/search_devcontainers.png)
 
 ### ● Rancher Desktopを用意する
 
@@ -23,10 +23,10 @@ git clone https://github.com/koi141/hugo-ocitutorials-poc
 
 `hugo-ocitutorials-poc`ディレクトリをVS Codeで開いた後、以下のポップアップがでてくるので、「コンテナーで再度開く」を選択
 
-![alt text](README_IMG/reopen_container.png)
+![alt text](content/images/README/reopen_container.png)
 
 出てこなければ、コマンドパレットから実行
-![alt text](README_IMG/rebuild_container.png)
+![alt text](content/images/README/rebuild_container.png)
 
 無事作成できたら続くコマンドを実行
 ```
