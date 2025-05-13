@@ -168,15 +168,72 @@
 }
 
 
-/*-- メニューバー目次 --*/
-/* モバイル用のみ  overflow-x: hidden; に*/
+/*------ メニューバー目次 ------*/
+/* スクロールに追従する */
 @media (min-width: 41rem) {
   html, body {
     overflow-x: visible;
+    overflow-y: auto;
   }
 }
-aside.gdoc-nav nav {
+.gdoc-nav nav {
   position: sticky;
+  overflow-y: auto;
+  max-height: 150vh;
   top: 0;
+	width: 12rem;
+	padding: 1rem 0 1rem 0;
+  scrollbar-width: none;
 }
-/*------------------*/
+
+
+/* デザイン */
+.gdoc-nav h1 {
+  margin-bottom: 0.6em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 1px solid #162b3c;
+  padding-bottom: .3em;
+}
+
+/* 共通設定 */
+.gdoc-nav ul {
+  list-style: none;
+  margin: 0 0 0 -1.2em;
+  padding: 0;
+}
+.gdoc-nav li {
+  margin: .5em 0;
+  padding-left: 1.4em;
+}
+/* h1見出し */
+.gdoc-nav ul > li {
+  margin-left: 0;
+  font-size: .9em;
+}
+/* h2見出し */
+.gdoc-nav ul ul > li {
+  margin-left: .9em;
+  font-size: .88em;
+}
+/* h3見出し */
+.gdoc-nav ul ul ul > li {
+  margin-left: .8em;
+  font-size: .86em;
+}
+/* h4以降 */
+.gdoc-nav ul ul ul ul > li {
+  font-size: .8em;
+}
+
+/* メニューバーの幅 */
+.gdoc-nav {
+    flex: 0 0 15rem;
+}
+@media screen and (max-width: 41rem) {
+	.gdoc-nav {
+		margin-left: -15rem;
+		font-size: 16px
+	}
+}
+/* ----------------------------- */
