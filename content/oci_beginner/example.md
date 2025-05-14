@@ -4,8 +4,9 @@ geekdocTagsToMenu : true
 tags: 
  - OCI
  - 初心者
-
 ---
+
+Kind: {{< showkind >}}
 
 # h1
 

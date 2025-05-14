@@ -5,6 +5,8 @@ geekdocAlign: left
 geekdocAnchor: false
 ---
 
+[案１](./proposal01)  
+[案２](./proposal02)
 
 ## チュートリアルコンテンツ一覧
 
