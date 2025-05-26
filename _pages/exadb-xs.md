@@ -3,7 +3,8 @@ title: "Oracle Database編 - Exadata Database Service on Exascale Infrastructure
 excerpt: "Exadata Database Service on Exascale Infrastructure (ExaDB-XS)を学ぶチュートリアルです。インスタンスの作成から、運用管理までを一通り体験します。"
 permalink: /exadb-xs
 layout: single
-tags: "Database"
+tags: 
+  - "Database"
 show_excerpts: true
 toc: true
 ---

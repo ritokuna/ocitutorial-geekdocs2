@@ -3,7 +3,8 @@ title: "Oracle Database編 - Exadata Database Service on Dedicated Infrastructur
 excerpt: "多くのミッションクリティカルなシステムを支えるExadata Database Service on Dedicated Infrastructure (ExaDB-D)を学ぶチュートリアルです。インスタンスの作成から、運用管理までを一通り体験します。"
 permalink: /exadbd
 layout: single
-tags: "Database"
+tags: 
+  - "Database"
 show_excerpts: true
 toc: true
 ---

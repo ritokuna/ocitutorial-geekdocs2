@@ -3,7 +3,8 @@ title: "OCI Search Service with OpenSearchチュートリアル"
 excerpt: "OCI Search Service with OpenSearchについて学習できるチュートリアル集です。"
 permalink: /opensearch/
 layout: single
-tags: "opensearch"
+tags: 
+  - "opensearch"
 show_excerpts: true
 toc: true
 ---

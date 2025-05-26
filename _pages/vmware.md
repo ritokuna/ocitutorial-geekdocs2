@@ -3,7 +3,8 @@ title: "Oracle Cloud VMware Solution編"
 excerpt: "OCI上でVMwareの仮想化環境を利用できる Oracle Cloud VMware Solution (OCVS) 関連のチュートリアル、ガイド、ブログなどへのリンク集です"
 permalink: /vmware/
 layout: single
-tags: "vmware"
+tags: 
+   - "vmware"
 show_excerpts: true
 toc: true
 date: "2023-10-04"

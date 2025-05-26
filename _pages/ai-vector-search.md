@@ -3,7 +3,8 @@ title: "Oracle Database - Oracle AI Vector Searchを使ってみよう"
 excerpt: "Oracle AI Vector Searchを学ぶチュートリアルです。Always Free ADBの作成から、様々な使い方までを一通り体験します。"
 permalink: /ai-vector-search
 layout: single
-tags: "Database"
+tags: 
+  - "Database"
 show_excerpts: true
 toc: true
 ---

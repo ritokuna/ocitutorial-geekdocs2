@@ -3,7 +3,8 @@ title: "Oracle Integration チュートリアル"
 excerpt: "OCIにおけるApplication IntegraionサービスであるOIC(Oracle Integraion Cloud)について学習できるチュートリアルです。"
 permalink: /integration/
 layout: single
-tags: "integration"
+tags: 
+  - "integration"
 show_excerpts: true
 toc: true
 ---

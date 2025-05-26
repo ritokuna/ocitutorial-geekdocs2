@@ -3,7 +3,8 @@ title: "OCI HPCポータル"
 excerpt: "OCIを活用してHPC/機械学習ワークロードを実行する際の有益な情報を技術面にフォーカスしてお届けする、OCI HPCポータルです。ベアメタルインスタンス、GPUインスタンス、クラスタ・ネットワーク等のリソースをリソース・マネージャ、Terraform、Ansibleを駆使して効率的に構築するチュートリアル集、パフォーマンス関連情報、テクニカルTips集、関連情報リンク集等をお届けします。チュートリアルで構築するHPCクラスタは、NFS、Lustre、LDAP、Slurm、OpenMPI等、システム運用・利用に欠かせないソフトウェアが使えます。またGPUクラスタは、NVIDIA Container Toolkit、Docker、containerdやEnrootのコンテナランタイム等、大規模な分散機械学習ワークロード実行に必須のソフトウェアが使えます。"
 permalink: /hpc/
 layout: single
-tags: "hpc"
+tags: 
+    - "hpc"
 toc: true
 ---
 <style>

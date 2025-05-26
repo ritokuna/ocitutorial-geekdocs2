@@ -3,7 +3,8 @@ title: "Cloud Nativeチュートリアル"
 excerpt: "OCIにおける各種コンテナ/サーバレス関連サービスのチュートリアルについて学習できるチュートリアルです。"
 permalink: /cloud-native/
 layout: single
-tags: "cloudnative"
+tags: 
+    - "cloudnative"
 show_excerpts: true
 toc: true
 date: "2022-04-06"
