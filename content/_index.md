@@ -34,14 +34,21 @@ OCIコンソールの基本的な操作方法やネットワーク、ストレ�
 OCIの応用編チュートリアルです。
 LoadBalancerや証明書サービスなどをはじめとした各OCIサービスの応用的な使い方を学習できます。
 
-### ■ Oracle Database編
+### ■ [Oracle Database編](./database)
+Oracle Database関連サービスのチュートリアル
 
 #### ・[Autonomous Database編](./adb)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+自己稼働・自己保護・自己修復をコンセプトにOracle Database、およびExadataをより身近にご利用いただくべく登場したAutonomous Database !
 
 #### ・[Base Database Service編](./basedb)
-Oracle Database関連サービスのチュートリアルです。
-自律型データベースサービスであるAutonomous DatabaseやBase Database Service、Exadata Database Service on Dedicated Infrastructure、Exadata Database Service on Exascale Infrastructure、AI Vector SearchなどOCIのデータベース・サービスを学習できます。
+Oracleのクラウドで使いたいものと言ったら、そう! Oracle Database!!
+まずはベーシックなBase Database
+
+#### ・[Exadata Database Service on Dedicated Infrastructure (ExaDB-D) 編](./exadbd)
+Oracle Databaseを動かす最適な基盤として、多くのミッションクリティカルなシステムを支えるExadata! OCIであればExadataもサブスクリプション
+
+#### ・[Exadata Database Service on Exascale Infrastructure (ExaDB-XS)編](./exadb-xs)
+Exadata Database Serviceのメリットを、小規模ながら重要度の劣らないデータベース向けに、より低いエントリーコストでご利用いただけるExadata Database Service on Exascale Infrastructure ! 
 
 ### ■ MySQL Database Service編
 Oracle MySQLチームが開発、管理およびサポートするOCI上で提供されるMySQL Database Serviceを学習できます。
