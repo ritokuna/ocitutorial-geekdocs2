@@ -11,15 +11,15 @@
 /* Light mode theming */
 :root,
 :root[color-theme="light"] {
-  --header-background: #3f3a36;
-  --header-font-color: #fcfbfa;
+  --header-background: #2a2f2f;
+  --header-font-color: #fbf9f8;
 
-  --body-background: #fcfbfa;
-  --body-font-color: #343a40;
+  --body-background: #fbf9f8;
+  --body-font-color: #2a2f2f;
 
-  --mark-color: #ffab00;
+  --mark-color: #f0cc72;
 
-  --button-background: #62cb97;
+  --button-background: #86b596;
   --button-border-color: #4ec58a;
 
   --link-color: #518169;
@@ -40,22 +40,22 @@
 
   --control-icons: #b2bac1;
 
-  --footer-background: #3f3a36;
+  --footer-background: #2a2f2f;
   --footer-font-color: #ffffff;
   --footer-link-color: #c05745;
   --footer-link-color-visited: #c05745;
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --header-background: #3f3a36;
-    --header-font-color: #fcfbfa;
+    --header-background: #2a2f2f;
+    --header-font-color: #fbf9f8;
 
-    --body-background: #fcfbfa;
-    --body-font-color: #343a40;
+    --body-background: #fbf9f8;
+    --body-font-color: #2a2f2f;
 
-    --mark-color: #ffab00;
+    --mark-color: #f0cc72;
 
-    --button-background: #62cb97;
+    --button-background: #86b596;
     --button-border-color: #4ec58a;
 
     --link-color: #518169;
@@ -76,7 +76,7 @@
 
     --control-icons: #b2bac1;
 
-    --footer-background: #3f3a36;
+    --footer-background: #2a2f2f;
     --footer-font-color: #ffffff;
     --footer-link-color: #c05745;
     --footer-link-color-visited: #c05745;
@@ -86,14 +86,14 @@
 /* Dark mode theming */
 :root[color-theme="dark"] {
   --header-background: #8f3a34;
-  --header-font-color: #fcfbfa;
+  --header-font-color: #fbf9f8;
 
-  --body-background: #343a40;
+  --body-background: #2a2f2f;
   --body-font-color: #ced3d8;
 
-  --mark-color: #ffab00;
+  --mark-color: #f0cc72;
 
-  --button-background: #62cb97;
+  --button-background: #86b596;
   --button-border-color: #4ec58a;
 
   --link-color: #7ac29e;
@@ -104,7 +104,7 @@
   --code-accent-color-lite: #2b3035;
   --code-font-color: #b9b9b9;
 
-  --code-copy-background: #343a40;
+  --code-copy-background: #2a2f2f;
   --code-copy-font-color: #6b7784;
   --code-copy-border-color: #6b7784;
   --code-copy-success-color: #37905c;
@@ -114,7 +114,7 @@
 
   --control-icons: #b2bac1;
 
-  --footer-background: #3f3a36;
+  --footer-background: #2a2f2f;
   --footer-font-color: #ffffff;
   --footer-link-color: #c05745;
   --footer-link-color-visited: #c05745;
@@ -124,12 +124,12 @@
     --header-background: #8f3a34;
     --header-font-color: #ffffff;
 
-    --body-background: #343a40;
+    --body-background: #2a2f2f;
     --body-font-color: #ced3d8;
 
-    --mark-color: #ffab00;
+    --mark-color: #f0cc72;
 
-    --button-background: #62cb97;
+    --button-background: #86b596;
     --button-border-color: #4ec58a;
 
     --link-color: #7ac29e;
@@ -140,7 +140,7 @@
     --code-accent-color-lite: #2b3035;
     --code-font-color: #b9b9b9;
 
-    --code-copy-background: #343a40;
+    --code-copy-background: #2a2f2f;
     --code-copy-font-color: #6b7784;
     --code-copy-border-color: #6b7784;
     --code-copy-success-color: #37905c;
@@ -150,7 +150,7 @@
 
     --control-icons: #b2bac1;
 
-    --footer-background: #3f3a36;
+    --footer-background: #2a2f2f;
     --footer-font-color: #ffffff;
     --footer-link-color: #c05745;
     --footer-link-color-visited: #c05745;
@@ -167,9 +167,11 @@
   font-display: swap;
 }
 
+/* ----------------------------- */
+/* -- メニューバー */
+/* ----------------------------- */
 
-/*------ メニューバー目次 ------*/
-/* スクロールに追従する */
+/*----- メニューバー目次 */
 @media (min-width: 41rem) {
   html, body {
     overflow-x: visible;
@@ -184,9 +186,6 @@
   overflow-y: auto;
   scrollbar-width: none;
 }
-
-
-/* デザイン */
 .gdoc-nav h1 {
   margin-bottom: 0.6em;
   font-size: 1.2em;
@@ -194,8 +193,17 @@
   border-bottom: 1px solid #162b3c;
   padding-bottom: .3em;
 }
+.gdoc-nav {
+    flex: 0 0 15rem;
+}
+@media screen and (max-width: 41rem) {
+	.gdoc-nav {
+		margin-left: -15rem;
+		font-size: 16px
+	}
+}
 
-/* 共通設定 */
+/*----- 共通設定 */
 .gdoc-nav ul {
   list-style: none;
   margin: 0 0 0 -1.2em;
@@ -207,34 +215,68 @@
   margin: .5em 0;
   padding-left: 1.4em;
 }
-/* h1見出し */
+/*------- h1見出し */
 .gdoc-nav ul > li {
   margin-left: 0;
   font-size: .9em;
 }
-/* h2見出し */
+/*------- h2見出し */
 .gdoc-nav ul ul > li {
   margin-left: .9em;
   font-size: .88em;
 }
-/* h3見出し */
+/*------- h3見出し */
 .gdoc-nav ul ul ul > li {
   margin-left: .8em;
   font-size: .86em;
 }
-/* h4以降 */
+/*------- h4以降 */
 .gdoc-nav ul ul ul ul > li {
   font-size: .8em;
 }
+.gdoc-nav--toc {
+  background-color: var(--body-background);
+  padding: 0.5rem 1rem 1rem 1rem;
+  border-radius: 0.4rem;
+}
 
-/* メニューバーの幅 */
-.gdoc-nav {
-    flex: 0 0 15rem;
-}
-@media screen and (max-width: 41rem) {
-	.gdoc-nav {
-		margin-left: -15rem;
-		font-size: 16px
-	}
-}
 /* ----------------------------- */
+/* -- メインコンテンツ */
+/* ----------------------------- */
+.gdoc-page {
+  background: var(--body-background);
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+}
+
+
+/* ----------------------------- */
+/* -- 背景画像 */
+/* ----------------------------- */
+/* .page__wrapper{
+  background-image: url('/img/background/96dpi_DataTexture_11a.png');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+} */
+
+div.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: var(--body-font-color);
+	background-image: url('/img/background/96dpi_DataTexture_8h.png');
+  background-repeat: repeat;
+  background-attachment: scroll;
+	font-weight: normal
+}
+div.wrapper.is_home {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: var(--body-font-color);
+  background-image: none;
+	background-color: var(--body-background);
+	font-weight: normal
+}

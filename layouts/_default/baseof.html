@@ -26,7 +26,7 @@
 
 
     <div
-      class="wrapper {{ if default false .Site.Params.geekdocDarkModeDim }}dark-mode-dim{{ end }}"
+      class="wrapper {{ if default false .Site.Params.geekdocDarkModeDim }}dark-mode-dim{{ end }} {{ if .IsHome }}is_home{{ end }}"
     >
       <input type="checkbox" class="hidden" id="menu-control" />
       <input type="checkbox" class="hidden" id="menu-header-control" />
@@ -49,11 +49,10 @@
           </aside>
         {{ end }}
 
-        <!--メインコンテンツ -->
+        <!-- メインコンテンツ -->
         <div class="gdoc-page"> 
           {{ template "main" . }}
 
-          
           {{ $showPrevNext := (default true .Site.Params.geekdocNextPrev) }}
           {{ if $showPrevNext }}
           <div class="gdoc-page__footer flex flex-wrap justify-between">
@@ -83,7 +82,6 @@
         });
       });
     </script>
-    <!--------------------------------------------------------->
     
   </body>
 </html>
