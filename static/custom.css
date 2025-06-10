@@ -251,16 +251,8 @@
 
 
 /* ----------------------------- */
-/* -- 背景画像 */
+/* -- wrapper */
 /* ----------------------------- */
-/* .page__wrapper{
-  background-image: url('/img/background/96dpi_DataTexture_11a.png');
-  background-repeat: repeat;
-  background-position: center;
-  background-size: 100%;
-  background-attachment: fixed;
-} */
-
 div.wrapper {
 	display: flex;
 	flex-direction: column;
