@@ -7,7 +7,6 @@ pre, code {
 
 :root {
   --code-max-height: 60rem;
-
   --header-font-family: "DancingScript";
   --body-font-family: "DancingScript";
   --code-font-family: "DancingScript";
@@ -27,7 +26,7 @@ pre, code {
   --button-background: #86b596;
   --button-border-color: #4ec58a;
 
-  --link-color: #518169;
+  --link-color: #1b5376;
   --link-color-visited: #c54e8a;
 
   --code-background: #f5f6f8;
@@ -88,79 +87,6 @@ pre, code {
   }
 }
 
-/* Dark mode theming */
-:root[color-theme="dark"] {
-  --header-background: #8f3a34;
-  --header-font-color: #fbf9f8;
-
-  --body-background: #2a2f2f;
-  --body-font-color: #ced3d8;
-
-  --mark-color: #f0cc72;
-
-  --button-background: #86b596;
-  --button-border-color: #4ec58a;
-
-  --link-color: #7ac29e;
-  --link-color-visited: #c27a9e;
-
-  --code-background: #2f353a;
-  --code-accent-color: #262b2f;
-  --code-accent-color-lite: #2b3035;
-  --code-font-color: #b9b9b9;
-
-  --code-copy-background: #2a2f2f;
-  --code-copy-font-color: #6b7784;
-  --code-copy-border-color: #6b7784;
-  --code-copy-success-color: #37905c;
-
-  --accent-color: #2b3035;
-  --accent-color-lite: #2f353a;
-
-  --control-icons: #b2bac1;
-
-  --footer-background: #2a2f2f;
-  --footer-font-color: #ffffff;
-  --footer-link-color: #c05745;
-  --footer-link-color-visited: #c05745;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --header-background: #8f3a34;
-    --header-font-color: #ffffff;
-
-    --body-background: #2a2f2f;
-    --body-font-color: #ced3d8;
-
-    --mark-color: #f0cc72;
-
-    --button-background: #86b596;
-    --button-border-color: #4ec58a;
-
-    --link-color: #7ac29e;
-    --link-color-visited: #c27a9e;
-
-    --code-background: #2f353a;
-    --code-accent-color: #262b2f;
-    --code-accent-color-lite: #2b3035;
-    --code-font-color: #b9b9b9;
-
-    --code-copy-background: #2a2f2f;
-    --code-copy-font-color: #6b7784;
-    --code-copy-border-color: #6b7784;
-    --code-copy-success-color: #37905c;
-
-    --accent-color: #2b3035;
-    --accent-color-lite: #2f353a;
-
-    --control-icons: #b2bac1;
-
-    --footer-background: #2a2f2f;
-    --footer-font-color: #ffffff;
-    --footer-link-color: #c05745;
-    --footer-link-color-visited: #c05745;
-  }
-}
 
 @font-face {
   font-family: "DancingScript";
