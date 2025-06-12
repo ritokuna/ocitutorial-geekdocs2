@@ -87,7 +87,7 @@ OCIにおける各種運用・管理関連サービスについて学習でき�
 ### ■ [OpenSearch編](./opensearch)
 OCI Search Service with OpenSearchに関して学習できます。
 
-### ■ [OCI HPCチュートリアル集](./hpc)
+### ■ [OCI HPCチュートリアル集](./hpc/#1-oci-hpcチュートリアル集)
 OCI上にHPCシステムを構築するためのチュートリアルです。
 OCIが提供するベアメタルインスタンス、GPUインスタンス、クラスタ・ネットワーク等を活用し、様々な用途のHPCシステムをリソース・マネージャ、Terraform、Ansibleを駆使して効率的に構築する方法を学習します。
 
