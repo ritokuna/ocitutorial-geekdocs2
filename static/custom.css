@@ -1,5 +1,10 @@
 /* Global customization */
 
+pre, code {
+  font-family: "Fira Code", "Source Code Pro", "Courier New", Courier, monospace;
+}
+
+
 :root {
   --code-max-height: 60rem;
 
