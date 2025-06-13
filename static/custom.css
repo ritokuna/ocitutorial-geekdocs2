@@ -203,3 +203,16 @@ div.wrapper.is_home {
 	background-color: var(--body-background);
 	font-weight: normal
 }
+
+/* ----------------------------- */
+/* -- コンテンツデザイン */
+/* ----------------------------- */
+
+/*----- テーブル */
+.table-wrap {
+	overflow: auto;
+	margin: 1rem 0
+}
+.table-wrap>table {
+	margin: 0 !important
+}
