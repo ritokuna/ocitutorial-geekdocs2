@@ -40,6 +40,9 @@ Oracle Database関連サービスのチュートリアル
 #### ・[Autonomous Database編](./adb)
 自己稼働・自己保護・自己修復をコンセプトにOracle Database、およびExadataをより身近にご利用いただくべく登場したAutonomous Database !
 
+#### ・[Oracle AI Vector Search編](./ai-vector-search)
+Oracle AI Vector Searchを学ぶチュートリアルです。Always Free ADBの作成から、様々な使い方までを一通り体験します。
+
 #### ・[Base Database Service編](./basedb)
 Oracleのクラウドで使いたいものと言ったら、そう! Oracle Database!!
 まずはベーシックなBase Database
