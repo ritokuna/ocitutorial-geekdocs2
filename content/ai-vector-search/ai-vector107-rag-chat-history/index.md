@@ -10,9 +10,9 @@ header:
 ---
 
 # はじめに
-[106 : Oracle Database 23aiとLangChainでRAGを構成してみよう](/ocitutorials/ai-vector-search/ai-vector106-23ai-langchain-rag){:target="_blank"}ではLangChainを利用したシンプルな検索拡張生成(RAG)の実装をご紹介しました。
+[106 : Oracle Database 23aiとLangChainでRAGを構成してみよう](/ocitutorials/ai-vector-search/ai-vector106-23ai-langchain-rag)ではLangChainを利用したシンプルな検索拡張生成(RAG)の実装をご紹介しました。
 
-今回は、その基本実装にチャット会話履歴を保持する仕組みを取り入れた構成をご紹介します。(※RAGって何ですか？という方は[こちらの記事](https://qiita.com/ksonoda/items/ba6d7b913fc744db3d79){:target="_blank"}を事前にご参照ください。)
+今回は、その基本実装にチャット会話履歴を保持する仕組みを取り入れた構成をご紹介します。(※RAGって何ですか？という方は[こちらの記事](https://qiita.com/ksonoda/items/ba6d7b913fc744db3d79)を事前にご参照ください。)
 
 ChatGPTを使って沢山の質問を投げていると、無意識に主語を省略したり、「それ」、「あれ」、「彼」、「彼女」など代名詞などを使って以前の質問を指し示すような質問をする場合が多々あります。そんな適当に入力した質問でもLLMがちゃんと応答してくれるのは、そのセッションで入力されたプロンプトと出力された応答テキストをデータベースに保存し、新しい質問が入力されると、その前までの会話と関連性がある質問なのかどうかを判断し、必要に応じて過去の会話から必要なテキストを参照する仕組みがあるからです。
 
@@ -42,7 +42,7 @@ RAGのフローや上述した会話履歴データベースの参照処理な�
 
 ![image.png](3.png)
 
-[106 : Oracle Database 23aiとLangChainでRAGを構成してみよう](/ocitutorials/ai-vector-search/ai-vector106-23ai-langchain-rag){:target="_blank"}で使用したPDFファイルと同じものになっているので、すでに実施済みの方はダウンロードしなくて結構です。
+[106 : Oracle Database 23aiとLangChainでRAGを構成してみよう](/ocitutorials/ai-vector-search/ai-vector106-23ai-langchain-rag)で使用したPDFファイルと同じものになっているので、すでに実施済みの方はダウンロードしなくて結構です。
 
 [本チュートリアルで使用するファイル](/ocitutorials/ai-vector-search/ai-vector106-23ai-langchain-rag/rocket.pdf)
 
@@ -67,7 +67,7 @@ pip install -Uq oracledb pypdf cohere langchain langchain-community langchain-co
 <br>
 
 ## Oracle Database へのデータ・ロード
-次に、データベースへ接続し、pdfファイルの埋め込みとロードを行います。[106 : Oracle Database 23aiとLangChainでRAGを構成してみよう](/ocitutorials/ai-vector-search/ai-vector106-23ai-langchain-rag){:target="_blank"}と同じ処理内容です。
+次に、データベースへ接続し、pdfファイルの埋め込みとロードを行います。[106 : Oracle Database 23aiとLangChainでRAGを構成してみよう](/ocitutorials/ai-vector-search/ai-vector106-23ai-langchain-rag)と同じ処理内容です。
 
 Oracle Database へ接続します。利用するサービスによって、接続文字列が変わりますので以下のサンプルを使って接続してください。
 
@@ -131,7 +131,7 @@ print(docs)
 
 区切ったチャンクテキストを埋め込みモデル(OCI Generative AI Serviceのembed-multilingual-v3.0)でベクトルに変換し、ベクトル・データベースにロードします。
 
-※service_endpointには大阪リージョンのエンドポイントを指定していますが、サブスクライブしているリージョンによって適宜修正してください。最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm){:target="_blank"}をご参照ください。例えばロンドンの場合は、service_endpointには*https://inference.generativeai.uk-london-1.oci.oraclecloud.com*と指定します。
+※service_endpointには大阪リージョンのエンドポイントを指定していますが、サブスクライブしているリージョンによって適宜修正してください。最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm)をご参照ください。例えばロンドンの場合は、service_endpointには*https://inference.generativeai.uk-london-1.oci.oraclecloud.com*と指定します。
 
 ```python
 from langchain_community.vectorstores.oraclevs import OracleVS
@@ -167,7 +167,7 @@ __root__
 <br>
 
 ## 会話履歴保存用データベース(PostgreSQL)のセットアップ
-ここから会話履歴用保存用のデータベースである PostgreSQL の処理を実装します。まず[こちら](https://docs.oracle.com/ja-jp/iaas/Content/postgresql/create-db.htm){:target="_blank"}を参考に、OCI PostgreSQL Serviceのインスタンスを作成します。(もちろんクラウドサービスではないローカルのPostgreSQLでも同じコードになりますのでPosgreSQLは何を使っても大丈夫です。)
+ここから会話履歴用保存用のデータベースである PostgreSQL の処理を実装します。まず[こちら](https://docs.oracle.com/ja-jp/iaas/Content/postgresql/create-db.htm)を参考に、OCI PostgreSQL Serviceのインスタンスを作成します。(もちろんクラウドサービスではないローカルのPostgreSQLでも同じコードになりますのでPosgreSQLは何を使っても大丈夫です。)
 
 
 以降の処理はデータベースへの接続と会話履歴をロードする表の作成の2つです。
@@ -259,7 +259,7 @@ llm = ChatOCIGenAI(
 )
 ```
 
-次に、会話コンテキストに沿って回答をするために、もとのプロンプトを変換するためのretrieverを定義します。この実装により、仮に主語が省略されたプロンプトが入力されたりしても、内部的に以前の会話のコンテキストに沿ったプロンプトに変換されます。冒頭で説明した図はかなり簡略化したもので、これ以降の処理は[こちら](https://python.langchain.com/v0.1/docs/use_cases/question_answering/chat_history/#tying-it-together){:target="_blank"}のLangChainの処理フローと一緒に確認するとコードの理解が進みやすいです。
+次に、会話コンテキストに沿って回答をするために、もとのプロンプトを変換するためのretrieverを定義します。この実装により、仮に主語が省略されたプロンプトが入力されたりしても、内部的に以前の会話のコンテキストに沿ったプロンプトに変換されます。冒頭で説明した図はかなり簡略化したもので、これ以降の処理は[こちら](https://python.langchain.com/v0.1/docs/use_cases/question_answering/chat_history/#tying-it-together)のLangChainの処理フローと一緒に確認するとコードの理解が進みやすいです。
 
 
 ```python

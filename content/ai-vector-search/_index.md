@@ -9,7 +9,7 @@ show_excerpts: true
 toc: true
 ---
 
-**Database編のチュートリアル一覧に[もどる](/ocitutorials/database/){:target="_blank"}**
+**チュートリアル一覧に[もどる](/ocitutorials/)**
 <br/>
 
 ----
@@ -19,8 +19,8 @@ toc: true
 
 **特記事項**  
 + チュートリアル内の画面ショットについては現在の画面と異なっている場合があります。
-+ [OCIチュートリアル入門編](/ocitutorials/beginners/){:target="_blank"}の、準備からその1を実施しておくと、理解がスムーズです。  
-+ より詳しく知りたい方は、[OCI活用資料集](https://oracle-japan.github.io/ocidocs/services/database/){:target="_blank"}も併せてご確認ください。それぞれのサービスに関する技術詳細資料をまとめ紹介しています。
++ [OCIチュートリアル入門編](/ocitutorials/beginners/)の、準備からその1を実施しておくと、理解がスムーズです。  
++ より詳しく知りたい方は、[OCI活用資料集](https://oracle-japan.github.io/ocidocs/services/database/)も併せてご確認ください。それぞれのサービスに関する技術詳細資料をまとめ紹介しています。
 <br/>
 
 ----
@@ -36,25 +36,25 @@ Oracle AI Vector Searchを使用すると、ビジネス・データにベクト
 以下のチュートリアルではAlways Free ADBの作り方/仮想マシンへのOracle Database 23ai Freeのインストール方法から、Oracle AI Vector Searchの様々な使い方を学んでいただける内容になっています。
 <br/>
 
-+ **[101 : Always Freeで23aiのADBインスタンスを作成してみよう](/ocitutorials/ai-vector-search/ai-vector101-always-free-adb/){:target="_blank"}**   
++ **[101 : Always Freeで23aiのADBインスタンスを作成してみよう](./ai-vector101-always-free-adb/)**   
 
-+ **[102 : 仮想マシンへOracle Database 23ai Freeをインストールしてみよう](/ocitutorials/ai-vector-search/ai-vector102-23aifree-install/){:target="_blank"}**   
++ **[102 : 仮想マシンへOracle Database 23ai Freeをインストールしてみよう](./ai-vector102-23aifree-install/)**   
 
-+ **[103 : Oracle AI Vector Searchの基本操作を試してみよう](/ocitutorials/ai-vector-search/ai-vector103-basics/){:target="_blank"}**
++ **[103 : Oracle AI Vector Searchの基本操作を試してみよう](./ai-vector103-basics/)**
 
-+ **[104 : ファイル→テキスト→チャンク→ベクトルへの変換およびベクトル検索を使おう](/ocitutorials/ai-vector-search/ai-vector104-file-to-embedding/){:target="_blank"}** 
++ **[104 : ファイル→テキスト→チャンク→ベクトルへの変換およびベクトル検索を使おう](./ai-vector104-file-to-embedding/)** 
 
-+ **[105 : マルチベクトル検索で複数のドキュメントを検索してみよう](/ocitutorials/ai-vector-search/ai-vector105-multi-vector-search/){:target="_blank"}**
++ **[105 : マルチベクトル検索で複数のドキュメントを検索してみよう](./ai-vector105-multi-vector-search/)**
 
-+ **[106 : Oracle Database 23aiとLangChainでRAGを構成してみよう](/ocitutorials/ai-vector-search/ai-vector106-23ai-langchain-rag/){:target="_blank"}**
++ **[106 : Oracle Database 23aiとLangChainでRAGを構成してみよう](./ai-vector106-23ai-langchain-rag/)**
 
-+ **[107 : 会話履歴保持の仕組みを取り入れたRAGの実装をしてみよう](/ocitutorials/ai-vector-search/ai-vector107-rag-chat-history/){:target="_blank"}**
++ **[107 : 会話履歴保持の仕組みを取り入れたRAGの実装をしてみよう](./ai-vector107-rag-chat-history/)**
 
-+ **[108 : SELECT AI with RAGを試してみよう](/ocitutorials/ai-vector-search/ai-vector108-select-ai-with-rag/){:target="_blank"}**
++ **[108 : SELECT AI with RAGを試してみよう](./ai-vector108-select-ai-with-rag/)**
 
-+ **[109 : Oracle Database で全文検索してみよう](/ocitutorials/ai-vector-search/ai-vector109-oracletext/){:target="_blank"}**
++ **[109 : Oracle Database で全文検索してみよう](./ai-vector109-oracletext/)**
 
 <br/>
 
-**Database編のチュートリアル一覧に[もどる](/ocitutorials/database/){:target="_blank"}**
+**チュートリアル一覧に[もどる](./)**
 <br/>

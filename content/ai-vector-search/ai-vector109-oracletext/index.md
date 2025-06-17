@@ -23,7 +23,7 @@ RAGでは「意味の近いコンテンツを取ってくる」という点か�
 <BR>
 
 # 0. 前提条件
-+ [101:Always Freeで23aiのADBインスタンスを作成してみよう](/ocitutorials/ai-vector-search/ai-vector101-always-free-adb/){:target="_blank"}、または[101: ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning/){:target="_blank"}の記事を参考に、Autonomous Database(23ai)を作成済みであること。
++ [101:Always Freeで23aiのADBインスタンスを作成してみよう](/ocitutorials/ai-vector-search/ai-vector101-always-free-adb/)、または[101: ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning/)の記事を参考に、Autonomous Database(23ai)を作成済みであること。
 
 + 本チュートリアルで使用する以下のサンプルデータをダウンロード済みであること。
   + [TextSample1.csv](/ocitutorials/ai-vector-search/ai-vector109-oracletext/TextSample1.csv)
@@ -85,7 +85,7 @@ WHERE CONTAINS (text, '日本 | オラクル') > 0
 
 これら以外にも指定されたキーワードの全てが含まれているものから高いスコアが割り当てられる`ACCUMulate`や、キーワードが含まれていなくても意味的に近いワードが含まれていればスコアが高くなる`ABOUT`などの演算子があります。
 
-その他の演算子については、[こちら](https://docs.oracle.com/en/database/oracle/oracle-database/23/ccref/oracle-text-CONTAINS-query-operators.html#GUID-6410B783-FC9A-4C99-B3AF-9E0349AA43D1){:target="_blank"}をご参照ください。
+その他の演算子については、[こちら](https://docs.oracle.com/en/database/oracle/oracle-database/23/ccref/oracle-text-CONTAINS-query-operators.html#GUID-6410B783-FC9A-4C99-B3AF-9E0349AA43D1)をご参照ください。
 
 <BR>
 <a id="anchor2"></a>
@@ -363,7 +363,7 @@ FROM
 
 # 3. 参考資料
 
-+ [Oracle Text 詳細解説](https://www.oracle.com/jp/a/tech/docs/technical-resources/oracletext-ver12.pdf){:target="_blank"}
++ [Oracle Text 詳細解説](https://www.oracle.com/jp/a/tech/docs/technical-resources/oracletext-ver12.pdf)
 
 
 [ページトップへ戻る](#anchor0)

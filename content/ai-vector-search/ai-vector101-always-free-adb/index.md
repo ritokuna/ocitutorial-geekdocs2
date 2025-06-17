@@ -19,7 +19,7 @@ header:
 Always FreeのADBでは、2024年5月にリリースとなった**Oracle Database 23ai**を使用し、新機能を試す事が出来ます。
 <br>この章では、Always FreeのADBインスタンスの作成方法をご紹介します。
 
-なお、BaseDBでのインスタンスの作成方法は[101: Oracle Cloud で Oracle Database を使おう(BaseDB)](/ocitutorials/basedb/dbcs101-create-db/){:target="_blank"} を参考にしてください。
+なお、BaseDBでのインスタンスの作成方法は[101: Oracle Cloud で Oracle Database を使おう(BaseDB)](./dbcs101-create-db/)を参考にしてください。
 
 
 <br>
@@ -49,13 +49,13 @@ Always FreeのADBでは、2024年5月にリリースとなった**Oracle Databas
   - シンガポール(SIN)
   - 東京(NRT)
   
-  最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/autonomous-database-serverless/doc/autonomous-always-free.html#:~:text=Oracle%20Database%2023ai%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9FAlways%20Free%20Autonomous%20Database%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%88%3A){:target="_blank"}をご参照ください。
+  最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/autonomous-database-serverless/doc/autonomous-always-free.html#:~:text=Oracle%20Database%2023ai%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9FAlways%20Free%20Autonomous%20Database%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%88%3A)をご参照ください。
   お使いのテナンシーの**ホーム・リージョン**が上記のリージョンのいずれか、
   <br>かつ、**ホーム・リージョン**でADBのインスタンスを作成する必要があります。
 
   >**【補足】**
   >
-  >ホーム・リージョンの確認方法は、[その1 - OCIコンソールにアクセスして基本を理解する](/ocitutorials/beginners/getting-started){:target="_blank"}の 6. リージョンの確認を参考にして下さい。
+  >ホーム・リージョンの確認方法は、[その1 - OCIコンソールにアクセスして基本を理解する](/ocitutorials/beginners/getting-started)の 6. リージョンの確認を参考にして下さい。
 
 <a id="anchor1"></a>
 <br>
@@ -139,7 +139,7 @@ Always FreeのADBでは、2024年5月にリリースとなった**Oracle Databas
     ![img](ai-vector101-9.png)
 
     >**【補足】**
-    >ADBへの接続方法については[104: クレデンシャル・ウォレットを利用して接続してみよう](/ocitutorials/adb/adb104-connect-using-wallet){:target="_blank"}を参考にして下さい。
+    >ADBへの接続方法については[104: クレデンシャル・ウォレットを利用して接続してみよう](./adb104-connect-using-wallet)を参考にして下さい。
 
 <br>
 以上で、この章は終了です。  

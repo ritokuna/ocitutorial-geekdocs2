@@ -21,7 +21,7 @@ SELECT AIについては[111: SELECT AIを試してみよう](https://oracle-jap
 
 
 **前提条件 :**
-+ [101:Always Freeで23aiのADBインスタンスを作成してみよう](/ocitutorials/ai-vector-search/ai-vector101-always-free-adb/){:target="_blank"}の記事を参考に、Oracle Database 23aiの準備が完了していること。
++ [101:Always Freeで23aiのADBインスタンスを作成してみよう](/ocitutorials/ai-vector-search/ai-vector101-always-free-adb/)の記事を参考に、Oracle Database 23aiの準備が完了していること。
 
 + OCI GenAI Serviceをご利用いただけるリージョンはサブスクリプション済みであること。
   
@@ -32,13 +32,13 @@ SELECT AIについては[111: SELECT AIを試してみよう](https://oracle-jap
   - ロンドン(LHR)
   - シカゴ(ORD)
   
-  最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm){:target="_blank"}をご参照ください。
+  最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm)をご参照ください。
   SELECT AIではデフォルトでシカゴリージョンのOCI GenAIサービスを使用しますが、本チュートリアルでは大阪リージョンのOCI GenAIサービスを使用しますので、大阪リージョンがサブスクライブされていることが前提となります。
   
-  本チュートリアルで使用するテキスト生成モデル、エンベッディングモデルについては、将来的にモデルの廃止が行われることがあるため、廃止日や置換モデルのリリース情報を[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/deprecating.htm){:target="_blank"}から確認のうえ、最新のモデルを使用することを推奨します。本チュートリアルでは、エンベッディングモデルにcohere.embed-multilingual-v3.0、テキスト生成モデルにcohere.command-r-plus-08-2024を使用します。これらが最新になっているか上記リンクよりご確認ください。
+  本チュートリアルで使用するテキスト生成モデル、エンベッディングモデルについては、将来的にモデルの廃止が行われることがあるため、廃止日や置換モデルのリリース情報を[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/deprecating.htm)から確認のうえ、最新のモデルを使用することを推奨します。本チュートリアルでは、エンベッディングモデルにcohere.embed-multilingual-v3.0、テキスト生成モデルにcohere.command-r-plus-08-2024を使用します。これらが最新になっているか上記リンクよりご確認ください。
 
   - OCI アカウントのAPI署名キーの生成は完了であること
-  <br>以下の情報を取得してください。必要があれば、[API署名キーの生成方法](https://docs.oracle.com/ja-jp/iaas/Content/API/Concepts/apisigningkey.htm#two){:target="_blank"}をご参照ください。
+  <br>以下の情報を取得してください。必要があれば、[API署名キーの生成方法](https://docs.oracle.com/ja-jp/iaas/Content/API/Concepts/apisigningkey.htm#two)をご参照ください。
     - `user` - キー・ペアが追加されるユーザーのOCID。
     - `fingerprint` - 追加されたキーのフィンガープリント。
     - `tenancy` - テナンシのOCID。

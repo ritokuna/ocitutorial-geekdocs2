@@ -45,7 +45,7 @@ header:
   - ロンドン(LHR)
   - シカゴ(ORD)
   
-  最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm){:target="_blank"}をご参照ください。本チュートリアルで使用するテキスト生成モデル、エンベッディングモデルについては、将来的にモデルの廃止が行われることがあるため、廃止日や置換モデルのリリース情報を[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/deprecating.htm){:target="_blank"}から確認のうえ、最新のモデルを使用することを推奨します。以降のチュートリアルでは、エンベッディングモデルにcohere.embed-multilingual-v3.0、テキスト生成モデルにcohere.command-r-plus-08-2024を使用します。これらが最新になっているか上記リンクよりご確認ください。また大阪リージョンの利用が前提となっているため、それ以外のリージョンの場合は適宜サービス・エンドポイントを修正してください。
+  最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm)をご参照ください。本チュートリアルで使用するテキスト生成モデル、エンベッディングモデルについては、将来的にモデルの廃止が行われることがあるため、廃止日や置換モデルのリリース情報を[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/deprecating.htm)から確認のうえ、最新のモデルを使用することを推奨します。以降のチュートリアルでは、エンベッディングモデルにcohere.embed-multilingual-v3.0、テキスト生成モデルにcohere.command-r-plus-08-2024を使用します。これらが最新になっているか上記リンクよりご確認ください。また大阪リージョンの利用が前提となっているため、それ以外のリージョンの場合は適宜サービス・エンドポイントを修正してください。
 
 <br>
 
@@ -376,7 +376,7 @@ SQL*Plusの出力をよりわかりやすいように、SQL*Plusの環境設定�
 
 OCI GenAIサービスを利用するためのパラメータを設定します。今回はOCI Generative AI Serviceのembed-multilingual-v3.0というモデルを利用します。
 
-※urlには大阪リージョンのエンドポイントを指定していますが、サブスクライブしているリージョンによってここからの手順では適宜修正してください。最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm){:target="_blank"}をご参照ください。例えばロンドンの場合は、urlには*https://inference.generativeai.uk-london-1.oci.oraclecloud.com*と指定します。
+※urlには大阪リージョンのエンドポイントを指定していますが、サブスクライブしているリージョンによってここからの手順では適宜修正してください。最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm)をご参照ください。例えばロンドンの場合は、urlには*https://inference.generativeai.uk-london-1.oci.oraclecloud.com*と指定します。
 
   ```sql
   var embed_genai_params clob;
@@ -730,7 +730,7 @@ object_uriには前に手順でメモをしたURIパスを入力します。
   ```
   OCI GenAIサービスを利用するためのパラメータを設定します。今回はOCI Generative AI Serviceのembed-multilingual-v3.0というモデルを利用します。
 
-  ※urlには大阪リージョンのエンドポイントを指定していますが、サブスクライブしているリージョンによってここからの手順では適宜修正してください。最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm){:target="_blank"}をご参照ください。例えばロンドンの場合は、urlには*https://inference.generativeai.uk-london-1.oci.oraclecloud.com*と指定します。
+  ※urlには大阪リージョンのエンドポイントを指定していますが、サブスクライブしているリージョンによってここからの手順では適宜修正してください。最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm)をご参照ください。例えばロンドンの場合は、urlには*https://inference.generativeai.uk-london-1.oci.oraclecloud.com*と指定します。
 
   上記の設定を検証してみます。
 

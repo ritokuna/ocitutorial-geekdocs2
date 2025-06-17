@@ -28,11 +28,11 @@ header:
   - ロンドン(LHR)
   - シカゴ(ORD)
   
-  最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm){:target="_blank"}をご参照ください。
+  最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm)をご参照ください。
 - ドキュメントデータのベクトル化に利用するモデル : Oracle Cloud Generative AI Service(cohere.embed-multilingual-v3.0)
 - ベクトルデータベース: Oracle Database 23ai Free(OCI Computeにインストール)、Base Database Service、Autonomous Database(Always Free)
 
-本チュートリアルで使用するテキスト生成モデル、エンベッディングモデルについては、将来的にモデルの廃止が行われることがあるため、廃止日や置換モデルのリリース情報を[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/deprecating.htm){:target="_blank"}から確認のうえ、最新のモデルを使用することを推奨します。本チュートリアルでは、エンベッディングモデルにcohere.embed-multilingual-v3.0、テキスト生成モデルにcohere.command-r-plus-08-2024を使用します。これらが最新になっているか上記リンクよりご確認ください。
+本チュートリアルで使用するテキスト生成モデル、エンベッディングモデルについては、将来的にモデルの廃止が行われることがあるため、廃止日や置換モデルのリリース情報を[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/deprecating.htm)から確認のうえ、最新のモデルを使用することを推奨します。本チュートリアルでは、エンベッディングモデルにcohere.embed-multilingual-v3.0、テキスト生成モデルにcohere.command-r-plus-08-2024を使用します。これらが最新になっているか上記リンクよりご確認ください。
 
 ※LangChainって何？という方は[こちらの記事](https://qiita.com/ksonoda/items/ba6d7b913fc744db3d79#langchain) をご参照ください。
 
@@ -175,10 +175,10 @@ exit
 <br>
 
 ## 1-3. Autonomous Database 23ai Free環境でのセットアップ
-Autonomous Database 23ai Free環境でチュートリアルを行う場合は、[104 :ファイル→テキスト→チャンク→ベクトルへの変換およびベクトル検索を使おう](https://oracle-japan.github.io/ocitutorials/ai-vector-search/ai-vector104-file-to-embedding/){:target="_blank"}の[2-1. ADB23ai Always Free編-ファイルの格納](https://oracle-japan.github.io/ocitutorials/ai-vector-search/ai-vector104-file-to-embedding/#anchor7){:target="_blank"}を参考に、Database Actionsからユーザーの作成、権限の付与を行います。
+Autonomous Database 23ai Free環境でチュートリアルを行う場合は、[104 :ファイル→テキスト→チャンク→ベクトルへの変換およびベクトル検索を使おう](https://oracle-japan.github.io/ocitutorials/ai-vector-search/ai-vector104-file-to-embedding/)の[2-1. ADB23ai Always Free編-ファイルの格納](https://oracle-japan.github.io/ocitutorials/ai-vector-search/ai-vector104-file-to-embedding/#anchor7)を参考に、Database Actionsからユーザーの作成、権限の付与を行います。
 
 本ハンズオンではPython環境を用意する必要があります。ADBではComputeやBaseDBのようにOSログインできないため、別のコンピュート・インスタンスやノートブック環境を用意してください。
-Pythonの実行環境を持っていない場合は[204: 開発者向け仮想マシンのセットアップ方法](https://oracle-japan.github.io/ocitutorials/adb/adb204-setup-VM/){:target="_blank"}の[仮想マシンの作成](https://oracle-japan.github.io/ocitutorials/adb/adb204-setup-VM/#anchor1){:target="_blank"}、[仮想マシンへのアクセス](https://oracle-japan.github.io/ocitutorials/adb/adb204-setup-VM/#anchor2){:target="_blank"}を参考にコンピュート・インスタンスを作成します。
+Pythonの実行環境を持っていない場合は[204: 開発者向け仮想マシンのセットアップ方法](https://oracle-japan.github.io/ocitutorials/adb/adb204-setup-VM/)の[仮想マシンの作成](https://oracle-japan.github.io/ocitutorials/adb/adb204-setup-VM/#anchor1)、[仮想マシンへのアクセス](https://oracle-japan.github.io/ocitutorials/adb/adb204-setup-VM/#anchor2)を参考にコンピュート・インスタンスを作成します。
 
 
 作成した仮想マシンのIPアドレスはメモしておきます。
@@ -214,7 +214,7 @@ OCIコンソールのAutonomous Databaseの画面で、**Autonomous Database情�
 これでTLS接続でAutonomous Databaseに接続する準備が出来ました。
 
 >**【補足】**
->TLS接続については[108: 接続文字列を利用して接続してみよう](/ocitutorials/adb/adb108-walletless){:target="_blank"}をご参照下さい。
+>TLS接続については[108: 接続文字列を利用して接続してみよう](/ocitutorials/adb/adb108-walletless)をご参照下さい。
 
 <br>
 
@@ -379,7 +379,7 @@ pd.DataFrame(contents)
 
 まずは、作成済のdocuserでデータベースに接続します。
 
-ADBでdocuserが作成されていない場合は、[こちら](https://oracle-japan.github.io/ocitutorials/ai-vector-search/ai-vector104-file-to-embedding/#2-1-adb23ai-always-free%E7%B7%A8-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%A0%BC%E7%B4%8D){:target="_blank"}を参考にdocuserを作成してください。
+ADBでdocuserが作成されていない場合は、[こちら](https://oracle-japan.github.io/ocitutorials/ai-vector-search/ai-vector104-file-to-embedding/#2-1-adb23ai-always-free%E7%B7%A8-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%A0%BC%E7%B4%8D)を参考にdocuserを作成してください。
 
 Autonomous Database(23ai)、もしくはBaseDBを使用している場合は、セットアップ手順で取得した接続文字列をdsnに貼り付けます。
 
@@ -422,7 +422,7 @@ from langchain_community.embeddings import OCIGenAIEmbeddings
 
 利用する埋め込みモデルを定義します。今回はOCI Generative AI Serviceのembed-multilingual-v3.0というモデルを利用します。
 
-※service_endpointには大阪リージョンのエンドポイントを指定していますが、サブスクライブしているリージョンによって適宜修正してください。最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm){:target="_blank"}をご参照ください。例えばロンドンの場合は、service_endpointには*https://inference.generativeai.uk-london-1.oci.oraclecloud.com*と指定します。
+※service_endpointには大阪リージョンのエンドポイントを指定していますが、サブスクライブしているリージョンによって適宜修正してください。最新のリージョン一覧は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/generative-ai/pretrained-models.htm)をご参照ください。例えばロンドンの場合は、service_endpointには*https://inference.generativeai.uk-london-1.oci.oraclecloud.com*と指定します。
 
 ```python
 embeddings = OCIGenAIEmbeddings(

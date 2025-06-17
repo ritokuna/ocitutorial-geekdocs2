@@ -29,7 +29,7 @@ header:
 - [参考資料](#参考資料)
 
 **前提条件 :**
-+ [101:Always Freeで23aiのADBインスタンスを作成してみよう](/ocitutorials/ai-vector-search/ai-vector101-always-free-adb/){:target="_blank"}もしくは、[102:仮想マシンへOracle Database 23ai Freeをインストールしてみよう](/ocitutorials/ai-vector-search/ai-vector102-23aifree-install/){:target="_blank"}の記事を参考に、Oracle Database 23aiの準備が完了していること。
++ [101:Always Freeで23aiのADBインスタンスを作成してみよう](/ocitutorials/ai-vector-search/ai-vector101-always-free-adb/)もしくは、[102:仮想マシンへOracle Database 23ai Freeをインストールしてみよう](/ocitutorials/ai-vector-search/ai-vector102-23aifree-install/)の記事を参考に、Oracle Database 23aiの準備が完了していること。
 
 
 **所要時間 :** 約90分
@@ -1053,8 +1053,8 @@ from_vector()
 <a id="anchor11"></a>
 
 # 参考資料
-+ [Oracle AI Vector Search User`s Guide](https://docs.oracle.com/en/database/oracle/oracle-database/23/vecse/index.html){:target="_blank"}
-+ [SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/index.html){:target="_blank"}
++ [Oracle AI Vector Search User`s Guide](https://docs.oracle.com/en/database/oracle/oracle-database/23/vecse/index.html)
++ [SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/index.html)
 
 <BR>
 
