@@ -34,7 +34,7 @@ OCI GoldenGateサービスは、構成、ワークロード・スケーリング
 本チュートリアルではBaseDB、ADBともにデータベースの作成が完了しており、初期データとしてHRスキーマがそれぞれのデータベースにロードされていることを前提にしています。
 各データベースの作成方法やデータロードの方法は下記手順をご確認ください。
 
- + BaseDBの作成については、[「101: Oracle Cloud で Oracle Database を使おう(BaseDB)」](https://oracle-japan.github.io/ocitutorials/basedb/dbcs101-create-db/) をご参照ください。
+ + BaseDBの作成については、[「101: Oracle Cloud で Oracle Database を使おう(BaseDB)」](/basedb/dbcs101-create-db/) をご参照ください。
  + データ連携用のサンプルデータはHRスキーマを使用しています。BaseDBでのHRスキーマ作成方法は、[「301: 移行元となるデータベースを作成しよう」](/adb/adb301-create-source-db/) をご参照ください。
  + ADBの作成については、[「101:ADBインスタンスを作成してみよう」](/adb/adb101-provisioning/) をご参照ください。
  + ADBの初期データロードについては、[「303 : Data Pumpを利用してデータを移行しよう」](/adb/adb303-datapump/) をご参照ください。

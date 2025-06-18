@@ -235,15 +235,12 @@ ORDER BY 1;
 # 2. 半構造化データの処理
 これまでは、あらかじめ定義されている構造化データを扱ってきました。しかし実際には、半構造化されたデータや、非構造化データを扱わなければいけないことがほとんどです。
 
-[こちら](https://oracle.github.io/learning-library/data-management-library/autonomous-database/shared/adb-analytics-using-sql/freetier/?lab=working-with-semi-structured-data){:target="_blank"}では、半構造化データであるJSONデータの処理についてご紹介しています。
-
 <br>
 <a id="anchor3"></a>
 
 # 3. テキスト文字列の処理
 ここでは、ADWにテキスト文字列データをカンマ区切りのフォーマットに変換してロードする、という作業を行います。シナリオとしては、顧客の電子メールアドレスを教育レベル別に分類するレポートを作成します。
 
-[こちら](https://oracle.github.io/learning-library/data-management-library/autonomous-database/shared/adb-analytics-using-sql/freetier/?lab=managing-text-lists){:target="_blank"}では、このタスクを簡単に行うことのできる集計関数LISTAGGの使用方法についてご紹介しています。
 
 <br>
 <a id="anchor4"></a>
