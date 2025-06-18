@@ -10,7 +10,7 @@ toc: true
 ---
   
 
-**Database編のチュートリアル一覧に[もどる](/ocitutorials/database/){:target="_blank"}**
+**Database編のチュートリアル一覧に[もどる](/){:target="_blank"}**
 <br/>
 
 ----
@@ -20,7 +20,7 @@ toc: true
 
 **特記事項**  
 + チュートリアル内の画面ショットについては現在の画面と異なっている場合があります。
-+ [OCIチュートリアル入門編](/ocitutorials/beginners/)の、準備からその1、その2、その3、その7を実施しておくと、理解がスムーズです。  
++ [OCIチュートリアル入門編](/beginners/)の、準備からその1、その2、その3、その7を実施しておくと、理解がスムーズです。  
 + より詳しく知りたい方は、[OCI活用資料集](https://oracle-japan.github.io/ocidocs/services/database/)も併せてご確認ください。それぞれのサービスに関する技術詳細資料をまとめ紹介しています。
 <br/>
 
@@ -32,32 +32,32 @@ Oracle Databaseを動かすための最適な基盤として、リリースか�
 OCIであればExadataもサブスクリプションで使えます。インスタンスの作り方から、様々な使い方を学んでいただける内容になっています。
 
 
-+ **[101: ExaDB-Dを使おう](/ocitutorials/exadbd/exadb-d101-create-exadb-d/){:target="_blank"}**   
++ **[101: ExaDB-Dを使おう](./exadb-d101-create-exadb-d/){:target="_blank"}**   
 
-+ **[102: ExaDB-D上のPDBを管理しよう](/ocitutorials/exadbd/exadb-d102-manage-pdb/){:target="_blank"}** 
++ **[102: ExaDB-D上のPDBを管理しよう](./exadb-d102-manage-pdb/){:target="_blank"}** 
 
-+ **[103: 自動バックアップを設定しよう](/ocitutorials/exadbd/exadb-d103-automatic-backup/){:target="_blank"}**
++ **[103: 自動バックアップを設定しよう](./exadb-d103-automatic-backup/){:target="_blank"}**
 
-+ **[104: バックアップからリストアしよう](/ocitutorials/exadbd/exadb-d104-backup-restore/){:target="_blank"}**
++ **[104: バックアップからリストアしよう](./exadb-d104-backup-restore/){:target="_blank"}**
 
-+ **[105: スケーリングしよう](/ocitutorials/exadbd/exadb-d105-scaling/){:target="_blank"}**	
++ **[105: スケーリングしよう](./exadb-d105-scaling/){:target="_blank"}**	
 
-+ **[106: データベースのバージョンを指定しよう](/ocitutorials/exadbd/exadb-d106-dbversion/){:target="_blank"}**
++ **[106: データベースのバージョンを指定しよう](./exadb-d106-dbversion/){:target="_blank"}**
 
-+ **[107: パッチを適用しよう](/ocitutorials/exadbd/exadb-d107-patch/){:target="_blank"}**
++ **[107: パッチを適用しよう](./exadb-d107-patch/){:target="_blank"}**
 
-+ **[108: Data Guardを構成しよう](/ocitutorials/exadbd/exadb-d108-dataguard/){:target="_blank"}**
++ **[108: Data Guardを構成しよう](./exadb-d108-dataguard/){:target="_blank"}**
 
-+ **[109: ExaDB-DにAutonomous Recovery Service (RCV/ZRCV) をセットアップしよう](/ocitutorials/exadbd/exadb-d109-zrcv/){:target="_blank"}**
++ **[109: ExaDB-DにAutonomous Recovery Service (RCV/ZRCV) をセットアップしよう](./exadb-d109-zrcv/){:target="_blank"}**
 
-+ **[110:ExaDB-Dのスタンバイ・データベースからバックアップを取得およびリストアしてみよう](/ocitutorials/exadbd/exadb-d110-dataguard-standby-bkup/){:target="_blank"}**
++ **[110:ExaDB-Dのスタンバイ・データベースからバックアップを取得およびリストアしてみよう](./exadb-d110-dataguard-standby-bkup/){:target="_blank"}**
 
-+ **[111:ExaDB-DでZRCVの長期保管バックアップ（LTR）を作成してみよう](/ocitutorials/exadbd/exadb-d111-ltr/){:target="_blank"}**
++ **[111:ExaDB-DでZRCVの長期保管バックアップ（LTR）を作成してみよう](./exadb-d111-ltr/){:target="_blank"}**
 
 
 <br/>
 
-**Database編のチュートリアル一覧に[もどる](/ocitutorials/database/){:target="_blank"}**
+**Database編のチュートリアル一覧に[もどる](/){:target="_blank"}**
 <br/>
 
 <!-- 
