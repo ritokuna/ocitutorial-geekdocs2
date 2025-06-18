@@ -140,7 +140,7 @@ Oracle Cloud Infrastructure（OCI） では様々な仮想マシンイメージ�
 ログインした仮想マシン上で次のコマンドを実行します。
 
     ```sh
-    wget /adb/adb-data/labs.zip
+    wget https://oracle-japan.github.io/adb/adb-data/labs.zip
     ```
 
 2. labs.zip がダウンロードされたことを確認します。（ファイルが存在すればOKです。）

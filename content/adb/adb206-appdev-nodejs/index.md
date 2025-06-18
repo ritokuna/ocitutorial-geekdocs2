@@ -30,7 +30,7 @@ node-oracledbドライバを利用することで、Autonomous Databaseに簡単
     <br>アップロード方法については [こちら](/adb/adb204-setup-VM#anchor3) をご確認ください。
     + 仮想マシン上に直接ダウンロードする場合は、次のコマンドを実行します。
         ```sh
-        wget /adb/adb-data/labs.zip
+        wget https://oracle-japan.github.io/adb/adb-data/labs.zip
         ```
 
 <br>
