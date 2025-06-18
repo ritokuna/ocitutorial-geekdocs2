@@ -1,7 +1,7 @@
 ---
 title: "ブロック・ボリュームでファイル共有ストレージを構築する"
 excerpt: "ブロック・ボリュームでファイル共有ストレージを構築してみましょう。このチュートリアルを終了すると、ブロックストレージサービスであるブロック・ボリュームを使用するコストパフォーマンスに優れるNFSファイル共有ストレージを、OCIコンソールから簡単に構築することが出来るようになります。"
-order: "1320"
+weight: "1320"
 layout: single
 header:
   teaser: "/hpc/spinup-nfs-server/architecture_diagram.png"

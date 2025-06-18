@@ -6,7 +6,10 @@ layout: single
 geekdocPageLastmod: true
 header:
   overlay_filter: rgba(34, 66, 55, 0.7)
-#link: https://community.oracle.com/tech/welcome/discussion/4474261/
+link: https://community.oracle.com/tech/welcome/discussion/4474261/
+permalink: /hpc/
+show_excerpts: true
+toc: true
 ---
 
 **注意 :** 本コンテンツ内の画面ショットは、現在のOCIコンソール画面と異なっている場合があります。

@@ -7,9 +7,10 @@ tags:
     - "hpc"
 toc: true
 ---
+
 <style>
-table, th, td {
-    font-size: 80%;
+.table-wrap {
+  display: table;
 }
 </style>
 
@@ -53,7 +54,7 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 本ポータルサイトを読み進めるうえで理解が必要なHPC関連の **OCI** 用語を解説しています。
 
 提供するコンテンツは、随時追加・更新されますので、定期的にチェックしてみて下さい。  
-また本ポータルサイト内のコンテンツは、作者が誠心誠意作成していますが、間違いや不正確な記述などを見つけた場合は、 **[ここ](https://github.com/oracle-japan/issues)** からIssue登録でご連絡ください。
+また本ポータルサイト内のコンテンツは、作者が誠心誠意作成していますが、間違いや不正確な記述などを見つけた場合は、 **[ここ](https://github.com/oracle-japan/ocitutorials/issues)** からIssue登録でご連絡ください。
 
 ***
 # 1. OCI HPCチュートリアル集

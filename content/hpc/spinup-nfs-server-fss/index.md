@@ -1,7 +1,7 @@
 ---
 title: "ファイル・ストレージでファイル共有ストレージを構築する"
 excerpt: "ファイル・ストレージでファイル共有ストレージを構築してみましょう。このチュートリアルを終了すると、HPC/GPUクラスタから利用することが可能な高可用性ファイル共有ストレージを、OCIのマネージドNFSサービスであるファイル・ストレージを使用してOCIコンソールから構築することが出来るようになります。"
-order: "1310"
+weight: "1310"
 layout: single
 header:
   teaser: "/hpc/spinup-nfs-server-fss/architecture_diagram.png"

@@ -9,9 +9,10 @@ header:
   overlay_filter: rgba(34, 66, 55, 0.7)
 #link: https://community.oracle.com/tech/welcome/discussion/4474261/
 ---
+
 <style>
-table, th, td {
-    font-size: 80%;
+.table-wrap {
+  display: table;
 }
 </style>
 

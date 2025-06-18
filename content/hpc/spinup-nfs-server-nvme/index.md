@@ -1,7 +1,7 @@
 ---
 title: "短期保存データ用高速ファイル共有ストレージを構築する"
 excerpt: "短期保存データを対象とする高速ファイル共有ストレージを構築してみましょう。このチュートリアルを終了すると、NVMe SSDローカルディスクを搭載するベアメタルインスタンスBM.DenseIO.E5.128を使用する、短期保存データ用高速ファイル共有ストレージを構築することが出来るようになります。"
-order: "1330"
+weight: "1330"
 layout: single
 header:
   teaser: "/hpc/spinup-nfs-server-nvme/architecture_diagram.png"
