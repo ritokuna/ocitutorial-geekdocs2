@@ -30,7 +30,7 @@ MovieStreamはビジネスを成長させるため、顧客の視聴傾向や適
 
 **前提条件：**
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} を参照ください。  
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。  
 
 <br>
 
@@ -49,7 +49,7 @@ MovieStreamはビジネスを成長させるため、顧客の視聴傾向や適
 
 # 1. ADWへのMovie Salesデータのロード
 ## 1-1. ADWインスタンスの作成
-まずはADWインスタンスを作成します。[101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} を参考にしながら、以下の条件で作成します。
+まずはADWインスタンスを作成します。[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参考にしながら、以下の条件で作成します。
 - **ワークロード・タイプ：** データ・ウェアハウス
 - **ECPU数：** 32
 - **ストレージ(TB)：** 1
@@ -480,7 +480,7 @@ GROUP BY segment_name;
 
 さらに、Autonomous Data Warehouseは、データの保存プロセスを自動的に管理しますので、監視や調整のための設定は必要ありません。データを読み込んで更新するだけで、データの保存まで効率的に管理してくれます。
 
-今回ロード・更新したデータの分析については、[602: ADWでMovieStreamデータの分析をしよう](/ocitutorials/adb/adb602-moviestream-analysis){:target="_blank"}でご紹介しておりますので、こちらも合わせてご参照ください。
+今回ロード・更新したデータの分析については、[602: ADWでMovieStreamデータの分析をしよう](/adb/adb602-moviestream-analysis){:target="_blank"}でご紹介しておりますので、こちらも合わせてご参照ください。
 
 <br>
 

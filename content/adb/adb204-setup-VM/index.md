@@ -24,15 +24,15 @@ Oracle Cloud Infrastructure（OCI） では様々な仮想マシンイメージ�
 **`Oracle Linux Cloud Developer イメージ`**は、Python、Node.js、Goといった言語や、Oracle Instant Clientなどの各種接続ドライバ、Oracle Cloud Infrastructure CLI(OCI CLI)といった各種ツールがプリインストールされており、アプリケーション開発は勿論、各種検証作業を実施する際にとても便利です。
 
 尚、Oracle Linux Cloud Developer イメージの詳細については [こちら](https://docs.oracle.com/ja-jp/iaas/oracle-linux/developer/index.htm#x86-components){:target="_blank"} を参照ください。  
-またOracle Cloud Infrastructureに仮想マシン作成する手順詳細に関しては本チュートリアル 入門編の [その3 - インスタンスを作成する](/ocitutorials/beginners/creating-compute-instance/){:target="_blank"} の手順も併せてご確認ください。
+またOracle Cloud Infrastructureに仮想マシン作成する手順詳細に関しては本チュートリアル 入門編の [その3 - インスタンスを作成する](/beginners/creating-compute-instance/){:target="_blank"} の手順も併せてご確認ください。
 
 <br>
 
 **前提条件** 
 * ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} を参照ください。
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。
 * ADBインスタンスのクレデンシャル・ウォレットがダウンロード済みであること
-    <br>※クレデンシャルウォレットのダウンロード方法については、[104: ウォレットを利用してADBに接続してみよう](/ocitutorials/adb/adb104-connect-using-wallet){:target="_blank"} の、[1. クレデンシャル・ウォレットのダウンロード](/ocitutorials/adb/adb104-connect-using-wallet#anchor1){:target="_blank"} をご確認ください。
+    <br>※クレデンシャルウォレットのダウンロード方法については、[104: ウォレットを利用してADBに接続してみよう](/adb/adb104-connect-using-wallet){:target="_blank"} の、[1. クレデンシャル・ウォレットのダウンロード](/adb/adb104-connect-using-wallet#anchor1){:target="_blank"} をご確認ください。
 
 <br>
 
@@ -140,7 +140,7 @@ Oracle Cloud Infrastructure（OCI） では様々な仮想マシンイメージ�
 ログインした仮想マシン上で次のコマンドを実行します。
 
     ```sh
-    wget https://oracle-japan.github.io/ocitutorials/adb/adb-data/labs.zip
+    wget /adb/adb-data/labs.zip
     ```
 
 2. labs.zip がダウンロードされたことを確認します。（ファイルが存在すればOKです。）
@@ -156,7 +156,7 @@ Oracle Cloud Infrastructure（OCI） では様々な仮想マシンイメージ�
     > <br>※ここではTera Termを前提に記載しています。
     >   
     >    1. 下記のリンクより、labs.zipを手元のPCにダウンロードします。
-    >       +  [labs.zip をダウンロード](/ocitutorials/adb/adb-data/labs.zip)
+    >       +  [labs.zip をダウンロード](/adb/adb-data/labs.zip)
     >
     >
     >    2. labs.zipをTera Termのウィンドウ画面上にドラッグ・アンド・ドロップします。
@@ -209,7 +209,7 @@ Oracle Cloud Infrastructure（OCI） では様々な仮想マシンイメージ�
 # 4. ADBに接続するための設定ファイルの編集
 
 ADBに接続するためには、クレデンシャル・ウォレット（Credential.zipファイル）を仮想マシン上に配置する必要があります。
-クレデンシャルウォレットのダウンロード方法については、[101: ウォレットを利用してADBに接続してみよう](/ocitutorials/adb/adb104-connect-using-wallet){:target="_blank"} の、[1. クレデンシャル・ウォレットのダウンロード](/ocitutorials/adb/adb104-connect-using-wallet#anchor1){:target="_blank"} をご確認ください。
+クレデンシャルウォレットのダウンロード方法については、[101: ウォレットを利用してADBに接続してみよう](/adb/adb104-connect-using-wallet){:target="_blank"} の、[1. クレデンシャル・ウォレットのダウンロード](/adb/adb104-connect-using-wallet#anchor1){:target="_blank"} をご確認ください。
 
 1. 仮想マシンにopcユーザでログインします。
 
@@ -339,7 +339,7 @@ ADBに接続するためには、クレデンシャル・ウォレット（Crede
   >
   >上記は接続端末としてTeratermを利用しましたが、OCIに付属するCloud Shellを使用して設定ファイルの編集をすることも可能です。
   >Cloud ShellはOracle CloudコンソールからアクセスできるWebブラウザ・ベースのターミナルです。こちらを利用すると、ブラウザだけで仮想マシンにアクセスできますので、是非お試しください。
-  ><br>手順は、本ハンズオンガイドの [104: ウォレットを利用してADBに接続してみよう](/ocitutorials/adb/adb104-connect-using-wallet){:target="_blank"} の、[2. 設定ファイルの編集](/ocitutorials/adb/adb104-connect-using-wallet#anchor2){:target="_blank"} をご確認ください。
+  ><br>手順は、本ハンズオンガイドの [104: ウォレットを利用してADBに接続してみよう](/adb/adb104-connect-using-wallet){:target="_blank"} の、[2. 設定ファイルの編集](/adb/adb104-connect-using-wallet#anchor2){:target="_blank"} をご確認ください。
 
 
 <br>
@@ -348,7 +348,7 @@ ADBに接続するためには、クレデンシャル・ウォレット（Crede
 
   >**Note**
   >
-  >設定ファイルの編集が完了した後に、ADBインスタンスに接続する手順は本ハンズオンガイドの [104: ウォレットを利用してADBに接続してみよう](/ocitutorials/adb/adb104-connect-using-wallet){:target="_blank"} の、[3. ADBに接続](/ocitutorials/adb/adb104-connect-using-wallet#anchor3){:target="_blank"} をご確認ください。
+  >設定ファイルの編集が完了した後に、ADBインスタンスに接続する手順は本ハンズオンガイドの [104: ウォレットを利用してADBに接続してみよう](/adb/adb104-connect-using-wallet){:target="_blank"} の、[3. ADBに接続](/adb/adb104-connect-using-wallet#anchor3){:target="_blank"} をご確認ください。
 
 <br>
 [ページトップへ戻る](#anchor0)

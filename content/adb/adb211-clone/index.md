@@ -37,8 +37,8 @@ Autonomous Databaseのクローン機能を利用することにより、テス�
 **前提条件 :**
 
 * 以下のチュートリアルが完了していること
-  * [101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} で、ADBインスタンスが構成済みであること
-  * [102:ADBにデータをロードしよう(Database Actions)](/ocitutorials/adb/adb102-dataload){:target="_blank"} でADMINユーザーでSALES_CHANNELS表が作成されていること
+  * [101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} で、ADBインスタンスが構成済みであること
+  * [102:ADBにデータをロードしよう(Database Actions)](/adb/adb102-dataload){:target="_blank"} でADMINユーザーでSALES_CHANNELS表が作成されていること
 * チュートリアルの便宜上インスタンス名はatp01とします。
 * SQLコマンドを実行するユーザー・インタフェースは、Database Actionsを使用します。
 
@@ -102,7 +102,7 @@ Autonomous Databaseのクローン機能を利用することにより、テス�
 ## そのほかのクローン・データベースの設定
 
   クローン・データベースの構成について必要な項目を設定していきます。  
-  今回は以下のように指定します。各項目については[2. ADBインスタンスを作成してみよう](http://localhost:4000/ocitutorials/adb/adb101-provisioning/#2-adb%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)の記載例をご確認ください。
+  今回は以下のように指定します。各項目については[2. ADBインスタンスを作成してみよう](http://localhost:4000/adb/adb101-provisioning/#2-adb%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)の記載例をご確認ください。
 
 + **データベースの構成**
   + データベース・バージョンの選択 : **23ai** ※ソースのバージョンよりも上である必要があります。

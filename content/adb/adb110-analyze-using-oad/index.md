@@ -29,9 +29,9 @@ Autonomous Database は暗号化およびSSL相互認証を利用した接続を
 
 **前提条件**
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスの作成方法については、[101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} をご参照ください。  
+    <br>※ADBインタンスの作成方法については、[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} をご参照ください。  
 + クレデンシャル・ウォレットを取得済みであること
-    <br>※クレデンシャル・ウォレットの取得については、[104:クレデンシャル・ウォレットを利用して接続してみよう](/ocitutorials/adb/adb104-connect-using-wallet/#anchor1){:target="_blank"} を参照ください。<br>
+    <br>※クレデンシャル・ウォレットの取得については、[104:クレデンシャル・ウォレットを利用して接続してみよう](/adb/adb104-connect-using-wallet/#anchor1){:target="_blank"} を参照ください。<br>
 + Oracle Analytics Desktop は、Windows OS用とMac OS用がありますが、本章ではWindows OS用 を使って説明します。
 + Oracle Analytics Desktop をインストールするPCから、プロキシ・サーバーを経由せずに、直接、インターネットに繋がること。
     <br>※Oracle Analytics Desktop はプロキシ対応できません。  

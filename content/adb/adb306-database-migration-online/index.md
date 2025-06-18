@@ -18,10 +18,10 @@ DMSでは下記の2つの論理的移行が可能です。
 + **オフライン移行** - ソース・データベースのポイント・イン・タイム・コピーがターゲット・データベースに作成されます。移行中のソース・データベースへの変更はコピーされないため、移行中はアプリケーションをオフラインのままにする必要があります。
 + **オンライン移行** - ソース・データベースのポイント・イン・タイム・コピーがターゲット・データベースに作成されるのに加え、内部的にOracle GoldenGateによるレプリケーションを利用しているため、移行中のソース・データベースへの変更も全てコピーされます。そのため、アプリケーションをオンラインのまま移行を行うことが可能で、移行に伴うアプリケーションのダウンタイムを極小化することができます。
 
-DMSに関するチュートリアルは[304 : OCI Database Migration Serviceを使用したデータベース移行の前準備](/ocitutorials/adb/adb304-database-migration-prep)、[305 : OCI Database Migration Serviceを使用したデータベースのオフライン移行](/ocitutorials/adb/adb305-database-migration-offline)、[306 : OCI Database Migration Serviceを使用したデータベースのオンライン移行](/ocitutorials/adb/adb306-database-migration-online)の計3章を含めた3部構成となっています。
+DMSに関するチュートリアルは[304 : OCI Database Migration Serviceを使用したデータベース移行の前準備](/adb/adb304-database-migration-prep)、[305 : OCI Database Migration Serviceを使用したデータベースのオフライン移行](/adb/adb305-database-migration-offline)、[306 : OCI Database Migration Serviceを使用したデータベースのオンライン移行](/adb/adb306-database-migration-online)の計3章を含めた3部構成となっています。
 DMSを使用してBaseDBで作成したソース・データベースからADBのターゲット・データベースにデータ移行を行います。
 
-[305 : OCI Database Migration Serviceを使用したデータベースのオフライン移行](/ocitutorials/adb/adb305-database-migration-offline)または[306 : OCI Database Migration Serviceを使用したデータベースのオンライン移行](/ocitutorials/adb/adb306-database-migration-online)を実施する前に必ず[304 : OCI Database Migration Serviceを使用したデータベース移行の前準備](/ocitutorials/adb/adb304-database-migration-prep)を実施するようにしてください。
+[305 : OCI Database Migration Serviceを使用したデータベースのオフライン移行](/adb/adb305-database-migration-offline)または[306 : OCI Database Migration Serviceを使用したデータベースのオンライン移行](/adb/adb306-database-migration-online)を実施する前に必ず[304 : OCI Database Migration Serviceを使用したデータベース移行の前準備](/adb/adb304-database-migration-prep)を実施するようにしてください。
 
 この章では、DMSを使用したデータベースのオンライン移行について紹介します。
 
@@ -41,7 +41,7 @@ DMSを使用してBaseDBで作成したソース・データベースからADB�
 
 
 **前提条件 :**
-+ [「304 : OCI Database Migration Serviceを使用したデータベース移行の前準備」](/ocitutorials/adb/adb304-database-migration-prep)を参考に、データベース移行の前準備が完了していること。
++ [「304 : OCI Database Migration Serviceを使用したデータベース移行の前準備」](/adb/adb304-database-migration-prep)を参考に、データベース移行の前準備が完了していること。
 + オンライン移行を実行する場合、Oracle GoldenGateの必須パッチ、推奨パッチが適用されている必要があります。Oracle Database 11g(11.2.0.4)用の必須パッチ、推奨パッチに関するドキュメント[「Oracle GoldenGate -- Oracle RDBMS Server Recommended Patches (Doc ID 1557031.1)」](https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=171610622943228&id=1557031.1&_afrWindowMode=0&_adf.ctrl-state=ysobl98cz_4)および、Oracle Datbase 12c以降のバージョンの必須パッチ、推奨パッチに関するドキュメント[「Latest GoldenGate/Database (OGG/RDBMS) Patch recommendations (Doc ID 2193391.1)」](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=168484936828414&parent=DOCUMENT&sourceId=1557031.1&id=2193391.1&_afrWindowMode=0&_adf.ctrl-state=4xfa5h2e8_4)を参考に適宜パッチの確認と適用を実施してください。
 + ターゲット・データベースのタイムゾーン・バージョンがソース・データベースのタイムゾーン・バージョンよりも最新になっていることを確認する(SELECT * FROM V$TIMEZONE_FILE;)。ターゲット・データベースのタイムゾーン・バージョンの方が古い場合はSRをあげる必要があります。
 + レプリケーション用にOCI GoldenGateサービスを使用する(デフォルト)場合は、本記事の1.と2.の手順をスキップしてください。OCI GoldenGateサービスを使用する方法を推奨します。DMSとOCI GoldenGateサービスの統合に関しては、[OCI Database MigrationサービスがOCI GoldenGate統合を発表](https://blogs.oracle.com/oracle4engineer/post/ja-oci-db-migration-announces-oci-gg-integration)をご参照ください。
@@ -359,7 +359,7 @@ BaseDBにあるソース・データベースに対して以下の設定を行�
 
 6. ソース・データベースへのサンプル・データの追加
 
-    PDB上のスキーマに接続します。スキーマがない場合は検証用のスキーマを作成してください。また、[305 : OCI Database Migration Serviceを使用したデータベースのオフライン移行](/ocitutorials/adb/adb305-database-migration-offline)のチュートリアルを実施済みの場合、使用したスキーマとは別のスキーマを使用してください。SQL*Plusを利用する場合は、以下のようにホスト名、ポート番号、サービス名を指定します。
+    PDB上のスキーマに接続します。スキーマがない場合は検証用のスキーマを作成してください。また、[305 : OCI Database Migration Serviceを使用したデータベースのオフライン移行](/adb/adb305-database-migration-offline)のチュートリアルを実施済みの場合、使用したスキーマとは別のスキーマを使用してください。SQL*Plusを利用する場合は、以下のようにホスト名、ポート番号、サービス名を指定します。
 
     例：（$ sqlplus <スキーマ名>/<パスワード>@<ホスト名>:<ポート>/<サービス名>）
 

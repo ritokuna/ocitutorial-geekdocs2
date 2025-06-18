@@ -228,7 +228,7 @@ Autonomous Data Guard には、本記事でご紹介した以外にもいくつ�
    + 手動フェイルオーバーの開始/終了
    + スイッチオーバーの開始/終了
    
-   EventsやNotificationsとの連携方法については、[こちら](https://oracle-japan.github.io/ocitutorials/adb/adb503-monitoring/){:target="_blank"}をご参照ください。
+   EventsやNotificationsとの連携方法については、[こちら](/adb/adb503-monitoring/){:target="_blank"}をご参照ください。
 
 <br>
 <a id="anchor2"></a>

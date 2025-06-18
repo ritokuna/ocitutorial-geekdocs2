@@ -422,7 +422,7 @@ ACDのアイコンが緑色になったらプロビジョニング完了です�
 
 **Autonomous Databaseの作成**で必要な項目を入力します。  
 設定項目は次の表を参考にしてください。  
-なお、Autonomous Databaseの作成方法については [101: ADBインスタンスを作成してみよう](https://oracle-japan.github.io/ocitutorials/adb/adb101-provisioning/){:target="_blank"} で詳細に説明していますので、重複する部分の説明は割愛します。
+なお、Autonomous Databaseの作成方法については [101: ADBインスタンスを作成してみよう](/adb/adb101-provisioning/){:target="_blank"} で詳細に説明していますので、重複する部分の説明は割愛します。
 
 <table>
     <thead>
@@ -525,7 +525,7 @@ ADBのアイコンが緑色になったらプロビジョニング完了です�
 
 ![データベース接続](DatabaseConn.png)
 
-接続を行う仮想マシンの設定は[204: 開発者向け仮想マシンのセットアップ方法](https://oracle-japan.github.io/ocitutorials/adb/adb204-setup-VM/){:target="_blank"}を参照ください。TLSがついている接続サービスはADB-Sに接続する場合と同様の方法で接続ができます。またTLSがついていない接続サービスはウォレットなしで接続することが可能です。
+接続を行う仮想マシンの設定は[204: 開発者向け仮想マシンのセットアップ方法](/adb/adb204-setup-VM/){:target="_blank"}を参照ください。TLSがついている接続サービスはADB-Sに接続する場合と同様の方法で接続ができます。またTLSがついていない接続サービスはウォレットなしで接続することが可能です。
 
 <br>
 

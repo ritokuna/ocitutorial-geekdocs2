@@ -29,7 +29,7 @@ Autonomous Databaseもコンバージド・データベースとして、RDBの�
 
 **前提条件**
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスの作成方法については、[101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} を参照ください。 
+    <br>※ADBインタンスの作成方法については、[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。 
 
 <br>
 

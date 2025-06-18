@@ -42,15 +42,15 @@ Autonomous Database(ADB)は、毎週末事前定義されたメンテナンス�
 **前提条件**
 + ADBインスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} を参照ください。
+    [101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。
 
 + 開発者向けの仮想マシンが構成済みであること
     <br>※作成方法については、
-    [204: 開発者向け仮想マシンのセットアップ方法](/ocitutorials/adb/adb204-setup-VM){:target="_blank"} を参照ください。
+    [204: 開発者向け仮想マシンのセットアップ方法](/adb/adb204-setup-VM){:target="_blank"} を参照ください。
 
 + 作成した仮想マシンからADBへSQL*Plusで接続ができること
     <br>※接続方法については、
-    [104: クレデンシャル・ウォレットを利用して接続してみよう](/ocitutorials/adb/adb104-connect-using-wallet){:target="_blank"} を参照ください。
+    [104: クレデンシャル・ウォレットを利用して接続してみよう](/adb/adb104-connect-using-wallet){:target="_blank"} を参照ください。
 
 <br>
 
@@ -121,7 +121,7 @@ Wallet_ATPRD01.zip
 sqlplus admin/Welcome12345#@ATPRD01_tp
 ```
 
-> ここでADBに接続できない場合、[104: クレデンシャル・ウォレットを利用して接続してみよう](/ocitutorials/adb/adb104-connect-using-wallet){:target="_blank"} を参照して再度設定してください。
+> ここでADBに接続できない場合、[104: クレデンシャル・ウォレットを利用して接続してみよう](/adb/adb104-connect-using-wallet){:target="_blank"} を参照して再度設定してください。
 
 カレント・ディレクトリを確認します。
 ```sh

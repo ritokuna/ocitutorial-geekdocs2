@@ -27,8 +27,8 @@ Select AIで大規模言語モデル(LLM)を使用することで、ユーザー
 <br>
 **前提条件**
 
-- [101: ADBインスタンスを作成してみよう](https://oracle-japan.github.io/ocitutorials/adb/adb101-provisioning/)を参考に、ADBインスタンスが作成済みであること
-- [104: クレデンシャル・ウォレットを利用して接続してみよう](https://oracle-japan.github.io/ocitutorials/adb/adb104-connect-using-wallet/)を参考に、SQL Developerを使ってADBに接続出来ること
+- [101: ADBインスタンスを作成してみよう](/adb/adb101-provisioning/)を参考に、ADBインスタンスが作成済みであること
+- [104: クレデンシャル・ウォレットを利用して接続してみよう](/adb/adb104-connect-using-wallet/)を参考に、SQL Developerを使ってADBに接続出来ること
 - OCI生成AIサービスを使用可能な、Chicagoリージョン、Frankfurtリージョン、Londonリージョン、Sao Pauloリージョンのいずれかをホーム・リージョン、若しくはサブスクライブしてあること。詳しくは、[Pretrained Foundational Models in Generative AI](https://docs.oracle.com/en-us/iaas/Content/generative-ai/pretrained-models.htm#)をご確認ください。
 
 
@@ -58,12 +58,12 @@ Select AIでは、2024年9月現在、OpenAI、Cohere、Azure OpenAI Service、O
 
 <a id="anchor2"></a>
 # 2. 環境設定
-Select AIはADBの機能なので、使用にはADBインスタンスが必要です。ADBのインスタンスが未作成の場合は[101: ADBインスタンスを作成してみよう](https://oracle-japan.github.io/ocitutorials/adb/adb101-provisioning/)を参考に、ADBインスタンスを作成します。
+Select AIはADBの機能なので、使用にはADBインスタンスが必要です。ADBのインスタンスが未作成の場合は[101: ADBインスタンスを作成してみよう](/adb/adb101-provisioning/)を参考に、ADBインスタンスを作成します。
 
 ## 2-1. ユーザーの作成と権限の付与
 先ずはチュートリアルを行うユーザーの作成と、権限の付与を行います。
 
-1. [101: ADBインスタンスを作成してみよう](https://oracle-japan.github.io/ocitutorials/adb/adb101-provisioning/)の[3-3. データベース・ユーザーを作成してみよう（コマンドライン)](https://oracle-japan.github.io/ocitutorials/adb/adb101-provisioning/#3-3-%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3)を参考に、Database ActionsのSQLワークシートから、チュートリアルを行うユーザーを作成し、必要なロールを付与します。
+1. [101: ADBインスタンスを作成してみよう](/adb/adb101-provisioning/)の[3-3. データベース・ユーザーを作成してみよう（コマンドライン)](/adb/adb101-provisioning/#3-3-%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3)を参考に、Database ActionsのSQLワークシートから、チュートリアルを行うユーザーを作成し、必要なロールを付与します。
 
     以下のSQLを実行し、
     - SELECT_AI_USERというユーザーを作成、必要なロールを付与
@@ -129,7 +129,7 @@ Select AIはADBの機能なので、使用にはADBインスタンスが必要�
 先程まで使用していたDatabase Actions内のSQLやAPEXではSELECT AI文を直接実行することをサポートしていないため、[DBMS_CLOUD_AIパッケージのGENERATEファンクション](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/dbms-cloud-ai-package.html#GUID-7B438E87-0E9A-4318-BA01-3BE1A5851229)を使用する必要があります。
 そのため本チュートリアルでは、SQL Developerを使用して、データベースに接続したいと思います。
 
-1. [104: クレデンシャル・ウォレットを利用して接続してみよう](https://oracle-japan.github.io/ocitutorials/adb/adb104-connect-using-wallet/)を参考に、作成したADBにSQL Developerから接続します。
+1. [104: クレデンシャル・ウォレットを利用して接続してみよう](/adb/adb104-connect-using-wallet/)を参考に、作成したADBにSQL Developerから接続します。
 
 2. 接続が完了したら、SQL Developer上で以下のクエリを実行し、HIGHSCHOOLS表とその中身を確認します。
 

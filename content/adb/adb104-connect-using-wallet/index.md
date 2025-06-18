@@ -28,7 +28,7 @@ Autonomous Databaseには暗号化およびSSL相互認証を利用した接続�
 
 **前提条件**
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} を参照ください。  
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。  
 + SQL Developerを使用した接続を行いたい場合には、当該クライアントツールがインストール済みであること。インストールは[こちら](https://www.oracle.com/jp/tools/downloads/sqldev-downloads.html){:target="_blank"}から<br>
 
 <br>
@@ -417,7 +417,7 @@ SQL Developerを起動し、管理者アカウント(ADMIN)でADBへ接続しま
 
 ## 3-4. Database Actions を使った接続
 
-Database Actionsを使った接続については、[こちら](/ocitutorials/adb/adb101-provisioning/)をご確認ください。
+Database Actionsを使った接続については、[こちら](/adb/adb101-provisioning/)をご確認ください。
 
 <br>
 

@@ -36,8 +36,8 @@ VPDはAutonomous Databaseでも利用できる機能です。基本的な設定�
 
 
 **前提条件 :**
- + テスト用の表を作成するスキーマは任意のスキーマでも構いませんが、ここでは、[「101:ADBインスタンスを作成してみよう」](https://oracle-japan.github.io/ocitutorials/adb/adb101-provisioning/) で作成したユーザADBUSERを利用しています。
- + SQLコマンドを実行するユーザインタフェースは、接続の切り替えが容易なので、SQL\*Plusを利用しています。Database Actionsでも実行可能ですが、ユーザでの接続をログインに読み替え、ログインしなおす必要があります。なお、 SQL\*Plusの環境は、[「204:マーケットプレイスからの仮想マシンのセットアップ方法」](https://oracle-japan.github.io/ocitutorials/adb/adb204-setup-VM/)で作成できます。
+ + テスト用の表を作成するスキーマは任意のスキーマでも構いませんが、ここでは、[「101:ADBインスタンスを作成してみよう」](/adb/adb101-provisioning/) で作成したユーザADBUSERを利用しています。
+ + SQLコマンドを実行するユーザインタフェースは、接続の切り替えが容易なので、SQL\*Plusを利用しています。Database Actionsでも実行可能ですが、ユーザでの接続をログインに読み替え、ログインしなおす必要があります。なお、 SQL\*Plusの環境は、[「204:マーケットプレイスからの仮想マシンのセットアップ方法」](/adb/adb204-setup-VM/)で作成できます。
  + チュートリアルの便宜上Autonomous Databaseへの接続文字列は「atp01_low」、各ユーザのパスワードはすべて「Welcome12345#」とします。
  + 使用パッケージの引数についての説明は記載していません。詳細はドキュメント[『PL/SQLパッケージ及びタイプ・リファレンス』](https://docs.oracle.com/cd/F19136_01/arpls/DBMS_RLS.html#GUID-27507923-FF74-4193-B55D-6ECB11B58FCC)（リンクは19c版です）をご参照くださいますようお願いいたします。
 
@@ -47,7 +47,7 @@ VPDはAutonomous Databaseでも利用できる機能です。基本的な設定�
 
 
 # 1. テスト用の表を作成
-サンプルスキーマのSSBスキーマのCUSTOMER表の一部を利用して、[「101:ADBインスタンスを作成してみよう」](https://oracle-japan.github.io/ocitutorials/adb/adb101-provisioning/) で作成したADBUSERスキーマにテスト用の表を作成します。  
+サンプルスキーマのSSBスキーマのCUSTOMER表の一部を利用して、[「101:ADBインスタンスを作成してみよう」](/adb/adb101-provisioning/) で作成したADBUSERスキーマにテスト用の表を作成します。  
 SQL*Plusを起動して以下を実行してください。
 
 ```sql

@@ -20,9 +20,9 @@ header:
 
 **前提条件 :**  
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} を参照ください。  
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。  
 + 以下にリンクされているサンプルデータのCSVファイルをダウンロードしていること
-	+ [サンプルデータファイルのダウンロードリンク](/ocitutorials/adb/adb102-dataload/sales_channels.csv)
+	+ [サンプルデータファイルのダウンロードリンク](/adb/adb102-dataload/sales_channels.csv)
 
 <br>
 
@@ -42,7 +42,7 @@ header:
 
 まず手元のPC上のデータをADBインスタンスにロードしてみましょう。サンプルデータとしてsales_channels.csvファイルを利用します。
 
-1. [ADBインスタンスを作成しよう](https://oracle-japan.github.io/ocitutorials/adb/adb101-provisioning/)で学習した**Database Actionsを利用したインスタンスへの接続** を参照し、Database Actionsを起動し、Adminユーザーで接続してください。**ツール**タブから、**データベース・アクションを開く**をクリックしてください。
+1. [ADBインスタンスを作成しよう](/adb/adb101-provisioning/)で学習した**Database Actionsを利用したインスタンスへの接続** を参照し、Database Actionsを起動し、Adminユーザーで接続してください。**ツール**タブから、**データベース・アクションを開く**をクリックしてください。
 
    ![画面ショット1-1](img0.png)
 	

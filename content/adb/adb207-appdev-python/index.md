@@ -23,11 +23,11 @@ PythonでAutonomous Databaseを利用する際には、cx_Oracleというモジ�
 **前提条件 :**
 
 1. ADBインスタンスが構成済みであること
-   <br>※ADBインタンスを作成方法については、本ハンズオンガイドの [101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning) を参照ください。
+   <br>※ADBインタンスを作成方法については、本ハンズオンガイドの [101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning) を参照ください。
 2. 開発用の仮想マシンが構成済みであり、仮想マシンからADBインスタンスへのアクセスが可能であること
 3. 仮想マシンのoracleユーザのホームディレクトリ配下にlabsフォルダをアップロード済みであること
-    +  [labs.zip をダウンロード](/ocitutorials/adb/adb-data/labs.zip)
-    <br>アップロード方法については [こちら](/ocitutorials/adb/adb204-setup-VM#anchor3) をご確認ください。
+    +  [labs.zip をダウンロード](/adb/adb-data/labs.zip)
+    <br>アップロード方法については [こちら](/adb/adb204-setup-VM#anchor3) をご確認ください。
 
 
 **目次**

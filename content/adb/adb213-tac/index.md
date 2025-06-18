@@ -38,8 +38,8 @@ Autonomous Database では接続サービス毎にApplication Continuity(AC)、�
   + [5.Application Continuityの無効化](#anchor5)
 
 **前提条件 :**
- + [「101:ADBインスタンスを作成してみよう」](https://oracle-japan.github.io/ocitutorials/adb/adb101-provisioning/) を参考に、ADBインスタンス、およびADBUSERが作成済みであること
- + SQLコマンドを実行するユーザインタフェースは、接続の切り替えが容易なので、SQL\*Plusを利用しています。Database Actionsでも実行可能ですが、ユーザでの接続をログインに読み替え、ログインしなおす必要があります。なお、 SQL\*Plusの環境は、[「204:マーケットプレイスからの仮想マシンのセットアップ方法」](https://oracle-japan.github.io/ocitutorials/adb/adb204-setup-VM/)で作成できます。
+ + [「101:ADBインスタンスを作成してみよう」](/adb/adb101-provisioning/) を参考に、ADBインスタンス、およびADBUSERが作成済みであること
+ + SQLコマンドを実行するユーザインタフェースは、接続の切り替えが容易なので、SQL\*Plusを利用しています。Database Actionsでも実行可能ですが、ユーザでの接続をログインに読み替え、ログインしなおす必要があります。なお、 SQL\*Plusの環境は、[「204:マーケットプレイスからの仮想マシンのセットアップ方法」](/adb/adb204-setup-VM/)で作成できます。
  + チュートリアルの便宜上、インスタンス名は「atp01」、各ユーザのパスワードはすべて「Welcome12345#」とします。
 
 

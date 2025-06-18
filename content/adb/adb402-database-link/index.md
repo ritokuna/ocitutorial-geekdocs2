@@ -44,11 +44,11 @@ Autonomous Database では以下の4つのパターンでDatabase Linkを作成�
 **前提条件**
 + ADBインスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} を参照ください。
+    [101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。
 
 + BaseDBインスタンスを構成済み、かつサンプルスキーマをインストール済みであること
     <br>※手順については、
-    [301 : 移行元となるデータベースを作成しよう](/ocitutorials/adb/adb301-create-source-db/){:target="_blank"} を参考に、BaseDBインスタンスを作成し、HRスキーマを作成してください。
+    [301 : 移行元となるデータベースを作成しよう](/adb/adb301-create-source-db/){:target="_blank"} を参考に、BaseDBインスタンスを作成し、HRスキーマを作成してください。
 
 <br>
 
@@ -369,7 +369,7 @@ chmod 604 /tmp/cwallet.sso
 
 ### 1-2-2. Object Storageへのウォレットのアップロード
 
-[102:ADBにデータをロードしよう(Database Actions)](/ocitutorials/adb/adb102-dataload/){:target="_blank"}の「2.OCIオブジェクトストレージへのデータアップロード」を参考に、ダウンロードしたウォレットをObject Storageにアップロードします。
+[102:ADBにデータをロードしよう(Database Actions)](/adb/adb102-dataload/){:target="_blank"}の「2.OCIオブジェクトストレージへのデータアップロード」を参考に、ダウンロードしたウォレットをObject Storageにアップロードします。
 
 <br>
 
@@ -392,7 +392,7 @@ END;
 * credential_name: データベースに保存した認証情報を識別するための名前、任意
 * username: Oracle Object Storageにアクセスするためのユーザー名
 * password: 認証トークン
-ユーザー名、認証トークンの生成については、[102:ADBにデータをロードしよう(Database Actions)](/ocitutorials/adb/adb102-dataload/){:target="_blank"}の「1.OCIオブジェクトストレージへのアクセス情報を取得」を参考にしてください。
+ユーザー名、認証トークンの生成については、[102:ADBにデータをロードしよう(Database Actions)](/adb/adb102-dataload/){:target="_blank"}の「1.OCIオブジェクトストレージへのアクセス情報を取得」を参考にしてください。
 
 1. Object Storageにアップロードしたウォレットをディレクトリ・オブジェクトに配置します。
 ```sql

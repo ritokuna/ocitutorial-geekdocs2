@@ -22,7 +22,7 @@ Autonomous Databaseはデータベースの様々な管理タスクをADB自身�
 **前提条件**
 + ADBインスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](/ocitutorials/adb/adb101-provisioning){:target="_blank"} を参照ください。  
+    [101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。  
     なお本記事では、後続の章でCPU使用率が閾値を超えた際の挙動を確認するため、**ECPU数は4、auto scalingは無効** で作成しています。
 
 <BR>
