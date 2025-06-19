@@ -9,7 +9,7 @@ header:
  teaser: "/security/networkfirewall-setup-hubspoke/hubspoke02.png"
  overlay_image: "/security/networkfirewall-setup-hubspoke/hubspoke02.png"
  overlay_filter: rgba(34, 66, 55, 0.7)
-
+weight: 202
 ---
 
 <!-- 

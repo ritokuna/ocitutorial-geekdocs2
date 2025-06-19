@@ -7,12 +7,6 @@ show_excerpts: true
 toc: true
 ---
 
-<!-- このページのpath:
-
-/ocitutorials/_pages/security
-
--->
-
 
 Oracle Cloud Infrastructureは、設計段階からセキュリティを考慮して開発されたクラウドサービスです。  
 セキュリティに非常に力を入れて取り組んでおり、無償でご利用いただけるクラウドサービスも多数提供しています。
@@ -27,24 +21,24 @@ Oracle Cloud Infrastructureは、設計段階からセキュリティを考慮�
 
 ## Global WAF
 <span style="color: olivedrab; ">**環境準備編**</span>
-+ **[OCI Web Application Firewallのエッジポリシーを使ってWebサーバーを保護する](/ocitutorials/security/waf-v1-setup)**  
++ **[OCI Web Application Firewallのエッジポリシーを使ってWebサーバーを保護する](/ocitutorials/waf-v1-setup)**  
    本チュートリアルでは、エッジポリシーを実際に作成し、Webアプリケーションへの攻撃をエッジポリシーが検知、防御しているところを確認します。
 
 
 <span style="color: olivedrab; ">**活用編**</span>
-+ **[エッジポリシーのWeb Application Firewallのログを分析する](/ocitutorials/security/waf-v1-loganalytics)**  
++ **[エッジポリシーのWeb Application Firewallのログを分析する](./waf-v1-loganalytics)**  
    本チュートリアルでは、「OCI Web Application Firewallのエッジポリシーを使ってWebサーバを保護する」の続編として、エッジポリシーのログをLogging Analyticsに転送して分析する手順を紹介します。
 
 
 ## Regional WAF
 <span style="color: olivedrab; ">**環境準備編**</span>
-+ **[OCI Load BalancerにアタッチするタイプのWeb Application Firewallを構築する](/ocitutorials/security/waf-v2-setup/)**  
++ **[OCI Load BalancerにアタッチするタイプのWeb Application Firewallを構築する](./waf-v2-setup/)**  
    本チュートリアルでは、OCIのLoad Balancerに直接アタッチする「WAFポリシー」を作成し、実際のWAFポリシーの動作を確認します。
 
 
 <span style="color: olivedrab; ">**活用編**</span>
 
-+ **[OCI Load Balancerに直接アタッチするタイプのWeb Application Firewallのログを分析する](/ocitutorials/security/waf-v2-loganalytics/)**  
++ **[OCI Load Balancerに直接アタッチするタイプのWeb Application Firewallのログを分析する](./waf-v2-loganalytics/)**  
    本チュートリアルでは、「OCIのLoad BalancerにアタッチするタイプのWeb Application Firewallを構築する」の続編として、WAFポリシーのログをLogging Analyticsに転送して分析する手順を紹介します。
 
 
@@ -55,27 +49,27 @@ Oracle Cloud Infrastructureは、設計段階からセキュリティを考慮�
 
 <span style="color: olivedrab; ">**環境準備編**</span>
 
-+ **[OCI Network Firewallを構築する](/ocitutorials/security/networkfirewall-setup/)**  
++ **[OCI Network Firewallを構築する](./networkfirewall-setup/)**  
    本チュートリアルでは、OCI Network Firewallの環境を構築し、動作を確認します。動作確認にはeicarファイルを使用します。
 
-+ **[ハブアンドスポーク構成でOCI Network Firewallを構築する](/ocitutorials/security/networkfirewall-setup-hubspoke/)**  
++ **[ハブアンドスポーク構成でOCI Network Firewallを構築する](./networkfirewall-setup-hubspoke/)**  
    本チュートリアルではOCI Network Firewallをハブアンドスポーク構成で構築します。
 
-+ **[トンネル検査構成でOCI Network Firewallを構築する](/ocitutorials/security/networkfirewall-setup-tunnelinspection/)**  
++ **[トンネル検査構成でOCI Network Firewallを構築する](./networkfirewall-setup-tunnelinspection/)**  
    本チュートリアルではOCI Network Firewallをトンネル検査構成で構築します。
 
 <span style="color: olivedrab; ">**活用編**</span>
 
-+ **[OCI Network Firewallの動作を検証する](/ocitutorials/security/networkfirewall-policycheck/)**  
++ **[OCI Network Firewallの動作を検証する](./networkfirewall-policycheck/)**  
    本チュートリアルでは、サービス・リストとURLリストを設定し、OCI Network Firewallの動作を確認します。
 
-+ **[OCI Network FirewallのSSLインスペクション（インバウンドモード）を行う](/ocitutorials/security/networkfirewall-sslinspect-inb/)**  
++ **[OCI Network FirewallのSSLインスペクション（インバウンドモード）を行う](./networkfirewall-sslinspect-inb/)**  
    本チュートリアルでは「OCI Network Firewallを構築する」の続編として、SSLインスペクションのうち、インバウンド検証モードの設定および動作を確認します
 
-+ **[OCI Network FirewallのSSLインスペクション（転送プロキシモード）を行う](/ocitutorials/security/networkfirewall-sslinspect-fwd/)**  
++ **[OCI Network FirewallのSSLインスペクション（転送プロキシモード）を行う](./networkfirewall-sslinspect-fwd/)**  
    本チュートリアルでは「OCI Network Firewallを構築する」の続編として、SSLインスペクションのうち、転送プロキシモードの設定および動作を確認します。
 
-+ **[OCI Network Firewallのログを分析する](/ocitutorials/security/networkfirewall-loganalytics/)**  
++ **[OCI Network Firewallのログを分析する](./networkfirewall-loganalytics/)**  
    本チュートリアルでは「OCI Network Firewallを構築する」の続編として、Network Firewallのログを分析し、Network Firewallを通過するトラフィックの傾向、脅威の有無を確認します。
 
 
@@ -86,20 +80,20 @@ Oracle Cloud Infrastructureは、設計段階からセキュリティを考慮�
 
 <span style="color: olivedrab; ">**環境準備編**</span>
 
-+ **[Vaultを作成し 顧客管理の鍵をインポートする](/ocitutorials/security/vault-setup/)**  
++ **[Vaultを作成し 顧客管理の鍵をインポートする](./vault-setup/)**  
    VaultサービスでVaultを作成し、暗号鍵の作成とインポートを行います。
 
 
 <span style="color: olivedrab; ">**活用編**</span>
-+ **[Vaultサービスを使ってObject Storageをユーザー管理の暗号鍵で暗号化する](/ocitutorials/security/vault-objectstorage/)**  
++ **[Vaultサービスを使ってObject Storageをユーザー管理の暗号鍵で暗号化する](./vault-objectstorage/)**  
    Vaultサービスでユーザー管理の暗号鍵を使用してObject Storageを作成する手順を紹介します。
 
 
-+ **[Vaultサービスを使ってコンピュート・インスタンスのブート・ボリュームをユーザー管理の暗号鍵で暗号化する](/ocitutorials/security/vault-compute/)**  
++ **[Vaultサービスを使ってコンピュート・インスタンスのブート・ボリュームをユーザー管理の暗号鍵で暗号化する](./vault-compute/)**  
    Vaultサービスでユーザー管理の暗号鍵を使用してコンピュート・インスタンスのブート・ボリュームを暗号化する手順を紹介します。
 
 
-+ **[Vaultサービスを使ってBase Databaseをユーザー管理の暗号鍵で暗号化する](/ocitutorials/security/vault-basedatabase/)**  
++ **[Vaultサービスを使ってBase Databaseをユーザー管理の暗号鍵で暗号化する](./vault-basedatabase/)**  
    Vaultサービスでユーザー管理の暗号鍵を使用してBase Databaseを暗号化する手順を紹介します。
 
 <br>
@@ -115,7 +109,7 @@ Oracle Cloud Infrastructureは、設計段階からセキュリティを考慮�
 
 # Oracle Data Safe
 
-+ **[Oracle Data Safeチュートリアルまとめ](/ocitutorials/security/datasafe-tutorial/)**  
++ **[Oracle Data Safeチュートリアルまとめ](./datasafe-tutorial/)**  
    本チュートリアルは外部のページで、Data Safeの有効化から、各種機能の使い方についてまとめています。   
 
 <br>

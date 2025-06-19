@@ -1,7 +1,6 @@
 ---
 title: "OCI Web Application Firewallのエッジポリシーを使ってWebサーバを保護する"
 excerpt: "Webサイトの脆弱性対策に苦労していませんか？そんな時はチューニング不要なOCI WAFを使って簡単にWebサーバーを保護しましょう。OCI WAFは保護ルールの適用、ボットトラフィックの制御、ログ参照など簡単にGUIから行うことができます。"
-order: "110"
 layout: single
 tags:
  - security
@@ -10,6 +9,7 @@ header:
  overlay_image: "/security/waf-v1-setup/edge17.png"
  overlay_filter: rgba(34, 66, 55, 0.7)
 
+weight: 101
 ---
 
 OCIにはエッジポリシーとWAFポリシーの2種類のWeb Application Firewallがあります。

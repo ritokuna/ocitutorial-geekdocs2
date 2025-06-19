@@ -9,7 +9,7 @@ header:
  teaser: "/security/waf-v2-setup/wafv2-19.png"
  overlay_image: "/security/waf-v2-setup/wafv2-19.png"
  overlay_filter: rgba(34, 66,55, 0.7)
-
+weight: 112
 ---
 
 OCIでは、OCI Load Balancerに直接デプロイするWAF、”WAFポリシー”と、お客様のアプリケーションのドメインに構築するWAF、”エッジポリシー”の2種類のWAFを提供しています。

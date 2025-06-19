@@ -9,7 +9,7 @@ header:
  teaser: "/security/networkfirewall-setup/nfw88.png"
  overlay_image: "/security/networkfirewall-setup/nfw88.png"
  overlay_filter: rgba(34, 66, 55, 0.7)
-
+weight: 211
 ---
 
 OCI Network FirewallはOracle Cloud Infrastructure (OCI) のクラウドネイティブなマネージド・ファイアウォールです。  
