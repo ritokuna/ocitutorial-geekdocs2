@@ -167,7 +167,7 @@ pre, code {
 }
 .gdoc-nav--toc {
   /* background-color: var(--body-background); */
-  padding: 0.5rem 1rem 1rem 1rem;
+  /* padding: 0.5rem 1rem 1rem 1rem; */
   border-radius: 0.4rem;
 }
 
@@ -189,7 +189,7 @@ div.wrapper {
 	flex-direction: column;
 	min-height: 100vh;
 	color: var(--body-font-color);
-	background-image: url('/img/background/oc-background.png');
+	background-image: url('/ocitutorials/img/background/oc-background.png');
   background-repeat: repeat;
   background-attachment: scroll;
 	font-weight: normal
