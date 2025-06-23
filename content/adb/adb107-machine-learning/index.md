@@ -4,8 +4,8 @@ excerpt: "タイタニック号の乗客情報から生存予測モデルを作�
 order: "3_107"
 layout: single
 header:
-  teaser: "/adb/adb107-machine-learning/img48.png"
-  overlay_image: "/adb/adb107-machine-learning/img48.png"
+  teaser: "../adb107-machine-learning/img48.png"
+  overlay_image: "../adb107-machine-learning/img48.png"
   overlay_filter: rgba(34, 66, 55, 0.7)
 #link: https://community.oracle.com/tech/welcome/discussion/4474261/
 ---
@@ -21,9 +21,9 @@ header:
 
 **前提条件 :**  
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。  
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。  
 + 以下にリンクされているZipファイルをダウンロードし、解凍していること
-	+ [OMLチュートリアルで資料するファイル](/adb/adb107-machine-learning/ADB_OML_handson.zip)
+	+ [OMLチュートリアルで資料するファイル](../adb107-machine-learning/ADB_OML_handson.zip)
 
 <br>
 
@@ -47,7 +47,7 @@ header:
 
 まずOMLを利用する権限を持つユーザを**Database Actions**で新規作成していきます。
 
-1. [ADBインスタンスを作成しよう](/adb/adb101-provisioning/)で学習した**Database Actionsを利用したインスタンスへの接続** を参照し、Database Actionsを起動し、Adminユーザーで接続してください。**ツール**タブから、**データベース・アクションを開く**をクリックしてください。
+1. [ADBインスタンスを作成しよう](../adb101-provisioning/)で学習した**Database Actionsを利用したインスタンスへの接続** を参照し、Database Actionsを起動し、Adminユーザーで接続してください。**ツール**タブから、**データベース・アクションを開く**をクリックしてください。
 
    ![画面ショット1-1](img0.png)
 

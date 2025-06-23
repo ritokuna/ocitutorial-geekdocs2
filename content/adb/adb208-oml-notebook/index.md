@@ -4,8 +4,8 @@ excerpt: "Oracle Machine Learningで液体の品質の予測や、同時購入�
 order: "3_208"
 layout: single
 header:
-  teaser: "/adb/adb208-oml-notebook/img20.png"
-  overlay_image: "/adb/adb208-oml-notebook/img20.png"
+  teaser: "../adb208-oml-notebook/img20.png"
+  overlay_image: "../adb208-oml-notebook/img20.png"
   overlay_filter: rgba(34, 66, 55, 0.7)
 #link: https://community.oracle.com/tech/welcome/discussion/4474261/
 ---
@@ -23,10 +23,10 @@ header:
 **前提条件** 
 
 * ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。  
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。  
 * 以下にリンクされているファイルをダウンロードしていること
-	+ [liquid.csv](/adb/adb208-oml-notebook/ADB-OML-Tutorial/liquid.csv)
-	+ [order_items.csv](/adb/adb208-oml-notebook/ADB-OML-Tutorial/order_items.csv)
+	+ [liquid.csv](../adb208-oml-notebook/ADB-OML-Tutorial/liquid.csv)
+	+ [order_items.csv](../adb208-oml-notebook/ADB-OML-Tutorial/order_items.csv)
 
 <br>
 
@@ -125,7 +125,7 @@ header:
 
 ### order_items.csvをObject Storageにアップロード
 
-1. [ADBインスタンスを作成しよう](/adb/adb101-provisioning/)で学習した**オブジェクトストレージへのデータアップロード** を参照し、**order_items.csv**を**Object Storage**にアップロードして下さい。
+1. [ADBインスタンスを作成しよう](../adb101-provisioning/)で学習した**オブジェクトストレージへのデータアップロード** を参照し、**order_items.csv**を**Object Storage**にアップロードして下さい。
 
    ![image.png](img14.png)
 
@@ -194,12 +194,12 @@ header:
 
 また、以下のリンクから直接資料をダウンロードすることも可能です。
 
-+ [Autonomous Database MLハンズオン資料](/adb/adb208-oml-notebook/ML_HOL_20200325.pdf)
++ [Autonomous Database MLハンズオン資料](../adb208-oml-notebook/ML_HOL_20200325.pdf)
 
 資料内で使用するSQLは、下記の**Handson_SQL.txt**を確認することが可能です。
 手入力ではなくコピー＆ペーストして学習を進めていくことができます。
 
-+ [Handson_SQL.txt](/adb/adb208-oml-notebook/ADB-OML-Tutorial/Handson_SQL.txt)
++ [Handson_SQL.txt](../adb208-oml-notebook/ADB-OML-Tutorial/Handson_SQL.txt)
 
 <br>
 

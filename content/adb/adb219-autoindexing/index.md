@@ -4,8 +4,8 @@ excerpt: "Automatic Indexingの機能を用いて、人手を介することな�
 order: "3_219"
 layout: single
 header:
-  teaser: "/adb/adb219-autoindexing/adb219_3.png"
-  overlay_image: "/adb/adb219-autoindexing/adb219_3.png"
+  teaser: "../adb219-autoindexing/adb219_3.png"
+  overlay_image: "../adb219-autoindexing/adb219_3.png"
   overlay_filter: rgba(34, 66, 55, 0.7)
 
 #link: https://community.oracle.com/tech/welcome/discussion/4474310
@@ -24,7 +24,7 @@ Autonomous Databaseではワークロードを監視して、自動的に索引�
 
 **前提条件：**
 + ATPインスタンスが構成済みであること
-    <br>※ATPンタンスの作成方法については、[ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照してください。
+    <br>※ATPンタンスの作成方法については、[ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照してください。
 - **ワークロード・タイプ：** トランザクション処理
 - **ECPU数：** 4
 - **ストレージ：** 1024
@@ -54,10 +54,10 @@ Autonomous Databaseではワークロードを監視して、自動的に索引�
 
 ## 1-1. SQL*PlusでADBに接続する
 
-1. [SQL＊Plusを使った接続](/adb/adb104-connect-using-wallet/#anchor3-1){:target="_blank"}を参考に、TeraTerm上でSQL＊Plusを用いて、ATPインスタンスに接続してください。<br>
+1. [SQL＊Plusを使った接続](../adb104-connect-using-wallet/#anchor3-1){:target="_blank"}を参考に、TeraTerm上でSQL＊Plusを用いて、ATPインスタンスに接続してください。<br>
 接続する際のスキーマ名は**ADMIN**としてください。
 
-    ここで、以前本チュートリアルを実施したことがある場合は、本章の4-1の手順2[自動索引の削除](/adb/adb219-autoindexing/#anchor4-1-2){:target="_blank"}を行ってください。初めて行う場合は、次のステップに進んでください。
+    ここで、以前本チュートリアルを実施したことがある場合は、本章の4-1の手順2[自動索引の削除](../adb219-autoindexing/#anchor4-1-2){:target="_blank"}を行ってください。初めて行う場合は、次のステップに進んでください。
 
 <br>
 

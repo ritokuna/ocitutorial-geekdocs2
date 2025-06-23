@@ -4,8 +4,8 @@ excerpt: "ADBを簡単に複製することができる、クローン機能に�
 order: "3_211"
 layout: single
 #header:
-#  teaser: "/adb/adb211-clone/image_top.png"
-#  overlay_image: "/adb/adb211-clone/img_top.png"
+#  teaser: "../adb211-clone/image_top.png"
+#  overlay_image: "../adb211-clone/img_top.png"
 #  overlay_filter: rgba(34, 66, 55, 0.7)
 ---
 
@@ -37,8 +37,8 @@ Autonomous Databaseのクローン機能を利用することにより、テス�
 **前提条件 :**
 
 * 以下のチュートリアルが完了していること
-  * [101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} で、ADBインスタンスが構成済みであること
-  * [102:ADBにデータをロードしよう(Database Actions)](/adb/adb102-dataload){:target="_blank"} でADMINユーザーでSALES_CHANNELS表が作成されていること
+  * [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} で、ADBインスタンスが構成済みであること
+  * [102:ADBにデータをロードしよう(Database Actions)](../adb102-dataload){:target="_blank"} でADMINユーザーでSALES_CHANNELS表が作成されていること
 * チュートリアルの便宜上インスタンス名はatp01とします。
 * SQLコマンドを実行するユーザー・インタフェースは、Database Actionsを使用します。
 
@@ -102,7 +102,7 @@ Autonomous Databaseのクローン機能を利用することにより、テス�
 ## そのほかのクローン・データベースの設定
 
   クローン・データベースの構成について必要な項目を設定していきます。  
-  今回は以下のように指定します。各項目については[2. ADBインスタンスを作成してみよう](/adb/adb101-provisioning/#2-adb%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)の記載例をご確認ください。
+  今回は以下のように指定します。各項目については[2. ADBインスタンスを作成してみよう](../adb101-provisioning/#2-adb%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)の記載例をご確認ください。
 
 + **データベースの構成**
   + データベース・バージョンの選択 : **23ai** ※ソースのバージョンよりも上である必要があります。
@@ -162,7 +162,7 @@ ADBインスタンスの詳細の**データベース・アクション**から*
 データが検索され、メタデータとデータが正しくクローンされていることが確認できました。
 
 # おわりに
-本チュートリアルでは簡単に既存のAutonomous Databaseからクローンを作成できることを体感いただきました。今回はフル・クローンでしたが、クローンのタイプにメタデータ・クローンを選択すると同様の手順でメタデータ・クローンの作成が可能です。リフレッシュ可能クローンは [218 : リフレッシュ可能クローンを活用しよう](/adb/adb218-refreshable-clone){:target="_blank"} で手順をご確認ください。
+本チュートリアルでは簡単に既存のAutonomous Databaseからクローンを作成できることを体感いただきました。今回はフル・クローンでしたが、クローンのタイプにメタデータ・クローンを選択すると同様の手順でメタデータ・クローンの作成が可能です。リフレッシュ可能クローンは [218 : リフレッシュ可能クローンを活用しよう](../adb218-refreshable-clone){:target="_blank"} で手順をご確認ください。
 
 <br>
 以上で、この章は終了です。  

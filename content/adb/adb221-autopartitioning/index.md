@@ -4,8 +4,8 @@ excerpt: "パーティショニングにはパフォーマンスを向上させ�
 order: "3_221"
 layout: single
 header:
-  teaser: "/adb/adb221-autopartitioning/partitioningadvantage.png"
-  overlay_image: "/adb/adb221-autopartitioning/partitioningadvantage.png"
+  teaser: "../adb221-autopartitioning/partitioningadvantage.png"
+  overlay_image: "../adb221-autopartitioning/partitioningadvantage.png"
   overlay_filter: rgba(34, 66, 55, 0.7)
 #link: https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=776
 ---
@@ -24,11 +24,11 @@ APIとして**DBMS_AUTO_PARTITION**パッケージが提供されており、3�
 
 **前提条件 :**
  + バージョンが19cのAutonomous Databaseインスタンスが構成済みであること  
-   ADBインタンスの作成方法については、[「101:ADBインスタンスを作成してみよう」](/adb/adb101-provisioning){:target="_blank"} を参照ください。
+   ADBインタンスの作成方法については、[「101:ADBインスタンスを作成してみよう」](../adb101-provisioning){:target="_blank"} を参照ください。
  + Always FreeまたはDeveloper ADBインスタンスを利用すること  
      自動パーティション化の対象は表のサイズがAlways Free/DeveloperADBインスタンスでは5GB以上、商用ADBインスタンスでは64GB以上である必要があります。商用ADBインスタンスの場合は5GBを64GBに置き換えてください。
   + SQLコマンドを実行するユーザー・インタフェースはSQL\*Plusを利用すること  
-    環境は、[「204:開発者向け仮想マシンのセットアップ方法」](/adb/adb204-setup-VM/){:target="_blank"} で作成できます。また、ADBへの接続方法は [「104: クレデンシャル・ウォレットを利用して接続してみよう」](/adb/adb104-connect-using-wallet){:target="_blank"} を参照ください。
+    環境は、[「204:開発者向け仮想マシンのセットアップ方法」](../adb204-setup-VM/){:target="_blank"} で作成できます。また、ADBへの接続方法は [「104: クレデンシャル・ウォレットを利用して接続してみよう」](../adb104-connect-using-wallet){:target="_blank"} を参照ください。
  + ユーザーはADMINユーザーで実行すること  
     Autonomous Databaseへの接続文字列は「atpdev01_medium」、各ユーザのパスワードはすべて「Welcome12345#」とします。
  

@@ -4,8 +4,8 @@ excerpt: "DRを構成するにはどうしたら良いでしょうか？ADBで�
 order: "3_212"
 layout: single
 header:
-  teaser: "/adb/adb212-audg/img1.jpg"
-  overlay_image: "/adb/adb212-audg/img1.jpg"
+  teaser: "../adb212-audg/img1.jpg"
+  overlay_image: "../adb212-audg/img1.jpg"
   overlay_filter: rgba(34, 66, 55, 0.7)
 #link: https://community.oracle.com/tech/welcome/discussion/4474261/
 ---
@@ -228,7 +228,7 @@ Autonomous Data Guard には、本記事でご紹介した以外にもいくつ�
    + 手動フェイルオーバーの開始/終了
    + スイッチオーバーの開始/終了
    
-   EventsやNotificationsとの連携方法については、[こちら](/adb/adb503-monitoring/){:target="_blank"}をご参照ください。
+   EventsやNotificationsとの連携方法については、[こちら](../adb503-monitoring/){:target="_blank"}をご参照ください。
 
 <br>
 <a id="anchor2"></a>

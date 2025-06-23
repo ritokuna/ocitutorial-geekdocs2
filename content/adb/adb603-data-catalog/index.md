@@ -4,8 +4,8 @@ excerpt: "データ・カタログを使えば、技術、ビジネスおよび�
 order: "3_603"
 layout: single
 header:
-  teaser: "/adb/adb603-data-catalog/3-1.png"
-  overlay_image: "/adb/adb603-data-catalog/3-1.png"
+  teaser: "../adb603-data-catalog/3-1.png"
+  overlay_image: "../adb603-data-catalog/3-1.png"
   overlay_filter: rgba(34, 66, 55, 0.7)
 #link: https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=776
 ---
@@ -40,7 +40,7 @@ Oracle Cloud Infrastructure Data Catalogは、そのような企業データの�
 **前提条件**
 + Autonomous Data Warehouse(ADW)インスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。
+    [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。
 
 + Data Catalogを使用するためのユーザーグループ、ポリシーが設定済みであること
     <br>※本チュートリアルを進めるうえで必要なポリシーは[こちら](https://docs.oracle.com/ja-jp/iaas/data-catalog/using/policies.htm#policy-examples){:target="_blank"}を参照ください。
@@ -69,7 +69,7 @@ GRANT CREATE procedure to sales_history;
 GRANT CREATE trigger to sales_history;
 ```
 
-1. [Data Catalogで使用するファイル](/adb/adb603-data-catalog/DCAT_Workshopfiles.zip)からzipファイルをダウンロードし、解凍します。
+1. [Data Catalogで使用するファイル](../adb603-data-catalog/DCAT_Workshopfiles.zip)からzipファイルをダウンロードし、解凍します。
 
 2. zipファイルの中の**DCAT_Livelabs.sql**というSQLスクリプトを実行します。実行すると、いくつかの表が作成されます。
 

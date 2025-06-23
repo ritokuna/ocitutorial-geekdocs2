@@ -162,7 +162,7 @@ toc: true
 + **[402: Database Linkを利用したデータ連携](./adb402-database-link){:target="_blank"}**
     * Database Linkを利用して、ADBから他のデータベースへアクセスする方法をご紹介します。
 
-+ **[OCI Data Integrationチュートリアル](/intermediates/ocidi-tutorials){:target="_blank"}**
++ **[OCI Data Integrationチュートリアル](../intermediates/ocidi-tutorials){:target="_blank"}**
     * ノーコーディングでETL処理を行うことができるフルマネージド・サービスを利用し、ADBにデータをロードする手順を解説します。
 
 + **[403: Data Transformsを使ってみよう](./adb403-data-transforms){:target="_blank"}**  

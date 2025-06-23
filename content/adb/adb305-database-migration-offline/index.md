@@ -4,8 +4,8 @@ excerpt: "OCI Database Migration Serviceの移行の作成、検証、実行、�
 order: "3_305"
 layout: single
 header:
-  teaser: "/adb/adb305-database-migration-prep/teaser.png"
-  overlay_image: "/adb/adb305-database-migration-offline/teaser.png"
+  teaser: "../adb305-database-migration-prep/teaser.png"
+  overlay_image: "../adb305-database-migration-offline/teaser.png"
   overlay_filter: rgba(34, 66, 55, 0.7)
 #link: https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=797
 ---
@@ -18,10 +18,10 @@ DMSでは下記の2つの論理的移行が可能です。
 + **オフライン移行** - ソース・データベースのポイント・イン・タイム・コピーがターゲット・データベースに作成されます。移行中のソース・データベースへの変更はコピーされないため、移行中はアプリケーションをオフラインのままにする必要があります。
 + **オンライン移行** - ソース・データベースのポイント・イン・タイム・コピーがターゲット・データベースに作成されるのに加え、内部的にOracle GoldenGateによるレプリケーションを利用しているため、移行中のソース・データベースへの変更も全てコピーされます。そのため、アプリケーションをオンラインのまま移行を行うことが可能で、移行に伴うアプリケーションのダウンタイムを極小化することができます。
 
-DMSに関するチュートリアルは[304 : OCI Database Migration Serviceを使用したデータベース移行の前準備](/adb/adb304-database-migration-prep)、[305 : OCI Database Migration Serviceを使用したデータベースのオフライン移行](/adb/adb305-database-migration-offline)、[306 : OCI Database Migration Serviceを使用したデータベースのオンライン移行](/adb/adb306-database-migration-online)の計3章を含めた3部構成となっています。
+DMSに関するチュートリアルは[304 : OCI Database Migration Serviceを使用したデータベース移行の前準備](../adb304-database-migration-prep)、[305 : OCI Database Migration Serviceを使用したデータベースのオフライン移行](../adb305-database-migration-offline)、[306 : OCI Database Migration Serviceを使用したデータベースのオンライン移行](../adb306-database-migration-online)の計3章を含めた3部構成となっています。
 DMSを使用してBaseDBで作成したソース・データベースからADBのターゲット・データベースにデータ移行を行います。
 
-[305 : OCI Database Migration Serviceを使用したデータベースのオフライン移行](/adb/adb305-database-migration-offline)または[306 : OCI Database Migration Serviceを使用したデータベースのオンライン移行](/adb/adb306-database-migration-online)を実施する前に必ず[304 : OCI Database Migration Serviceを使用したデータベース移行の前準備](/adb/adb304-database-migration-prep)を実施するようにしてください。
+[305 : OCI Database Migration Serviceを使用したデータベースのオフライン移行](../adb305-database-migration-offline)または[306 : OCI Database Migration Serviceを使用したデータベースのオンライン移行](../adb306-database-migration-online)を実施する前に必ず[304 : OCI Database Migration Serviceを使用したデータベース移行の前準備](../adb304-database-migration-prep)を実施するようにしてください。
 
 この章では、DMSを使用したデータベースのオフライン移行について紹介します。
 
@@ -36,7 +36,7 @@ DMSを使用してBaseDBで作成したソース・データベースからADB�
 
 
 **前提条件 :**
-+ [「304 : OCI Database Migration Serviceを使用したデータベース移行の前準備」](/adb/adb304-database-migration-prep)を参考に、データベース移行の前準備が完了していること。
++ [「304 : OCI Database Migration Serviceを使用したデータベース移行の前準備」](../adb304-database-migration-prep)を参考に、データベース移行の前準備が完了していること。
 + ターゲット・データベースのタイムゾーン・バージョンがソース・データベースのタイムゾーン・バージョンよりも最新になっていることを確認する(SELECT * FROM V$TIMEZONE_FILE;)。ターゲット・データベースのタイムゾーン・バージョンの方が古い場合はSRをあげる必要があります。
 
 **所要時間 :** 約30分
@@ -260,7 +260,7 @@ DMSを使用してBaseDBで作成したソース・データベースからADB�
 
 以上で **DMSを使用したデータベースのオフライン移行** は終了です。
 
-オンライン移行を実行したい場合は、[306 : OCI Database Migration Serviceを使用したデータベースのオンライン移行](/adb/adb306-database-migration-online)にお進みください。
+オンライン移行を実行したい場合は、[306 : OCI Database Migration Serviceを使用したデータベースのオンライン移行](../adb306-database-migration-online)にお進みください。
 
 <BR>
 

@@ -5,8 +5,8 @@ excerpt: "この章では開発言語としてpythonを想定し、Autonomous Da
 order: "3_207"
 layout: single
 #header:
-#  teaser: "/adb/adb207-appdev-python/image_top.png"
-#  overlay_image: "/adb/adb207-appdev-python/img_top.png"
+#  teaser: "../adb207-appdev-python/image_top.png"
+#  overlay_image: "../adb207-appdev-python/img_top.png"
 #  overlay_filter: rgba(34, 66, 55, 0.7)
 
 #link: https://community.oracle.com/tech/welcome/discussion/4474311
@@ -23,11 +23,11 @@ PythonでAutonomous Databaseを利用する際には、cx_Oracleというモジ�
 **前提条件 :**
 
 1. ADBインスタンスが構成済みであること
-   <br>※ADBインタンスを作成方法については、本ハンズオンガイドの [101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning) を参照ください。
+   <br>※ADBインタンスを作成方法については、本ハンズオンガイドの [101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。
 2. 開発用の仮想マシンが構成済みであり、仮想マシンからADBインスタンスへのアクセスが可能であること
 3. 仮想マシンのoracleユーザのホームディレクトリ配下にlabsフォルダをアップロード済みであること
-    +  [labs.zip をダウンロード](/adb/adb-data/labs.zip)
-    <br>アップロード方法については [こちら](/adb/adb204-setup-VM#anchor3) をご確認ください。
+    +  [labs.zip をダウンロード](../adb-data/labs.zip)
+    <br>アップロード方法については [こちら](../adb204-setup-VM#anchor3) をご確認ください。
 
 
 **目次**

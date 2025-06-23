@@ -4,8 +4,8 @@ excerpt: "ADBでは、パブリックIPを持つパブリック・エンドポ�
 order: "3_109"
 layout: single
 header:
-  teaser: "/adb/adb109-private-endpoint/private-endpoint_teaser.png"
-  overlay_image: "/adb/adb109-private-endpoint/private-endpoint_teaser.png"
+  teaser: "../adb109-private-endpoint/private-endpoint_teaser.png"
+  overlay_image: "../adb109-private-endpoint/private-endpoint_teaser.png"
   overlay_filter: rgba(34, 66, 55, 0.7)
 
 #link: https://community.oracle.com/tech/welcome/discussion/4474310
@@ -75,7 +75,7 @@ Autonomous Databaseでは、パブリック・エンドポイントとプライ�
 ## 1-3. ADBへの接続
 パブリック・サブネットの踏み台サーバー経由でプライベート・サブネットのコンピュート・インスタンスに接続します。
 プライベート・エンドポイント・アクセスのみの場合は、ウォレットなし接続が可能です。
-ウォレットなし接続の手順については、[こちら](/adb/adb108-walletless/){:target="_blank"}をご参照ください。
+ウォレットなし接続の手順については、[こちら](../adb108-walletless/){:target="_blank"}をご参照ください。
 もちろんウォレットを使用した接続も可能です。
 
 ![adb-access.png](adb-access.png)
@@ -99,7 +99,7 @@ ADBの作成ページの[ネットワーク・アクセスの更新]をクリッ
 IPアドレス、CIDRブロック、VCN名、VCNのOCIDを指定して、アクセス許可を行います。今回はADBが配置されているVCNとは異なるVCN内にあるコンピュート・インスタンスのパブリックIPを指定します。
 
 このとき接続用のウォレットにパブリック・エンドポイントにアクセスする接続文字列が追加されるので、確認してみます。
-ウォレットのダウンロード方法は[こちら](/adb/adb104-connect-using-wallet/#1-%E3%82%AF%E3%83%AC%E3%83%87%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89){:target="_blank"}をご参照ください。
+ウォレットのダウンロード方法は[こちら](../adb104-connect-using-wallet/#1-%E3%82%AF%E3%83%AC%E3%83%87%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89){:target="_blank"}をご参照ください。
 
 以下にように*DB名_public_コンシューマグループ*が追加されています。
 

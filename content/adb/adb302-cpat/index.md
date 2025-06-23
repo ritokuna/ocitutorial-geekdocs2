@@ -4,8 +4,8 @@ excerpt: "Autonomous Databaseへの移行前に、現行Oracle Database環境に
 order: "3_302"
 layout: single
 header:
-  teaser: "/adb/adb302-cpat/img102.png"
-  overlay_image: "/adb/adb302-cpat/img102.png"
+  teaser: "../adb302-cpat/img102.png"
+  overlay_image: "../adb302-cpat/img102.png"
   overlay_filter: rgba(34, 66, 55, 0.7)
 #link: https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=776
 ---
@@ -21,7 +21,7 @@ Autonomous Databaseでは性能・可用性・セキュリティの観点から�
    ![イメージ](img101.png)
 
 
-この章では先の[301: 移行元となるデータベースを作成しよう](/adb/adb301-create-source-db){:target="_blank"}にて事前に作成しておいたDBCSインスタンスを利用して、CPATの使い方を紹介します。
+この章では先の[301: 移行元となるデータベースを作成しよう](../adb301-create-source-db){:target="_blank"}にて事前に作成しておいたDBCSインスタンスを利用して、CPATの使い方を紹介します。
 
 <BR>
 
@@ -38,7 +38,7 @@ Autonomous Databaseでは性能・可用性・セキュリティの観点から�
 
 **前提条件 :**
  + My Oracle Supportへのログイン・アカウントを保有していること
- + [301: 移行元となるデータベースを作成しよう](/adb/adb301-create-source-db){:target="_blank"}を完了していること
+ + [301: 移行元となるデータベースを作成しよう](../adb301-create-source-db){:target="_blank"}を完了していること
 
 <BR>
 
@@ -113,7 +113,7 @@ DBCSインスタンスのHRスキーマを移行対象に、移行先をAutonomo
 ```
 ![イメージ](img105.png)
 
-+ `--connectstring` 移行元となるデータベースへの接続。[101: Oracle Cloud で Oracle Database を使おう(DBCS)](/adb/dbcs101-create-db){:target="_blank"}を参考にホスト(HOST)、ポート番号（PORT）、サービス名（SERVICE_NAME）をご確認ください。
++ `--connectstring` 移行元となるデータベースへの接続。[101: Oracle Cloud で Oracle Database を使おう(DBCS)](../dbcs101-create-db){:target="_blank"}を参考にホスト(HOST)、ポート番号（PORT）、サービス名（SERVICE_NAME）をご確認ください。
 + `--targetcloud` ターゲットデータベースの指定。
   + Autonomous Databaseの場合DedicatedはATPD/ADWD、SharedはATPS/ADWSから選択します。このチュートリアルではATPSを指定しています。
   + Autonomous DatabaseではないPDBロックダウンの設定が行われていないクラウドデータベースの場合はdefaultを指定します。  
@@ -142,7 +142,7 @@ view premigration_advisor_report.txt
 ![イメージ](img107.png)  
 
 
-`--targetcloud`をADWSにした場合は、先の[301: 移行元となるデータベースを作成しよう](/adb/adb301-create-source-db){:target="_blank"}で作成したLONG型を有するNG_TAB_4ADW表がADBに移行できないことを、対応策と共に明示してくれます。  
+`--targetcloud`をADWSにした場合は、先の[301: 移行元となるデータベースを作成しよう](../adb301-create-source-db){:target="_blank"}で作成したLONG型を有するNG_TAB_4ADW表がADBに移行できないことを、対応策と共に明示してくれます。  
 ![イメージ](img108.png)
 
 

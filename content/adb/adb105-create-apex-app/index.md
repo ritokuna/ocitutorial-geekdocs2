@@ -5,8 +5,8 @@ excerpt: "APEXコンソールの起動から簡単なアプリケーション作
 order: "3_105"
 layout: single
 header:
-  teaser: "/adb/adb105-create-apex-app/image105-8.png"
-  overlay_image: "/adb/adb105-create-apex-app/image105-8.png"
+  teaser: "../adb105-create-apex-app/image105-8.png"
+  overlay_image: "../adb105-create-apex-app/image105-8.png"
   overlay_filter: rgba(34, 66, 55, 0.7)
 #link: https://community.oracle.com/tech/welcome/discussion/4474306
 ---
@@ -26,7 +26,7 @@ Autonomous Database上でAPEXを利用すると、バックアップや可用性
 
 **前提条件**
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。 
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。 
 
 <br>
 
@@ -52,7 +52,7 @@ Autonomous Database上でAPEXを利用すると、バックアップや可用性
 サンプルとして受発注データ(orders.csv)を用意します。
 下記のリンクをクリックし、サンプルファイル(orders.zip)を手元のPCにダウンロードして展開してください。
 
-+ [orders.csvをダウンロード](/adb/adb-data/orders.csv)
++ [orders.csvをダウンロード](../adb-data/orders.csv)
 
 受発注データは次のような表になっており、ORDER_KEY(注文番号)、ORDER_STATUS(注文状況)、UNITS(個数) ...etc などの列から構成される、5247行の表となっています。
 

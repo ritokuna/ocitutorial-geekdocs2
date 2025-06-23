@@ -5,8 +5,8 @@ excerpt: "Oracle Linux Cloud Developer イメージから仮想マシンをセ�
 order: "3_204"
 layout: single
 header:
-  teaser: "/adb/adb204-setup-VM/image_top.png"
-  overlay_image: "/adb/adb204-setup-VM/img1_3.png"
+  teaser: "../adb204-setup-VM/image_top.png"
+  overlay_image: "../adb204-setup-VM/img1_3.png"
   overlay_filter: rgba(34, 66, 55, 0.7)
 
 #link: https://community.oracle.com/tech/welcome/discussion/4474310
@@ -30,9 +30,9 @@ Oracle Cloud Infrastructure（OCI） では様々な仮想マシンイメージ�
 
 **前提条件** 
 * ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](/adb/adb101-provisioning){:target="_blank"} を参照ください。
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。
 * ADBインスタンスのクレデンシャル・ウォレットがダウンロード済みであること
-    <br>※クレデンシャルウォレットのダウンロード方法については、[104: ウォレットを利用してADBに接続してみよう](/adb/adb104-connect-using-wallet){:target="_blank"} の、[1. クレデンシャル・ウォレットのダウンロード](/adb/adb104-connect-using-wallet#anchor1){:target="_blank"} をご確認ください。
+    <br>※クレデンシャルウォレットのダウンロード方法については、[104: ウォレットを利用してADBに接続してみよう](../adb104-connect-using-wallet){:target="_blank"} の、[1. クレデンシャル・ウォレットのダウンロード](../adb104-connect-using-wallet#anchor1){:target="_blank"} をご確認ください。
 
 <br>
 
@@ -140,7 +140,7 @@ Oracle Cloud Infrastructure（OCI） では様々な仮想マシンイメージ�
 ログインした仮想マシン上で次のコマンドを実行します。
 
     ```sh
-    wget https://oracle-japan.github.io/adb/adb-data/labs.zip
+    wget https://oracle-japan.github.io../ocitutorials/adb/adb-data/labs.zip
     ```
 
 2. labs.zip がダウンロードされたことを確認します。（ファイルが存在すればOKです。）
@@ -156,7 +156,7 @@ Oracle Cloud Infrastructure（OCI） では様々な仮想マシンイメージ�
     > <br>※ここではTera Termを前提に記載しています。
     >   
     >    1. 下記のリンクより、labs.zipを手元のPCにダウンロードします。
-    >       +  [labs.zip をダウンロード](/adb/adb-data/labs.zip)
+    >       +  [labs.zip をダウンロード](../adb-data/labs.zip)
     >
     >
     >    2. labs.zipをTera Termのウィンドウ画面上にドラッグ・アンド・ドロップします。
@@ -209,7 +209,7 @@ Oracle Cloud Infrastructure（OCI） では様々な仮想マシンイメージ�
 # 4. ADBに接続するための設定ファイルの編集
 
 ADBに接続するためには、クレデンシャル・ウォレット（Credential.zipファイル）を仮想マシン上に配置する必要があります。
-クレデンシャルウォレットのダウンロード方法については、[101: ウォレットを利用してADBに接続してみよう](/adb/adb104-connect-using-wallet){:target="_blank"} の、[1. クレデンシャル・ウォレットのダウンロード](/adb/adb104-connect-using-wallet#anchor1){:target="_blank"} をご確認ください。
+クレデンシャルウォレットのダウンロード方法については、[101: ウォレットを利用してADBに接続してみよう](../adb104-connect-using-wallet){:target="_blank"} の、[1. クレデンシャル・ウォレットのダウンロード](../adb104-connect-using-wallet#anchor1){:target="_blank"} をご確認ください。
 
 1. 仮想マシンにopcユーザでログインします。
 
@@ -339,7 +339,7 @@ ADBに接続するためには、クレデンシャル・ウォレット（Crede
   >
   >上記は接続端末としてTeratermを利用しましたが、OCIに付属するCloud Shellを使用して設定ファイルの編集をすることも可能です。
   >Cloud ShellはOracle CloudコンソールからアクセスできるWebブラウザ・ベースのターミナルです。こちらを利用すると、ブラウザだけで仮想マシンにアクセスできますので、是非お試しください。
-  ><br>手順は、本ハンズオンガイドの [104: ウォレットを利用してADBに接続してみよう](/adb/adb104-connect-using-wallet){:target="_blank"} の、[2. 設定ファイルの編集](/adb/adb104-connect-using-wallet#anchor2){:target="_blank"} をご確認ください。
+  ><br>手順は、本ハンズオンガイドの [104: ウォレットを利用してADBに接続してみよう](../adb104-connect-using-wallet){:target="_blank"} の、[2. 設定ファイルの編集](../adb104-connect-using-wallet#anchor2){:target="_blank"} をご確認ください。
 
 
 <br>
@@ -348,7 +348,7 @@ ADBに接続するためには、クレデンシャル・ウォレット（Crede
 
   >**Note**
   >
-  >設定ファイルの編集が完了した後に、ADBインスタンスに接続する手順は本ハンズオンガイドの [104: ウォレットを利用してADBに接続してみよう](/adb/adb104-connect-using-wallet){:target="_blank"} の、[3. ADBに接続](/adb/adb104-connect-using-wallet#anchor3){:target="_blank"} をご確認ください。
+  >設定ファイルの編集が完了した後に、ADBインスタンスに接続する手順は本ハンズオンガイドの [104: ウォレットを利用してADBに接続してみよう](../adb104-connect-using-wallet){:target="_blank"} の、[3. ADBに接続](../adb104-connect-using-wallet#anchor3){:target="_blank"} をご確認ください。
 
 <br>
 [ページトップへ戻る](#anchor0)
