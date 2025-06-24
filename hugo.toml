@@ -16,7 +16,7 @@ enableRobotsTXT = true
 
 enableGitInfo = true
 
-geekdocRepo = "https://github.com/thegeeklab/hugo"
+geekdocRepo = "https://github.com/oracle-japan/ocitutorial-geekdocs"
 
 # Needed for mermaid shortcodes
 [markup]
