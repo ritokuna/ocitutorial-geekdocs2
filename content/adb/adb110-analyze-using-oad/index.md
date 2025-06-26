@@ -61,27 +61,27 @@ Oracle Analytics Desktop (OAD) をダウンロードします。
 
 3. Oracleログイン画面が表示されるので、Oralceプロファイルを入力します。Oralceアカウントをお持ちでない場合、下の **プロファイルの作成** をクリックして、Oralceアカウントを作成します。
 
-    <img src="img1_3.png" width="80%">
+    <img src="img1_3.png" max-width="100%">
 
 4. ダウンロード画面が表示されるので、Platforms から **Microst Windows x64 (64bit)** を選択し、ライセンス許諾のチェックボックスを **チェック** して、 **zipファイル** をクリックします。すると、インストーラーがダウンロードされるので、任意の場所に保存します。
 
-    <img src="img1_4_2.png" width="80%">
+    <img src="img1_4_2.png" max-width="100%">
 
 5. ダウンロードした zipファイル を解凍し、解凍したフォルダの中の exeファイル をダブルクリックしてインストールを開始します。インストールするフォルダ名は、日本語や空白を含まないように（例 C:\OAD ）してください。また、フォルダの中は空である必要があります。
 
-    <img src="img1_5.png" width="80%">
+    <img src="img1_5.png" max-width="100%">
 
 6. インストーラーが起動するので、 **Browse** ボタンをクリックして、日本語や空白を含まない名前のフォルダに変更します。ファルダの中は空である必要があります。次に、**Install** ボタン、または、**Upgrade** ボタンをクリックして、インストールを始めます。
 
-    <img src="img1_6.png" width="80%">
+    <img src="img1_6.png" max-width="100%">
     
     フォルダを選択します。
 
-    <img src="img1_6_1.png" width="80%">
+    <img src="img1_6_1.png" max-width="100%">
 
 7. インストールが完了したら、 **finish** ボタンをクリックして、インストーラーを終了します。これで、Oracle Analytics Desktop をインストールできました。
 
-    <img src="img1_7.png" width="80%">
+    <img src="img1_7.png" >
 
 <br>
 
@@ -152,7 +152,7 @@ Oracle Analytics Desktop から Autonomous Database (ADB)  への接続設定を
 
 1. Windowsスタートメニューから、Oracle > **Oracle Analytics Desktop** をクリックし、Oracle Analytics Desktop を起動します。
 
-    <img src="img3_1.png" width="80%">
+    <img src="img3_1.png" >
 
 2. Oracle Analytics Desktop アプリケーションの右上の **作成** ボタンをクリックし、 **接続** をクリックします。
 
