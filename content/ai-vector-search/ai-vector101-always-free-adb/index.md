@@ -23,6 +23,7 @@ Always FreeのADBでは、2024年5月にリリースとなった**Oracle Databas
 
 
 <br>
+
 **目次**
 
 - [はじめに](#はじめに)
@@ -144,6 +145,3 @@ Always FreeのADBでは、2024年5月にリリースとなった**Oracle Databas
 <br>
 以上で、この章は終了です。  
 次の章にお進みください。
-
-<br>
-[ページトップへ戻る](#anchor0)

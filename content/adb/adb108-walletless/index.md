@@ -15,14 +15,14 @@ header:
 
 # はじめに
 
-Autonomous Database への接続には、[104: クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet/){:target="_blank"} でご紹介した通り、ウォレットファイルを利用した証明書認証・SSL暗号化接続がデフォルトになっています。
+Autonomous Database への接続には、[104: クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet/)でご紹介した通り、ウォレットファイルを利用した証明書認証・SSL暗号化接続がデフォルトになっています。
 しかし特定の条件下では、このウォレットを利用しないでセキュアに接続することが可能です。
 本章では、ADBにおけるネットワーク・アクセスの種類とウォレットを利用しない接続方式について確認していきます。
 <br>
 
 **前提条件**
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスの作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。
+    <br>※ADBインタンスの作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning)を参照ください。
 <br>
 
 **目次**
@@ -117,7 +117,7 @@ TLS認証では、クライアントは信頼できる認証局(CA)のリスト�
 <a id="anchor3-1"></a>
 
 ## 3-1. 仮想マシン作成
-まずはクライアントとして仮想マシンを一台作成します。TLS接続がサポートされているクライアントがインストール済みの**Oracle Linux Cloud Developer イメージ**で作成します。詳しい手順は[こちら](../adb204-setup-VM/){:target="_blank"}をご参照ください。
+まずはクライアントとして仮想マシンを一台作成します。TLS接続がサポートされているクライアントがインストール済みの**Oracle Linux Cloud Developer イメージ**で作成します。詳しい手順は[こちら](../adb204-setup-VM/)をご参照ください。
 
 <br>
 
@@ -169,11 +169,8 @@ sql admin/<password>@<コピーした文字列>
 
 # 参考資料
 
-* [Autonomous Databaseへの接続について（マニュアル）](https://docs.oracle.com/en-us/iaas/autonomous-database-shared/doc/connect-introduction.html){:target="_blank"}
+* [Autonomous Databaseへの接続について（マニュアル）](https://docs.oracle.com/en-us/iaas/autonomous-database-shared/doc/connect-introduction.html)
 
 
 以上で、この章は終了です。  
 次の章にお進みください。
-
-<br>
-[ページトップへ戻る](#anchor0)

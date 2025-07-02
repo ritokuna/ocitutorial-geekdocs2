@@ -364,6 +364,3 @@ FROM
 # 3. 参考資料
 
 + [Oracle Text 詳細解説](https://www.oracle.com/jp/a/tech/docs/technical-resources/oracletext-ver12.pdf)
-
-
-[ページトップへ戻る](#anchor0)

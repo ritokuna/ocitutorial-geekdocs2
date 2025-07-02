@@ -14,7 +14,7 @@ header:
 
 # はじめに
 
-[Oracle LiveLabs](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/home){:target="_blank"} とはOracle Cloud Infrastructure上でお試しいただける様々なワークショップをまとめたサイトです。2024/6現在900種類を超える数のワークショップが登録されています。
+[Oracle LiveLabs](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/home)とはOracle Cloud Infrastructure上でお試しいただける様々なワークショップをまとめたサイトです。2024/6現在900種類を超える数のワークショップが登録されています。
 
    ![livelabs](livelabs.png)  
 
@@ -42,7 +42,7 @@ header:
 
 # 1.ワークショップの検索  
 
-[Livelabsのトップページ](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/home){:target="_blank"} にある **View All Workshops** ボタンをクリックするとファセット検索の画面へ遷移します。ワークショップの各カードにはワークショップのタイトルと概要、所要時間が表示されます。
+[Livelabsのトップページ](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/home)にある **View All Workshops** ボタンをクリックするとファセット検索の画面へ遷移します。ワークショップの各カードにはワークショップのタイトルと概要、所要時間が表示されます。
 
    ![faceted](faceted.png)  
 
@@ -138,10 +138,5 @@ OCIコンソールの画面が表示されます。Reservation Informationで確
 
    + Chrome:右クリックで"ページのソースを表示"後、iframe src= で指定されているURLをクリックし、フレーム画面のみを表示後に翻訳
       
-
-<br>
-
-[ページトップへ戻る](#はじめに)
-
 
 

@@ -29,9 +29,9 @@ Autonomous Database は暗号化およびSSL相互認証を利用した接続を
 
 **前提条件**
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスの作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} をご参照ください。  
+    <br>※ADBインタンスの作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning)をご参照ください。  
 + クレデンシャル・ウォレットを取得済みであること
-    <br>※クレデンシャル・ウォレットの取得については、[104:クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet/#anchor1){:target="_blank"} を参照ください。<br>
+    <br>※クレデンシャル・ウォレットの取得については、[104:クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet/#anchor1)を参照ください。<br>
 + Oracle Analytics Desktop は、Windows OS用とMac OS用がありますが、本章ではWindows OS用 を使って説明します。
 + Oracle Analytics Desktop をインストールするPCから、プロキシ・サーバーを経由せずに、直接、インターネットに繋がること。
     <br>※Oracle Analytics Desktop はプロキシ対応できません。  
@@ -44,6 +44,7 @@ Autonomous Database は暗号化およびSSL相互認証を利用した接続を
 - [3. Oracle Analytics Desktop から ADB に接続し、データを見える化する](#anchor3)
 
 <br>
+
 **所要時間 :** 約30分
 
 <a id="anchor1"></a>
@@ -53,7 +54,7 @@ Autonomous Database は暗号化およびSSL相互認証を利用した接続を
 Oracle Analytics Desktop (OAD) をダウンロードします。
 1. 次のサイトから、Oracle Analytics Desktop のインストーラーをダウンロードします。
 
-    [Oracle Analytics Desktop ダウンロードサイト](https://www.oracle.com/jp/solutions/business-analytics/analytics-desktop/oracle-analytics-desktop.html){:target="_blank"} 
+    [Oracle Analytics Desktop ダウンロードサイト](https://www.oracle.com/jp/solutions/business-analytics/analytics-desktop/oracle-analytics-desktop.html)
     
 2. OADダウンロードサイトから、**ダウンロード**をクリックします。
 
@@ -252,8 +253,5 @@ Oracle Analytics Desktop から Autonomous Database (ADB)  への接続設定を
 <br>
 以上で、この章は終了です。  
 次の章にお進みください。
-
-<br>
-[ページトップへ戻る](#anchor0)
 
 
