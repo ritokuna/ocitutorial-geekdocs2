@@ -165,7 +165,7 @@ OCI CLIのインストール方法を含め、OCI CLIの詳細についてはを
     先程取得したAPI公開キーをペーストし、追加をクリックします。
 
     <div style="text-align: center">
-    <img src="img1_7_2.png" width="80%">
+    <img src="img1_7_2.png" >
     </div>
 
     APIキーを追加すると、ユーザー設定の画面上に新たにフィンガープリントが表示されます。
