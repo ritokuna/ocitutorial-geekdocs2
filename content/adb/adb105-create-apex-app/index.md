@@ -26,7 +26,7 @@ Autonomous Database上でAPEXを利用すると、バックアップや可用性
 
 **前提条件**
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。 
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning)を参照ください。 
 
 <br>
 
@@ -41,6 +41,7 @@ Autonomous Database上でAPEXを利用すると、バックアップや可用性
 
 
 <br>
+
 **所要時間 :** 約10分
 
 <a id="anchor1"></a>
@@ -265,8 +266,5 @@ APEX情報まとめサイトは [こちら](https://apex.oracle.com/pls/apex/jap
 <br>
 以上で、この章は終了です。  
 次の章にお進みください。
-
-<br>
-[ページトップへ戻る](#anchor0)
 
 

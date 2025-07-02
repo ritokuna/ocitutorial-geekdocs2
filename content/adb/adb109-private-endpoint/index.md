@@ -56,7 +56,7 @@ Autonomous Databaseでは、パブリック・エンドポイントとプライ�
 ![security-list.png](security-list.png)
 
 プライベート・サブネット**sub_pri1**は、パブリック・サブネット**sub_pub**からのSSHのみ許可、**sub_pri2**は、**sub_pri1**からのTCP接続(1521ポート)のみ許可しています。
-本章では、パブリック・サブネットに踏み台サーバーを置いて利用しますが、インターネット側からアクセスする場合には、[Bastionサービス](https://oracle-japan.github.io/ocitutorials/intermediates/bastion/){:target="_blank"}も利用できます。
+本章では、パブリック・サブネットに踏み台サーバーを置いて利用しますが、インターネット側からアクセスする場合には、[Bastionサービス](https://oracle-japan.github.io/ocitutorials/intermediates/bastion/)も利用できます。
 
 <br>
 <a id="anchor1-2"></a>
@@ -75,7 +75,7 @@ Autonomous Databaseでは、パブリック・エンドポイントとプライ�
 ## 1-3. ADBへの接続
 パブリック・サブネットの踏み台サーバー経由でプライベート・サブネットのコンピュート・インスタンスに接続します。
 プライベート・エンドポイント・アクセスのみの場合は、ウォレットなし接続が可能です。
-ウォレットなし接続の手順については、[こちら](../adb108-walletless/){:target="_blank"}をご参照ください。
+ウォレットなし接続の手順については、[こちら](../adb108-walletless/)をご参照ください。
 もちろんウォレットを使用した接続も可能です。
 
 ![adb-access.png](adb-access.png)
@@ -99,7 +99,7 @@ ADBの作成ページの[ネットワーク・アクセスの更新]をクリッ
 IPアドレス、CIDRブロック、VCN名、VCNのOCIDを指定して、アクセス許可を行います。今回はADBが配置されているVCNとは異なるVCN内にあるコンピュート・インスタンスのパブリックIPを指定します。
 
 このとき接続用のウォレットにパブリック・エンドポイントにアクセスする接続文字列が追加されるので、確認してみます。
-ウォレットのダウンロード方法は[こちら](../adb104-connect-using-wallet/#1-%E3%82%AF%E3%83%AC%E3%83%87%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89){:target="_blank"}をご参照ください。
+ウォレットのダウンロード方法は[こちら](../adb104-connect-using-wallet/#1-%E3%82%AF%E3%83%AC%E3%83%87%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89)をご参照ください。
 
 以下にように*DB名_public_コンシューマグループ*が追加されています。
 
@@ -191,7 +191,7 @@ ACLを更新後、OCIコンソール画面からアクセスできるように�
 インターネットからアクセスする場合は、上の画像の記載のように、**VCN内にコンピュート・インスタンスを1台置きそちらのブラウザを使用する**ようにしてください。もしくは**エンドポイントの443番ポートをlocalhostの443番ポートにポートフォワードする**ことでも使用可能です。
 
 また、OCIのBastion Serviceを使用してアクセスすることもできます。
-詳しい手順は、[こちらの記事](https://qiita.com/500InternalServerError/items/d09dc910c9f115035225){:target="_blank"}をご参照ください。
+詳しい手順は、[こちらの記事](https://qiita.com/500InternalServerError/items/d09dc910c9f115035225)をご参照ください。
 
 [こちら](#1-4-パブリックアクセスの許可)でパブリック・アクセスを許可している場合、Database ActionsなどのADB付属ツールへパブリック・アクセスが可能です。
 
@@ -228,17 +228,14 @@ ADBの詳細画面の[ネットワーク]の**パブリック・アクセス**�
 ## 2-3. プライベート・エンドポイントでプライベート・ネットワークから接続
 オンプレミスのデータセンターなどからプライベート・ネットワークでDatabase Actionsに接続する場合です。
 この場合、FastConnectを使用して、オンプレミスからOCIのVCNに接続する方法が一般的です。なお、トラフィックはインターネットを経由しません。
-詳しい手順については、[マニュアル](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/fastconnectoverview.htm){:target="_blank"}をご参照ください。
+詳しい手順については、[マニュアル](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/fastconnectoverview.htm)をご参照ください。
 
 <br>
 
 # 参考資料
 
-* [プライベート・エンドポイントの概要](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/security-restrict-private-endpoint.html#GUID-D12F124A-9B71-4B83-B157-63F1057072FF){:target="_blank"}
+* [プライベート・エンドポイントの概要](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/security-restrict-private-endpoint.html#GUID-D12F124A-9B71-4B83-B157-63F1057072FF)
 
 
 以上で、この章は終了です。  
 次の章にお進みください。
-
-<br>
-[ページトップへ戻る](#anchor0)

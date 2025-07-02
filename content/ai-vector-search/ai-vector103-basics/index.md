@@ -12,7 +12,7 @@ header:
 <a id="anchor0"></a>
 
 # はじめに
-**Oracle AI Vector Search** は、Oracle Database 23aiから追加されている、ベクトル・データを活用した**セマンティック検索機能**です。機能としては、新たなベクトルデータ型、ベクトル索引、ベクトル検索のSQL演算子が含まれております。これらにより、Oracle Databaseは、文書、画像、その他の非構造化データのセマンティック・コンテンツをベクトルとして格納し、それを活用して迅速な類似性クエリを実行することが可能になります。この機能は、**大規模言語モデル(LLM)**とプライベートのビジネス・データを組みわせて、ビジネス基準のセキュリティ、性能レベルを満たすためのワークフローである**Retrieval Augmented Generation(RAG)**に対応することができ、エンタープライズ向けの高度で強力な検索を可能にします。
+**Oracle AI Vector Search** は、Oracle Database 23aiから追加されている、ベクトル・データを活用した**セマンティック検索機能**です。機能としては、新たなベクトルデータ型、ベクトル索引、ベクトル検索のSQL演算子が含まれております。これらにより、Oracle Databaseは、文書、画像、その他の非構造化データのセマンティック・コンテンツをベクトルとして格納し、それを活用して迅速な類似性クエリを実行することが可能になります。この機能は、**LLM**とプライベートのビジネス・データを組みわせて、ビジネス基準のセキュリティ、性能レベルを満たすためのワークフローである**RAG**に対応することができ、エンタープライズ向けの高度で強力な検索を可能にします。
 
 この章では、ベクトル列を含んだテーブルの作成、ベクトル列でのDDLおよびDML操作、関数を使用した類似性検索、リレーショナル・データベース上でベクトル・データを扱った操作など、基本的なOracle AI Vector Searchにおけるベクトル・データの操作についてご紹介します。
 
@@ -1055,7 +1055,3 @@ from_vector()
 # 参考資料
 + [Oracle AI Vector Search User`s Guide](https://docs.oracle.com/en/database/oracle/oracle-database/23/vecse/index.html)
 + [SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/index.html)
-
-<BR>
-
-[ページトップへ戻る](#anchor0)

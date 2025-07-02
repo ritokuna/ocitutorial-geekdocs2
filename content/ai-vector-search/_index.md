@@ -26,7 +26,8 @@ toc: true
 ----
 
 <br/>
-# <span style="color: brown; ">■ Oracle AI Vector Searchを使ってみよう</span>
+<span style="color: brown; ">■ Oracle AI Vector Searchを使ってみよう</span>
+
 Oracle AI Vector Search機能は、ドキュメント、画像、その他の非構造化データとプライベートなビジネス・データを、移動したり複製したりすることなくセキュアに組み合わせて検索することが出来る機能です。
 <br/>
 Oracle AI Vector Searchを使用すると、ビジネス・データにベクトル検索を追加してCohereやChatGPTなどのジェネレーティブAIと組み合わせながら精度の高い分析が可能になります。
@@ -56,5 +57,5 @@ Oracle AI Vector Searchを使用すると、ビジネス・データにベクト
 
 <br/>
 
-**チュートリアル一覧に[もどる](./)**
+**チュートリアル一覧に[もどる](/ocitutorials/)**
 <br/>

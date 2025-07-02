@@ -29,7 +29,7 @@ Autonomous Databaseもコンバージド・データベースとして、RDBの�
 
 **前提条件**
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスの作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。 
+    <br>※ADBインタンスの作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning)を参照ください。 
 
 <br>
 
@@ -41,6 +41,7 @@ Autonomous Databaseもコンバージド・データベースとして、RDBの�
 
 
 <br>
+
 **所要時間 :** 約20分
 
 <a id="anchor1"></a>
@@ -53,7 +54,7 @@ Autonomous Databaseもコンバージド・データベースとして、RDBの�
 
 > SODA APIは、Simple Oracle Document Accessの略で、オラクルが用意するJSONデータにアクセスする際のAPIです。新たにJSONコレクションを作成する、挿入、検索、変更や削除にご利用いただけます。SQLで言えばDDL、DMLに当たります。  
 このSODA APIはJavaScriptはもちろん、JavaやPython, PL/SQLなどからCallして利用することが可能ですし、SQLclやDatabase Actionsではデフォルトでインストールされています。  
-（参考資料: [Autonomous JSON Database 技術概要](https://speakerdeck.com/oracle4engineer/autonomous-json-database-ji-shu-gai-yao){:target="_blank"} ）
+（参考資料: [Autonomous JSON Database 技術概要](https://speakerdeck.com/oracle4engineer/autonomous-json-database-ji-shu-gai-yao)）
 
 <br>
 
@@ -67,13 +68,13 @@ soda create emp
 ```
 ![img](img04.png)
 
-1. コレクションempが作成されたことを確認します
+3. コレクションempが作成されたことを確認します
 ```
 soda list
 ```
 ![img](img05.png)
 
-1. JSONのドキュメントをempコレクションに格納します。以下のSODAコマンドを貼り付け て、**緑色のスクリプト実行ボタン**をクリックしてください
+4. JSONのドキュメントをempコレクションに格納します。以下のSODAコマンドを貼り付け て、**緑色のスクリプト実行ボタン**をクリックしてください
 (ドキュメントとはRDBMSで言う行に相当します。empコレクション（表）に3件のドキュメント（行）を格納しています。)
 ```
 soda insert emp {"name":"Blake", "job":"Intern", "salary":30000}
@@ -128,7 +129,7 @@ select json_serialize(json_document) from emp ;
 ```
 ![img](img09.png)
 
-1. 次にRDBフォーマットで出力しましょう。Database ActionsのSQLワークシートに以下のSQLを貼り付けて、**緑色の実行ボタン**をクリックし実行してください。
+3. 次にRDBフォーマットで出力しましょう。Database ActionsのSQLワークシートに以下のSQLを貼り付けて、**緑色の実行ボタン**をクリックし実行してください。
 各キーに対してjson_document関数を使います。
 ```
 select e.json_document.name,
@@ -139,7 +140,7 @@ from emp e ;
 ```
 ![img](img10.png)
 
-1. 次に集計してみましょう。Database ActionsのSQLワークシートに以下のSQLを貼り付けて、**緑色の実行ボタン**をクリックし実行してください。  
+4. 次に集計してみましょう。Database ActionsのSQLワークシートに以下のSQLを貼り付けて、**緑色の実行ボタン**をクリックし実行してください。  
 ここでは簡単な例としてJOBごとの従業員数を表示しています。
 ```
 select e.json_document.job , count(*)
@@ -265,8 +266,6 @@ select xxx
 以上で、この章は終了です。  
 次の章にお進みください。
 
-<br>
-[ページトップへ戻る](#anchor0)
 
 
 
