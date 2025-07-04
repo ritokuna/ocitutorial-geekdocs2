@@ -40,10 +40,14 @@
       <!-- トップページのトップバナーここまで -->
 
 
+      {{ if eq .Section "tags-search" }}
+      <main class="container flex">
+      {{ else }}
       <main class="container flex flex-even">
+      {{ end }}
 
         <!-- サイドメニュー -->
-        {{ if $navEnabled }}
+        {{ if and $navEnabled (ne .Section "tags-search") }}
           <aside class="gdoc-nav">
             {{ partial "menu" . }}
           </aside>

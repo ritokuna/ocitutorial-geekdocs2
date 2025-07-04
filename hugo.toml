@@ -31,6 +31,11 @@ geekdocRepo = "https://github.com/oracle-japan/ocitutorial-geekdocs"
 [taxonomies]
    tag = "tags"
 
+[outputs]
+   home = ["HTML", "JSON"]
+   section = ["HTML", "JSON"]
+   page = ["HTML"]
+
 [params]
   customCSS = ["./custom.css"]
   favicon = "./img/favicon.ico"
