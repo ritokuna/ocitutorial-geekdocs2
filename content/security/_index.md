@@ -21,7 +21,7 @@ Oracle Cloud Infrastructureは、設計段階からセキュリティを考慮�
 
 ## Global WAF
 <span style="color: olivedrab; ">**環境準備編**</span>
-+ **[OCI Web Application Firewallのエッジポリシーを使ってWebサーバーを保護する](/ocitutorials/waf-v1-setup)**  
++ **[OCI Web Application Firewallのエッジポリシーを使ってWebサーバーを保護する](./waf-v1-setup)**  
    本チュートリアルでは、エッジポリシーを実際に作成し、Webアプリケーションへの攻撃をエッジポリシーが検知、防御しているところを確認します。
 
 
@@ -127,3 +127,6 @@ Oracle Cloud Infrastructureは、設計段階からセキュリティを考慮�
 
 + **[Vulnerability Scanning Serviceを設定する](https://speakerdeck.com/oracle4engineer/vulnerability-scanning-serviceshe-ding-cao-zuo-gaido)**  
    本チュートリアルは外部のページで、Vulnerability Scanning Serviceの設定手順を紹介しています。
+
+
+{{< debug >}}
