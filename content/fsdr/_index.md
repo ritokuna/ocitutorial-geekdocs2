@@ -3,7 +3,8 @@ title: "Full Stack Disaster Recovery (FSDR)を使ってみよう"
 excerpt: "世界中のどこからでもOCIリージョン間のリソース移行をワンクリックで実行できるFull Stack Disaster Recoveryを体験してみましょう。"
 permalink: /fsdr
 layout: single
-tags: "Database"
+tags: 
+ - Database
 show_excerpts: true
 toc: true
 ---
