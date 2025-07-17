@@ -127,6 +127,3 @@ Oracle Cloud Infrastructureは、設計段階からセキュリティを考慮�
 
 + **[Vulnerability Scanning Serviceを設定する](https://speakerdeck.com/oracle4engineer/vulnerability-scanning-serviceshe-ding-cao-zuo-gaido)**  
    本チュートリアルは外部のページで、Vulnerability Scanning Serviceの設定手順を紹介しています。
-
-
-{{< debug >}}
