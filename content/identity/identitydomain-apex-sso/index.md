@@ -23,7 +23,7 @@ Identity Domainでは、SAMLやOAuthなどの技術を使用することで、�
 
 **前提条件 :**
 + OCIチュートリアル[Oracle Database編 - ADBの付属ツールで簡易アプリを作成しよう（APEX）](/ocitutorials/adb/adb105-create-apex-app/)を参考に、APEXのワークスペースを作成していること
-+ OCIチュートリアル[OCI IAM Identity Domains テナント管理者・一般ユーザーを作成する](/ocitutorials/identity/identitydomains-admin-users)を参考に、APEXアプリケーションにアクセスするユーザーが複数名分作成されていること。
++ OCIチュートリアル[OCI IAM Identity Domains テナント管理者・一般ユーザーを作成する](/ocitutorials/identity/identitydomain-setup-users/)を参考に、APEXアプリケーションにアクセスするユーザーが複数名分作成されていること。
 
 **注意 :**
 ※チュートリアル内の画面ショットについてはOracle Cloud Infrastructureの現在のコンソール画面と異なっている場合があります。
