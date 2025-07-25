@@ -126,10 +126,10 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 
 | チュートリアル名                                                                                      | 構築手法                | クラスタ<br>管理機能 | スタティック/<br>オンデマンド | 計算ノードOS                |
 | :-------------------------------------------------------------------------------------------: | :-----------------: | :----------: | :---------------: | :--------------------: |
-| **[HPCクラスタを構築する<br>(基礎インフラ手動構築編)](/hpc/spinup-cluster-network/)**                | 手動構築  | 無し           | スタティック            | **Oracle Linux** 7.9/8 |
-| **[HPCクラスタを構築する<br>(基礎インフラ自動構築編)](/hpc/spinup-hpc-cluster-withterraform/)**      | 自動構築<br>（**Terraform** CLI/**スタック**） | 無し           | スタティック            | **Oracle Linux** 7.9/8 |
-| **[HPCクラスタを構築する<br>(スタティッククラスタ自動構築編)](/hpc/spinup-hpc-cluster)**                 | 自動構築<br>（**スタック**）      | 有り           | スタティック            | **Oracle Linux** 7.9/8 |
-| **[HPCクラスタを構築する<br>(オンデマンドクラスタ自動構築編)](/hpc/spinup-hpc-cluster-withautoscaling)** | 自動構築<br>（**スタック**）      | 有り           | オンデマンド            | **Oracle Linux** 7.9/8 |
+| **[HPCクラスタを構築する<br>(基礎インフラ手動構築編)](spinup-cluster-network/)**                | 手動構築  | 無し           | スタティック            | **Oracle Linux** 7.9/8 |
+| **[HPCクラスタを構築する<br>(基礎インフラ自動構築編)](spinup-hpc-cluster-withterraform/)**      | 自動構築<br>（**Terraform** CLI/**スタック**） | 無し           | スタティック            | **Oracle Linux** 7.9/8 |
+| **[HPCクラスタを構築する<br>(スタティッククラスタ自動構築編)](spinup-hpc-cluster)**                 | 自動構築<br>（**スタック**）      | 有り           | スタティック            | **Oracle Linux** 7.9/8 |
+| **[HPCクラスタを構築する<br>(オンデマンドクラスタ自動構築編)](spinup-hpc-cluster-withautoscaling)** | 自動構築<br>（**スタック**）      | 有り           | オンデマンド            | **Oracle Linux** 7.9/8 |
 
 ## 1-2. 機械学習環境
 
@@ -137,13 +137,13 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 
 | チュートリアル名                                                                                       | GPU<br>ノード数 | 構築手法                             | クラスタ<br>管理機能 | スタティック/<br>オンデマンド | コンテナ<br>ランタイム                                                        | GPUノードOS               |
 | :--------------------------------------------------------------------------------------------: | :---------: | :------------------------------: | :----------: | :---------------: | :------------------------------------------------------------------: | :--------------------: |
-| **[GPUインスタンスで<br>機械学習にトライ](/hpc/spinup-ml-instance/)**                            | 単一          | 手動構築                             | 無し           | スタティック            | **Docker CE**                                                        | **Oracle Linux** 7.9/8 |
-| **[GPUインスタンスで<br>分散機械学習環境を構築する](/hpc/spinup-ml-instance-cntnd/)**                 | 単一          | 手動構築                             | 無し           | スタティック            | **containerd** | **Oracle Linux** 8     |
-| **[GPUクラスタを構築する<br>(基礎インフラ手動構築編)](/hpc/spinup-gpu-cluster/)**                     | 複数          | 手動構築                             | 無し           | スタティック            | **Docker CE**                                                        | **Oracle Linux** 7.9/8 |
-| **[GPUクラスタを構築する<br>(基礎インフラ自動構築編)](/hpc/spinup-gpu-cluster-withterraform/)**       | 複数          | 自動構築<br>（Terraform CLI<br>/スタック） | 無し           | スタティック            | **Docker CE**                                                        | **Oracle Linux** 7.9/8 |
-| **[GPUクラスタを構築する<br>(スタティッククラスタ自動構築編)](/hpc/spinup-gpu-cluster-withstack/)**       | 複数          | 自動構築<br>（スタック）                   | 有り           | スタティック            | **Enroot**                                                           | **Oracle Linux** 7.9/8 |
-| **[GPUクラスタを構築する<br>(オンデマンドクラスタ自動構築編)](/hpc/spinup-gpu-cluster-withautoscaling/)** | 複数          | 自動構築<br>（スタック）                   | 有り           | オンデマンド            | **Enroot**                                                           | **Oracle Linux** 7.9/8 |
-| **[GPUクラスタを構築する<br>(Ubuntu OS編)](/hpc/spinup-gpu-cluster-withubuntu/)**           | 複数          | 手動構築                             | 無し           | スタティック            | -                                                                    | **Ubuntu** 20.04       |
+| **[GPUインスタンスで<br>機械学習にトライ](spinup-ml-instance/)**                            | 単一          | 手動構築                             | 無し           | スタティック            | **Docker CE**                                                        | **Oracle Linux** 7.9/8 |
+| **[GPUインスタンスで<br>分散機械学習環境を構築する](spinup-ml-instance-cntnd/)**                 | 単一          | 手動構築                             | 無し           | スタティック            | **containerd** | **Oracle Linux** 8     |
+| **[GPUクラスタを構築する<br>(基礎インフラ手動構築編)](spinup-gpu-cluster/)**                     | 複数          | 手動構築                             | 無し           | スタティック            | **Docker CE**                                                        | **Oracle Linux** 7.9/8 |
+| **[GPUクラスタを構築する<br>(基礎インフラ自動構築編)](spinup-gpu-cluster-withterraform/)**       | 複数          | 自動構築<br>（Terraform CLI<br>/スタック） | 無し           | スタティック            | **Docker CE**                                                        | **Oracle Linux** 7.9/8 |
+| **[GPUクラスタを構築する<br>(スタティッククラスタ自動構築編)](spinup-gpu-cluster-withstack/)**       | 複数          | 自動構築<br>（スタック）                   | 有り           | スタティック            | **Enroot**                                                           | **Oracle Linux** 7.9/8 |
+| **[GPUクラスタを構築する<br>(オンデマンドクラスタ自動構築編)](spinup-gpu-cluster-withautoscaling/)** | 複数          | 自動構築<br>（スタック）                   | 有り           | オンデマンド            | **Enroot**                                                           | **Oracle Linux** 7.9/8 |
+| **[GPUクラスタを構築する<br>(Ubuntu OS編)](spinup-gpu-cluster-withubuntu/)**           | 複数          | 手動構築                             | 無し           | スタティック            | -                                                                    | **Ubuntu** 20.04       |
 
 ## 1-3. ファイル共有ストレージ
 
@@ -158,28 +158,28 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 
 | 構築手法の呼称                      | チュートリアル名                                                                                              | 保存対象データ<br>（※7） | ターゲット<br>スループットレンジ | 利用可能な<br>バックアップ手法                                                              |
 | :--------------------------: | :---------------------------------------------------------------------------------------------------: | :-------------: | :----------------: | :----------------------------------------------------------------------------: |
-| 標準FSS                        | **[ファイル・ストレージで<br>ファイル共有ストレージを<br>構築する](/hpc/spinup-nfs-server-fss/)**                   | 長期保存データ         | 120 MiB/s（※8）      | **ファイル・ストレージ** が<br>提供するバックアップ機能<br>（※11）                                      |
-| 高性能FSS                       | **[ファイル・ストレージで<br>ファイル共有ストレージを<br>構築する](/hpc/spinup-nfs-server-fss/)**                   | 長期保存データ         | 10 GiB/s（※8）       | **ファイル・ストレージ** が<br>提供するバックアップ機能<br>（※11）                                      |
-| **File Storage with Lustre** | **[File Storage with Lustre<br>でファイル共有ストレージ<br>を構築する](/hpc/spinup-lustre-server-fswl/)** | 長期保存データ         | 3.9 - 25 GB/s（※9）  | -<br>（※12）                                                                          |
-| 標準ブロック・ボリューム<br>NFSサーバ         | **[ブロック・ボリュームで<br>ファイル共有ストレージを<br>構築する<br>（BM.Optimized3.36編）](/hpc/spinup-nfs-server/)**                       | 中期保存データ         | 5 GiB/s（※10）       | **[Rclone](https://rclone.org/)** を使用した<br> **オブジェクト・ストレージ** への<br>バックアップ（※13） |
-| 高性能ブロック・ボリューム<br>NFSサーバ         | **[ブロック・ボリュームで<br>ファイル共有ストレージを<br>構築する<br>（BM.Standard.E6.256編）](/hpc/spinup-nfs-server-e6/)**                       | 中期保存データ         | 10 GiB/s（※10）       | **[Rclone](https://rclone.org/)** を使用した<br> **オブジェクト・ストレージ** への<br>バックアップ（※13） |
-| DenceIO<br>NFSサーバ            | **[短期保存データ用<br>高速ファイル共有ストレージ<br>を構築する](/hpc/spinup-nfs-server-nvme/)**                   | 短期保存データ         | 10 GiB/s（※10）      | **[Rclone](https://rclone.org/)** を使用した<br> **オブジェクト・ストレージ** への<br>バックアップ（※13） |
+| 標準FSS                        | **[ファイル・ストレージで<br>ファイル共有ストレージを<br>構築する](spinup-nfs-server-fss/)**                   | 長期保存データ         | 120 MiB/s（※8）      | **ファイル・ストレージ** が<br>提供するバックアップ機能<br>（※11）                                      |
+| 高性能FSS                       | **[ファイル・ストレージで<br>ファイル共有ストレージを<br>構築する](spinup-nfs-server-fss/)**                   | 長期保存データ         | 10 GiB/s（※8）       | **ファイル・ストレージ** が<br>提供するバックアップ機能<br>（※11）                                      |
+| **File Storage with Lustre** | **[File Storage with Lustre<br>でファイル共有ストレージ<br>を構築する](spinup-lustre-server-fswl/)** | 長期保存データ         | 3.9 - 25 GB/s（※9）  | -<br>（※12）                                                                          |
+| 標準ブロック・ボリューム<br>NFSサーバ         | **[ブロック・ボリュームで<br>ファイル共有ストレージを<br>構築する<br>（BM.Optimized3.36編）](spinup-nfs-server/)**                       | 中期保存データ         | 5 GiB/s（※10）       | **[Rclone](https://rclone.org/)** を使用した<br> **オブジェクト・ストレージ** への<br>バックアップ（※13） |
+| 高性能ブロック・ボリューム<br>NFSサーバ         | **[ブロック・ボリュームで<br>ファイル共有ストレージを<br>構築する<br>（BM.Standard.E6.256編）](spinup-nfs-server-e6/)**                       | 中期保存データ         | 10 GiB/s（※10）       | **[Rclone](https://rclone.org/)** を使用した<br> **オブジェクト・ストレージ** への<br>バックアップ（※13） |
+| DenceIO<br>NFSサーバ            | **[短期保存データ用<br>高速ファイル共有ストレージ<br>を構築する](spinup-nfs-server-nvme/)**                   | 短期保存データ         | 10 GiB/s（※10）      | **[Rclone](https://rclone.org/)** を使用した<br> **オブジェクト・ストレージ** への<br>バックアップ（※13） |
 
 ※7）対象の構築手法が提供するデータ可用性レベルに応じて分類しています。（データ可用性が低いほど短期保存データ用ファイル共有ストレージに分類）  
 ※8）**マウント・ターゲット** の最大スループット値を元に記載しています。  
 ※9）使用する **パフォーマンス層** （MB/s/TB）と **容量** （TB）を掛け合わせて計算した値で、最大値は **テナンシ** 当たり・ **可用性ドメイン** 当たりの **サービス制限** で決定されています。この **サービス制限** に関連する **OCI** 公式ドキュメントは、 **[ここ](https://docs.oracle.com/ja-jp/iaas/Content/General/Concepts/servicelimits.htm#File_Storage_w_Lustre_Limits)** を参照してください。  
-※10）**IOR** の測定値を元に記載しています。詳細な測定値は、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[HPC/GPUクラスタ向けファイル共有ストレージの最適な構築手法](/hpc/tech-knowhow/howto-configure-sharedstorage/)** の **[2-1. コストパフォーマンスによる比較](/hpc/tech-knowhow/howto-configure-sharedstorage/#2-1-コストパフォーマンスによる比較)** を参照してください。  
+※10）**IOR** の測定値を元に記載しています。詳細な測定値は、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[HPC/GPUクラスタ向けファイル共有ストレージの最適な構築手法](tech-knowhow/howto-configure-sharedstorage/)** の **[2-1. コストパフォーマンスによる比較](tech-knowhow/howto-configure-sharedstorage/#2-1-コストパフォーマンスによる比較)** を参照してください。  
 ※11）スナップショット、クローン、及びレプリケーションが用意されています。これらサービスの詳細は、 **OCI** 公式ドキュメントの **[ここ](https://docs.oracle.com/ja-jp/iaas/Content/File/home.htm)** を参照ください。  
 ※12）**オブジェクト・ストレージ** へのバックアップ機能が今後リリースされる予定です。（2025年4月現在）  
-※13）このバックアップ環境は、チュートリアル **[ベア・メタル・インスタンスNFSサーバ向けバックアップサーバを構築する](/hpc/spinup-backup-server)** に従って構築することが出来ます。
+※13）このバックアップ環境は、チュートリアル **[ベア・メタル・インスタンスNFSサーバ向けバックアップサーバを構築する](spinup-backup-server)** に従って構築することが出来ます。
 
-どのファイル共有ストレージ構築手法を選択するかは、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[HPC/GPUクラスタ向けファイル共有ストレージの最適な構築手法](/hpc/tech-knowhow/howto-configure-sharedstorage/)** を参照してください。
+どのファイル共有ストレージ構築手法を選択するかは、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[HPC/GPUクラスタ向けファイル共有ストレージの最適な構築手法](tech-knowhow/howto-configure-sharedstorage/)** を参照してください。
 
 ## 1-3-2. バックアップ
 
-ファイル共有ストレージのバックアップは、チュートリアル **[ベア・メタル・インスタンスNFSサーバ向けバックアップサーバを構築する](/hpc/spinup-backup-server)** に従って構築するバックアップサーバで、容量単価の安価な **オブジェクト・ストレージ** や **ブロック・ボリューム** の **より低いコスト** にバックアップすることが可能です。
+ファイル共有ストレージのバックアップは、チュートリアル **[ベア・メタル・インスタンスNFSサーバ向けバックアップサーバを構築する](spinup-backup-server)** に従って構築するバックアップサーバで、容量単価の安価な **オブジェクト・ストレージ** や **ブロック・ボリューム** の **より低いコスト** にバックアップすることが可能です。
 
-ファイル共有ストレージのバックアップを念頭に置いたバックアップ環境構築手法の比較は、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[ファイル共有ストレージ向けバックアップ環境の最適な構築手法](/hpc/tech-knowhow/howto-choose-osbackuptool/)** を参照してください。
+ファイル共有ストレージのバックアップを念頭に置いたバックアップ環境構築手法の比較は、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[ファイル共有ストレージ向けバックアップ環境の最適な構築手法](tech-knowhow/howto-choose-osbackuptool/)** を参照してください。
 
 ## 1-4. チュートリアルを組み合わせた実践的HPCシステム構築
 
@@ -187,8 +187,8 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 
 | No. | チュートリアル名                                                                                          | 組み合わせるチュートリアル                                                                                                                                                                                                                                                                                                                                                                                                                                                                | 構築するシステム概要                                                              |
 | :-: | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| 1   | **[ブロック・ボリュームNFSサーバと<br>基礎インフラ編HPC/GPUクラスタを<br>組み合わせる](/hpc/cluster-with-bv-base/)** | **[ブロック・ボリュームで<br>NFSサーバを構築する](/hpc/spinup-nfs-server/)**<br><br>**[HPCクラスタを構築する<br>(基礎インフラ手動構築編)](/hpc/spinup-cluster-network/)**<br>or<br>**[GPUクラスタを構築する<br>(基礎インフラ手動構築編)](/hpc/spinup-gpu-cluster/)**                                                                                                                                                                                                                             | 基礎インフラ編のHPC/GPUクラスタの<br>ファイル共有ストレージを<br> **ブロック・ボリューム** NFSサーバで<br>サービス |
-| 2   | **[ブロック・ボリュームNFSサーバと<br>自動構築編HPC/GPUクラスタを<br>組み合わせる](/hpc/cluster-with-bv-stack/)**  | **[ブロック・ボリュームで<br>NFSサーバを構築する](/hpc/spinup-nfs-server/)**<br><br>**[HPCクラスタを構築する<br>(スタティッククラスタ自動構築編)](/hpc/spinup-hpc-cluster)**<br>or<br>**[HPCクラスタを構築する<br>(オンデマンドクラスタ自動構築編)](/hpc/spinup-hpc-cluster-withautoscaling)**<br>or<br>**[GPUクラスタを構築する<br>(スタティッククラスタ自動構築編)](/hpc/spinup-gpu-cluster-withstack/)**<br>or<br>**[GPUクラスタを構築する<br>(オンデマンドクラスタ自動構築編)](/hpc/spinup-gpu-cluster-withautoscaling/)** | 自動構築編のHPC/GPUクラスタの<br>ファイル共有ストレージを<br> **ブロック・ボリューム** NFSサーバで<br>サービス   |
+| 1   | **[ブロック・ボリュームNFSサーバと<br>基礎インフラ編HPC/GPUクラスタを<br>組み合わせる](cluster-with-bv-base/)** | **[ブロック・ボリュームで<br>NFSサーバを構築する](spinup-nfs-server/)**<br><br>**[HPCクラスタを構築する<br>(基礎インフラ手動構築編)](spinup-cluster-network/)**<br>or<br>**[GPUクラスタを構築する<br>(基礎インフラ手動構築編)](spinup-gpu-cluster/)**                                                                                                                                                                                                                             | 基礎インフラ編のHPC/GPUクラスタの<br>ファイル共有ストレージを<br> **ブロック・ボリューム** NFSサーバで<br>サービス |
+| 2   | **[ブロック・ボリュームNFSサーバと<br>自動構築編HPC/GPUクラスタを<br>組み合わせる](cluster-with-bv-stack/)**  | **[ブロック・ボリュームで<br>NFSサーバを構築する](spinup-nfs-server/)**<br><br>**[HPCクラスタを構築する<br>(スタティッククラスタ自動構築編)](spinup-hpc-cluster)**<br>or<br>**[HPCクラスタを構築する<br>(オンデマンドクラスタ自動構築編)](spinup-hpc-cluster-withautoscaling)**<br>or<br>**[GPUクラスタを構築する<br>(スタティッククラスタ自動構築編)](spinup-gpu-cluster-withstack/)**<br>or<br>**[GPUクラスタを構築する<br>(オンデマンドクラスタ自動構築編)](spinup-gpu-cluster-withautoscaling/)** | 自動構築編のHPC/GPUクラスタの<br>ファイル共有ストレージを<br> **ブロック・ボリューム** NFSサーバで<br>サービス   |
 
 下表は、各チュートリアルで構築するシステム仕様を示します。
 
@@ -234,73 +234,73 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 
 | 名称                      | ベンチマークサイトURL                                                                                               | 対象シェイプ                                                                                                                                  |
 | :---------------------: | :--------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: |
-| **HPL**                 | **[Link](https://www.netlib.org/benchmark/hpl/)**                                                          | **[BM.Optimized3.36](/hpc/benchmark/run-hpl/)**<br>**[BM.Standard.E5.192](/hpc/benchmark/run-hpl-e5/)**<br>**[BM.Standard.E6.256](/hpc/benchmark/run-hpl-e6/)**       |
-| **STREAM**              | **[Link](https://www.cs.virginia.edu/stream/)**                                                            | **[BM.Optimized3.36](/hpc/benchmark/run-stream/)**<br>**[BM.Standard.E5.192](/hpc/benchmark/run-stream-e5/)**<br>**[BM.Standard.E6.256](/hpc/benchmark/run-stream-e6/)** |
-| **Intel MPI Benchmarks** | **[Link](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-mpi-benchmarks.html)** | **[BM.Optimized3.36](/hpc/benchmark/run-imb/)**                                                                            |
-| **NCCL Tests**          | **[Link](https://github.com/NVIDIA/nccl-tests)**                                                           | **[BM.GPU.A100-v2.8/BM.GPU4.8](/hpc/benchmark/run-nccltests/)**<br>**[BM.GPU.H100.8](/hpc/benchmark/run-nccltests-h100/)**                                                 |
+| **HPL**                 | **[Link](https://www.netlib.org/benchmark/hpl/)**                                                          | **[BM.Optimized3.36](benchmark/run-hpl/)**<br>**[BM.Standard.E5.192](benchmark/run-hpl-e5/)**<br>**[BM.Standard.E6.256](benchmark/run-hpl-e6/)**       |
+| **STREAM**              | **[Link](https://www.cs.virginia.edu/stream/)**                                                            | **[BM.Optimized3.36](benchmark/run-stream/)**<br>**[BM.Standard.E5.192](benchmark/run-stream-e5/)**<br>**[BM.Standard.E6.256](benchmark/run-stream-e6/)** |
+| **Intel MPI Benchmarks** | **[Link](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-mpi-benchmarks.html)** | **[BM.Optimized3.36](benchmark/run-imb/)**                                                                            |
+| **NCCL Tests**          | **[Link](https://github.com/NVIDIA/nccl-tests)**                                                           | **[BM.GPU.A100-v2.8/BM.GPU4.8](benchmark/run-nccltests/)**<br>**[BM.GPU.H100.8](benchmark/run-nccltests-h100/)**                                                 |
 
 ## 2-2. パフォーマンス関連Tips集
 
 本章は、HPC/機械学習ワークロードの実行時パフォーマンスに関連する、パフォーマンス関連Tipsを提供します。
 
-- **[パフォーマンスに関連するベアメタルインスタンスのBIOS設定方法](/hpc/benchmark/bios-setting/)**
+- **[パフォーマンスに関連するベアメタルインスタンスのBIOS設定方法](benchmark/bios-setting/)**
 
     ベアメタルインスタンスは、作成する際にBIOSの設定を指定することが可能です。  
     これらの設定は、 **NPS** （NUMA nodes per socket）や **SMT** （Simultanious Multi Threading）といった、当該インスタンスの性能に影響するものが少なくありません。  
     本パフォーマンス関連Tipsは、これらのBIOS設定を指定してHPC/GPUクラスタを構築する方法を解説します。
 
-- **[不要サービス停止によるパフォーマンスチューニング方法](/hpc/benchmark/stop-unused-service/)**
+- **[不要サービス停止によるパフォーマンスチューニング方法](benchmark/stop-unused-service/)**
 
     計算リソースを極限まで使用するHPCワークロードの実行は、些細な計算リソースを使用するOS常駐サービスがその性能に影響することがあります。  
     特に高並列実行時は、HPCクラスタ内の1ノードでこのようなサービスが稼働していることで、そのスケーラビリティに影響を及ぼします。  
     本パフォーマンス関連Tipsは、OS標準で稼働している常駐サービスの中でリソースを多く消費しているものを特定しこれを停止することで、OSレベルのパフォーマンスチューニングを実施する方法を解説します。
 
-- **[クラスタ・ネットワークのトポロジーを考慮したノード間通信最適化方法](/hpc/benchmark/topology-aware-cn-tuning/)**
+- **[クラスタ・ネットワークのトポロジーを考慮したノード間通信最適化方法](benchmark/topology-aware-cn-tuning/)**
 
     **[クラスタ・ネットワーク](#5-1-クラスタネットワーク)** は、業界標準のRoCEv2を採用する高帯域・低遅延のRDMA対応インターコネクトネットワークサービスで、そのトポロジーがFat treeのため同一リーフスイッチに接続するノード間とスパインスイッチを介して異なるリーフスイッチに接続するノード間で、ノード間通信のレイテンシが大きく異なります。このため、この特性を意識して適切な計算/GPUノードにジョブを配置することで、レイテンシに影響を受け易いワークロードの性能や高並列実行時のスケーラビリティを改善できる場合があります。  
     本パフォーマンス関連Tipsは、この **クラスタ・ネットワーク** のレイテンシ特性を生かしてマルチノードジョブをクラスタ内に配置することで、ノード間通信性能を最適化する方法を解説します。
 
-- **[CFD解析フローのコストパフォーマンを向上させるOpenFOAM関連Tips](/hpc/benchmark/openfoam-tuning/)**
+- **[CFD解析フローのコストパフォーマンを向上させるOpenFOAM関連Tips](benchmark/openfoam-tuning/)**
 
     **[OpenFOAM](https://www.openfoam.com/)** は、CAE分野で多くの利用実績を持つオープンソースのCFDアプリケーションで、計算時に多くのメモリ帯域を使用したり実行中に多くのデータをファイルシステムに書き出したりする特性があるため、これらを考慮した実行方法を採用することでその性能を大きく向上させることが可能です。  
     本パフォーマンス関連Tipsは、HPCワークロードの実行に最適なベアメタルインスタンス **[BM.Optimized3.36](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-hpc-optimized)** を **[クラスタ・ネットワーク](#5-1-クラスタネットワーク)** でノード間接続するHPCクラスタで **OpenFOAM** を使用する際、CFD解析フローをコストパフォーマンス良く実行するという観点で有益なTipsを解説します。
 
-- **[OpenMPIのMPI通信性能に影響するパラメータとその関連Tips](/hpc/benchmark/openmpi-perftips/)**
+- **[OpenMPIのMPI通信性能に影響するパラメータとその関連Tips](benchmark/openmpi-perftips/)**
 
     **[OpenMPI](https://www.open-mpi.org/)** は、最新のMPI言語規格に準拠し、HPC/機械学習ワークロード実行に必要とされる様々な機能を備えたオープンソースのMPI実装です。  
     **OpenMPI** は、 **[Modular Component Architecture (MCA)](https://docs.open-mpi.org/en/v5.0.x/mca.html)** を採用し、ビルド時に組み込むコンポーネントを介して多彩な機能を提供する設計となっており、この **MCA** が用意する多数のパラメータを制御することで、MPI通信性能を最適化することが可能です。  
     また **OpenMPI** は、 **[クラスタ・ネットワーク](#5-1-クラスタネットワーク)** を介して高帯域・低遅延のMPIプロセス間通信を実現するための通信フレームワークに **[UCX](https://openucx.org/)** を採用し、MPI通信性能を最適化するためには **UCX** のパラメータを適切に設定することが求められます。  
     本パフォーマンス関連Tipsは、 **OpenMPI** のMPI通信性能に影響するパラメーターやその指定方法に関する有益なTipsを解説します。
 
-- **[パフォーマンスを考慮したプロセス・スレッドのコア割当て指定方法（BM.Optimized3.36編）](/hpc/benchmark/cpu-binding/)**
+- **[パフォーマンスを考慮したプロセス・スレッドのコア割当て指定方法（BM.Optimized3.36編）](benchmark/cpu-binding/)**
 
     NUMAアーキテクチャを採用するインスタンスに於けるMPIやOpenMPの並列プログラム実行は、生成されるプロセスやスレッドをどのようにインスタンスのコアに割当てるかでその性能が大きく変動するため、その配置を意識してアプリケーションを実行することが求められます。  
     このため、使用するシェイプに搭載されるプロセッサのアーキテクチャやアプリケーションの特性に合わせて意図したとおりにプロセスやスレッドをコアに配置するために必要な、MPI実装、OpenMP実装、及びジョブスケジューラがそれぞれ有するコア割当て制御機能に精通している必要があります。  
     本パフォーマンス関連Tipsは、 **MPI** 実装に **[OpenMPI](https://www.open-mpi.org/)** 、 **OpenMP** 実装にGNUコンパイラ、及びジョブスケジューラに **[Slurm](https://slurm.schedmd.com/)** を取り上げ、 **[クラスタ・ネットワーク](#5-1-クラスタネットワーク)** 対応のHPCワークロード向けベア・メタル・シェイプ **[BM.Optimized3.36](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-hpc-optimized)** でこれらのコア割当て機能を駆使してMPIプロセスやOpenMPスレッドのコア割当てを行う方法を解説します。
 
-- **[パフォーマンスを考慮したプロセス・スレッドのコア割当て指定方法（BM.Standard.E5.192編）](/hpc/benchmark/cpu-binding-e5/)**
+- **[パフォーマンスを考慮したプロセス・スレッドのコア割当て指定方法（BM.Standard.E5.192編）](benchmark/cpu-binding-e5/)**
 
     NUMAアーキテクチャを採用するインスタンスに於けるMPIやOpenMPの並列プログラム実行は、生成されるプロセスやスレッドをどのようにインスタンスのコアに割当てるかでその性能が大きく変動するため、その配置を意識してアプリケーションを実行することが求められます。  
     このため、使用するシェイプに搭載されるプロセッサのアーキテクチャやアプリケーションの特性に合わせて意図したとおりにプロセスやスレッドをコアに配置するために必要な、MPI実装、OpenMP実装、及びジョブスケジューラがそれぞれ有するコア割当て制御機能に精通している必要があります。  
     本パフォーマンス関連Tipsは、 **MPI** 実装に **[OpenMPI](https://www.open-mpi.org/)** 、 **OpenMP** 実装にGNUコンパイラ、及びジョブスケジューラに **[Slurm](https://slurm.schedmd.com/)** を取り上げ、第4世代 **AMD EPYC** プロセッサを搭載するベア・メタル・シェイプ **[BM.Standard.E5.192](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-standard)** でこれらのコア割当て機能を駆使してMPIプロセスやOpenMPスレッドのコア割当てを行う方法を解説します。
 
-- **[パフォーマンスを考慮したプロセス・スレッドのコア割当て指定方法（BM.Standard.E6.256編）](/hpc/benchmark/cpu-binding-e6/)**
+- **[パフォーマンスを考慮したプロセス・スレッドのコア割当て指定方法（BM.Standard.E6.256編）](benchmark/cpu-binding-e6/)**
 
     NUMAアーキテクチャを採用するインスタンスに於けるMPIやOpenMPの並列プログラム実行は、生成されるプロセスやスレッドをどのようにインスタンスのコアに割当てるかでその性能が大きく変動するため、その配置を意識してアプリケーションを実行することが求められます。  
     このため、使用するシェイプに搭載されるプロセッサのアーキテクチャやアプリケーションの特性に合わせて意図したとおりにプロセスやスレッドをコアに配置するために必要な、MPI実装、OpenMP実装、及びジョブスケジューラがそれぞれ有するコア割当て制御機能に精通している必要があります。  
     本パフォーマンス関連Tipsは、 **MPI** 実装に **[OpenMPI](https://www.open-mpi.org/)** 、 **OpenMP** 実装にGNUコンパイラ、及びジョブスケジューラに **[Slurm](https://slurm.schedmd.com/)** を取り上げ、第5世代 **AMD EPYC** プロセッサを搭載するベア・メタル・シェイプ **[BM.Standard.E6.256](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-standard)** でこれらのコア割当て機能を駆使してMPIプロセスやOpenMPスレッドのコア割当てを行う方法を解説します。
 
-- **[OpenMPIのMPI集合通信チューニング方法（BM.Optimized3.36編）](/hpc/benchmark/openmpi-perftune/)**
+- **[OpenMPIのMPI集合通信チューニング方法（BM.Optimized3.36編）](benchmark/openmpi-perftune/)**
 
     MPI並列アプリケーションは、MPI通信時間がボトルネックになっている場合そのMPI通信をチューニングすることで性能が向上しますが、ボトルネックのMPI通信が集合通信の場合は、使用する通信アルゴリズムやその切り替えメッセージサイズ等の実行時パラメータ、MPIプロセス分割方法や **NUMA nodes per socket** 等のアプリケーション実行環境まで、様々な要因がその性能に影響します。  
     本パフォーマンス関連Tipsは、MPIの実装に **[OpenMPI](https://www.open-mpi.org/)** を取り上げ、これが採用する **[Modular Component Architecture](https://docs.open-mpi.org/en/v5.0.x/mca.html)** や **[UCX](https://openucx.org/)** の実行時パラメーター、MPIプロセス分割方法や **NUMA nodes per socket** を組合せて、HPCワークロード向けベア・メタル・シェイプ **BM.Optimized3.36** でMPI集合通信をチューニングする方法を解説します。
 
-- **[OpenMPIのMPI集合通信チューニング方法（BM.Standard.E5.192編）](/hpc/benchmark/openmpi-perftune-e5/)**
+- **[OpenMPIのMPI集合通信チューニング方法（BM.Standard.E5.192編）](benchmark/openmpi-perftune-e5/)**
 
     MPI並列アプリケーションは、MPI通信時間がボトルネックになっている場合そのMPI通信をチューニングすることで性能が向上しますが、ボトルネックのMPI通信が集合通信の場合は、使用する通信アルゴリズムやその切り替えメッセージサイズ等の実行時パラメータ、MPIプロセス分割方法や **NUMA nodes per socket** 等のアプリケーション実行環境まで、様々な要因がその性能に影響します。  
     本パフォーマンス関連Tipsは、MPIの実装に **[OpenMPI](https://www.open-mpi.org/)** を取り上げ、これが採用する **[Modular Component Architecture](https://docs.open-mpi.org/en/v5.0.x/mca.html)** や **[UCX](https://openucx.org/)** の実行時パラメーター、MPIプロセス分割方法や **NUMA nodes per socket** を組合せて、第4世代 **AMD EPYC** プロセッサを搭載するベア・メタル・シェイプ **[BM.Standard.E5.192](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-standard)** でMPI集合通信をチューニングする方法を解説します。
 
-- **[OpenMPIのMPI集合通信チューニング方法（BM.Standard.E6.256編）](/hpc/benchmark/openmpi-perftune-e6/)**
+- **[OpenMPIのMPI集合通信チューニング方法（BM.Standard.E6.256編）](benchmark/openmpi-perftune-e6/)**
 
     MPI並列アプリケーションは、MPI通信時間がボトルネックになっている場合そのMPI通信をチューニングすることで性能が向上しますが、ボトルネックのMPI通信が集合通信の場合は、使用する通信アルゴリズムやその切り替えメッセージサイズ等の実行時パラメータ、MPIプロセス分割方法や **NUMA nodes per socket** 等のアプリケーション実行環境まで、様々な要因がその性能に影響します。  
     本パフォーマンス関連Tipsは、MPIの実装に **[OpenMPI](https://www.open-mpi.org/)** を取り上げ、これが採用する **[Modular Component Architecture](https://docs.open-mpi.org/en/v5.0.x/mca.html)** や **[UCX](https://openucx.org/)** の実行時パラメーター、MPIプロセス分割方法や **NUMA nodes per socket** を組合せて、第5世代 **AMD EPYC** プロセッサを搭載するベア・メタル・シェイプ **[BM.Standard.E6.256](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-standard)** でMPI集合通信をチューニングする方法を解説します。
@@ -309,13 +309,13 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 
 本章は、HPCアプリケーションのパフォーマンス解析やチューニングに必要な情報を収集する、プロファイリング関連Tips集を提供します。
 
-- **[PAPIでHPCアプリケーションをプロファイリング](/hpc/benchmark/papi-profiling/)**
+- **[PAPIでHPCアプリケーションをプロファイリング](benchmark/papi-profiling/)**
 
     HPCワークロードの実行に最適なベアメタル・インスタンスでアプリケーションを実行する場合、高価な計算資源を有効活用出来ているかを検証するため、アプリケーションのプロファイリングを実施することが一般的です。  
     **[PAPI](https://icl.utk.edu/papi/)** は、HPCワークロード向け **ベアメタル・シェイプ** に採用されている **Intel Ice Lake** や **AMD EPYC 9004シリーズ** のCPUが持つハードウェアカウンタから浮動小数点演算数やキャッシュヒット数といったプロファイリングに有益な情報を取得するAPIを提供し、HPCアプリケーションのプロファイリングに欠かせないツールとなっています。  
     本プロファイリング関連Tipsは、 **ベアメタル・インスタンス** 上で実行するHPCアプリケーションを **PAPI** を使ってプロファイリングする方法を解説します。
 
-- **[Score-P・Scalasca・CubeGUIで並列アプリケーションをプロファイリング](/hpc/benchmark/scorep-profiling/)**
+- **[Score-P・Scalasca・CubeGUIで並列アプリケーションをプロファイリング](benchmark/scorep-profiling/)**
 
     並列アプリケーションは、ロードバランス不均衡やプロセス間通信の影響等で並列実行数の増加と共にスケーラビリティの低下が発生しますが、HPCワークロードの実行に最適なベアメタル・インスタンスでアプリケーションを高並列実行する場合、高価な計算資源を有効活用する観点から、スケーラビリティ低下の原因を調査しチューニングでスケーラビリティーを改善する開発プロセスを踏んだり、最も効率的な並列実行数を見極める必要があり、これらの判断に必要な情報を得るためにアプリケーションをプロファイリングすることが重要です。  
     本プロファイリング関連Tipsは、 **ベアメタル・インスタンス** 上で実行するOpenMPやMPIでコーディングされた並列プログラムをオープンソースの **[Score-P](https://www.vi-hps.org/projects/score-p/)** 、 **[Scalasca](https://www.scalasca.org/)** 、及び **[CubeGUI](https://www.scalasca.org/scalasca/software/cube-4.x/download.html)** を駆使してプロファイリングし、並列アプリケーションを効果的に実行するための有益な情報を取得する方法を解説します。
@@ -355,27 +355,27 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 
 ## 3-1. クラスタ・ネットワーク
 
-- **[クラスタネットワーキングイメージを使ったクラスタ・ネットワーク接続方法](/hpc/tech-knowhow/howto-connect-clusternetwork/)**
+- **[クラスタネットワーキングイメージを使ったクラスタ・ネットワーク接続方法](tech-knowhow/howto-connect-clusternetwork/)**
 
     **[クラスタ・ネットワーク](#5-1-クラスタネットワーク)** 対応シェイプを使用して **クラスター・ネットワーク** に接続するするインスタンスは、作成時のイメージに **Oracle Linux** をベースOSとする **[クラスタネットワーキングイメージ](#5-13-クラスタネットワーキングイメージ)** を使用することで、 **クラスタ・ネットワーク** 接続に必要なソフトウェアのインストールやセットアップ等の作業を大幅に簡素化することが可能です。  
     本テクニカルTipsは、この **クラスタ・ネットワーキングイメージ** を使用してインスタンスを **クラスタ・ネットワーク** に接続する方法を解説します。
 
-- **[クラスタネットワーキングイメージの選び方](/hpc/tech-knowhow/osimage-for-cluster/)**
+- **[クラスタネットワーキングイメージの選び方](tech-knowhow/osimage-for-cluster/)**
 
     **クラスタ・ネットワーク** を使用するインスタンスは、接続に必要なソフトウェアがインストールされている必要がありますが、これらを含んだOSイメージである **[クラスタネットワーキングイメージ](#5-13-クラスタネットワーキングイメージ)** が **[マーケットプレース](#5-5-マーケットプレイス)** から提供されています。  
     本テクニカルTipsは、この **クラスタネットワーキングイメージ** の適切な選び方を解説します。
 
-- **[クラスタ・ネットワーク未対応OSを使ったクラスタ・ネットワーク接続方法](/hpc/tech-knowhow/howto-create-cnenabled-osimage/)**
+- **[クラスタ・ネットワーク未対応OSを使ったクラスタ・ネットワーク接続方法](tech-knowhow/howto-create-cnenabled-osimage/)**
 
     **クラスタ・ネットワーク** に接続するインスタンスは、接続に必要なソフトウェアがインストールされている必要があり、これらを含んだ **[クラスタネットワーキングイメージ](#5-13-クラスタネットワーキングイメージ)** が **[マーケットプレース](#5-5-マーケットプレイス)** から提供されていますが、これらのベースとなるOSは、 **Oracle Linux** のみです。  
     本テクニカルTipsは、 **クラスタ・ネットワーク** 対応シェイプの **[BM.Optimized3.36](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-hpc-optimized)** や **[BM.GPU4.8/BM.GPU.A100-v2.8](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-gpu)** を使用するインスタンスを **Oracle Linux** 以外のOSで **クラスタ・ネットワーク** に接続する方法を解説します。
 
-- **[クラスタ・ネットワークに接続する計算/GPUノード作成時の問題判別方法](/hpc/tech-knowhow/determine-cnrelated-issue/)**
+- **[クラスタ・ネットワークに接続する計算/GPUノード作成時の問題判別方法](tech-knowhow/determine-cnrelated-issue/)**
 
     **クラスタ・ネットワーク** に接続する計算/GPUノードの作成は、接続する **クラスタ・ネットワーク** の論理的なパーティション内で利用可能なインスタンスが不足していると、これに失敗します。  
     本テクニカルTipsは、このようなケースで発生する問題を特定する方法を解説します。
 
-- **[クラスタ・ネットワーク統計情報の取得方法](/hpc/tech-knowhow/howto-get-cnrelated-statistics/)**
+- **[クラスタ・ネットワーク統計情報の取得方法](tech-knowhow/howto-get-cnrelated-statistics/)**
 
     複数ノードに跨るHPC/機械学習ワークロードを実行するHPC/GPUクラスタは、ノード間通信に使用する **クラスタ・ネットワーク** が想定通りに使用されて初めてその性能を発揮することが出来ます。  
     ここで、インスタンスを **クラスタ・ネットワーク** に接続するNIC（ **NVIDIA Mellanox ConnectX** ）は、これを介して通信する際の様々な統計情報を記録するハードウェアカウンタを備えており、インスタンスのOS上でこれらを取得することが可能です。  
@@ -383,72 +383,72 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 
 ## 3-2. ストレージ
 
-- **[ベアメタルインスタンスのNVMe SSDローカルディスク領域ファイルシステム作成方法](/hpc/tech-knowhow/nvme-filesystem/)**
+- **[ベアメタルインスタンスのNVMe SSDローカルディスク領域ファイルシステム作成方法](tech-knowhow/nvme-filesystem/)**
 
     高速スクラッチ領域として利用することを想定したNVMe SSDローカルディスクを内蔵するHPCクラスタ向けベアメタルシェイプ **[BM.Optimized3.36](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-hpc-optimized)** やGPUクラスタ向けベアメタルシェイプ **[BM.GPU4.8/BM.GPU.A100-v2.8/BM.GPU.H100.8](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-gpu)** は、NVMe SSDローカルディスクをOSのファイルシステムとして利用するための設定をユーザ自身が行う必要があります。  
     本テクニカルTipsは、このファイルシステム作成方法を解説します。
 
-- **[HPC/GPUクラスタ向けファイル共有ストレージの最適な構築手法](/hpc/tech-knowhow/howto-configure-sharedstorage/)**
+- **[HPC/GPUクラスタ向けファイル共有ストレージの最適な構築手法](tech-knowhow/howto-configure-sharedstorage/)**
 
     HPC/GPUクラスタを運用する際必須となるファイル共有ストレージは、その選択肢にマネージドサービスを使用する方法と、高帯域のネットワークポートを持つベア・メタル・インスタンスとストレージサービスで構築する方法があります。  
     本テクニカルTipsは、コストパフォーマンス、可用性、構築・運用のしやすさ、最大性能等を考慮し、自身の要件に沿った最適なファイル共有ストレージ構築手法を選定する方法を解説します。
 
-- **[ブロック・ボリュームを使用するNFSサーバのインスタンス障害からの復旧方法](/hpc/tech-knowhow/bv-sharedstorage-recovery/)**
+- **[ブロック・ボリュームを使用するNFSサーバのインスタンス障害からの復旧方法](tech-knowhow/bv-sharedstorage-recovery/)**
 
     **ブロック・ボリューム** とベアメタルインスタンスを組み合わせたNFSサーバは、HPC/GPUクラスタで必須となるファイル共有ストレージをコストパフォーマンス良く運用するためには最適なソリューションですが、NFSサーバとなるベアメタルインスタンスに障害が発生し起動できなくなった場合、どのようにデータ領域を復旧すればよいでしょうか。  
     本テクニカルTipsは、このシナリオで発生する障害の復旧方法を解説します。
 
-- **[計算/GPUノードのブート・ボリューム動的拡張方法](/hpc/tech-knowhow/boot-volume-extension/)**
+- **[計算/GPUノードのブート・ボリューム動的拡張方法](tech-knowhow/boot-volume-extension/)**
 
     インスタンスのルートファイルシステムを格納する **ブート・ボリューム** は、OSを停止することなく動的にその容量を拡張することが可能です。  
     ただこの動的拡張は、 **OCI** コンソールやインスタンスOSで複数のオペレーションを実施する必要があり、ノード数が多くなるクラスタ環境の計算/GPUノードでは、これらのオペレーションを効率的に実施することが求められます。  
     本テクニカルTipsは、HPC/GPUクラスタの多数の計算/GPUノードに対し、 **ブート・ボリューム** の動的拡張を効率的に実施する方法を解説します。
 
-- **[ファイル共有ストレージ向けバックアップ環境の最適な構築手法](/hpc/tech-knowhow/howto-choose-osbackuptool/)**
+- **[ファイル共有ストレージ向けバックアップ環境の最適な構築手法](tech-knowhow/howto-choose-osbackuptool/)**
 
     HPC/GPUクラスタを運用する際必須となるファイル共有ストレージは、コストパフォーマンスを考慮すると **ベア・メタル・インスタンス** と **ブロック・ボリューム** 等のストレージサービスで構築することになりますが、そのバックアップ環境は自身で構築する必要があり、バックアップを格納するストレージはその安価な容量単価から **オブジェクト・ストレージ** や **ブロック・ボリューム** の **より低いコスト** が有力な選択肢になります。  
     本テクニカルTipsは、ファイル共有ストレージのバックアップを容量単価の安価なストレージに取得することを念頭に、自身のバックアップ要件に沿った最適なバックアップ環境構築手法を選定する方法を解説します。
 
 ## 3-3. クラスタ管理
 
-- **[計算/GPUノードの効果的な名前解決方法](/hpc/tech-knowhow/compute-name-resolution/)**
+- **[計算/GPUノードの効果的な名前解決方法](tech-knowhow/compute-name-resolution/)**
 
     ノード数が多くなるHPCクラスタやGPUクラスタの計算/GPUノードの名前解決は、どのように行うのが効果的でしょうか。  
     本テクニカルTipsは、 **仮想クラウド・ネットワーク** のDNSを使用した効果的な計算/GPUノードの名前解決方法を解説します。
 
-- **[計算/GPUノードデプロイ時の効果的なOSカスタマイズ方法](/hpc/tech-knowhow/compute-os-customization/)**
+- **[計算/GPUノードデプロイ時の効果的なOSカスタマイズ方法](tech-knowhow/compute-os-customization/)**
 
     ノード数が多くなるHPCクラスタやGPUクラスタの計算/GPUノードは、デプロイ時に実施するOSカスタマイズをどのように行うのが効果的でしょうか。  
     本テクニカルTipsは、計算/GPUノードデプロイ時のOSカスタマイズ方法の選択肢と、それぞれの利用方法について解説します。
 
-- **[計算/GPUノードのホスト名リスト作成方法](/hpc/tech-knowhow/compute-host-list/)**
+- **[計算/GPUノードのホスト名リスト作成方法](tech-knowhow/compute-host-list/)**
 
     ノード数が多くなるHPCクラスタやGPUクラスタは、全ての計算/GPUノードのホスト名の一覧を記載したホスト名リストを作成することで、構築・運用作業を効率的に進めることが可能になります。  
     本テクニカルTipsは、HPC/GPUクラスタの計算/GPUノードのホスト名リストを効果的に作成する方法を解説します。
 
-- **[計算/GPUノードの追加・削除・入れ替え方法](/hpc/tech-knowhow/cluster-resize/)**
+- **[計算/GPUノードの追加・削除・入れ替え方法](tech-knowhow/cluster-resize/)**
 
     HPC/GPUクラスタは、実行するワークロードの増減に伴い計算/GPUノードのノード数を増減する必要が生じることがあります。またハードウェア障害が発生すると、利用可能なノード数を維持するために当該ノードを別のノードに置き換える必要が生じます。  
     本テクニカルTipsは、 **[クラスタ・ネットワーク](#5-1-クラスタネットワーク)** を使用するHPC/GPUクラスタで計算/GPUノードのノード数を増減する方法や置き換える方法を解説します。
 
-- **[pdshで効率的にクラスタ管理オペレーションを実行](/hpc/tech-knowhow/cluster-with-pdsh/)**
+- **[pdshで効率的にクラスタ管理オペレーションを実行](tech-knowhow/cluster-with-pdsh/)**
 
     ノード数が多くなるHPC/GPUクラスタは、クラスタに含まれるノードに対して様々な管理オペレーションを実施する必要があります。この時、これらのオペレーションを実現するためのコマンドを全てのノードに適用する際、どのような方法が効果的でしょうか。  
     本テクニカルTipsは、 **pdsh** を使用して計算/GPUクラスタの管理オペレーションを効率的に実施する方法を解説します。
 
-- **[オンデマンドクラスタ実現のためのインスタンス・プリンシパル認証設定方法](/hpc/tech-knowhow/instance-principal-auth/)**
+- **[オンデマンドクラスタ実現のためのインスタンス・プリンシパル認証設定方法](tech-knowhow/instance-principal-auth/)**
 
     パブリッククラウドは、ワークロード発生時に必要な規模のHPC/GPUクラスタを構築し、ワークロード終了時にこれを削除する、オンデマンドクラスタ環境を構築するには最適なサービスです。  
     オンデマンドクラスタの管理は、ソフトウェアにより自動化することが一般的ですが、HPC/GPUクラスタに必要なリソースの作成・終了をこのアプリケーションに許可するための仕組みとして、 **[インスタンス・プリンシパル](#5-15-インスタンスプリンシパル)** 認証が用意されています。  
     本テクニカルTipsは、オンデマンドクラスタを念頭とした **インスタンス・プリンシパル** 認証の設定方法を解説します。
 
-- **[OCIロギングとGrafanaを使用したHPC/GPUクラスタのログ監視方法](/hpc/tech-knowhow/log-monitoring/)**
+- **[OCIロギングとGrafanaを使用したHPC/GPUクラスタのログ監視方法](tech-knowhow/log-monitoring/)**
 
     ノード数が多くなるHPC/GPUクラスタは、各計算/GPUノードに分散するログを一元的に監視するフレームワークを構築することで、運用管理工数の低減や監視対象ログの見落としを防ぎ、システムセキュリティーを効率的に維持することが可能です。  
     このフレームワーク構築に活用できるソフトウェアはいくつかありますが、 **[OCIロギング](https://docs.oracle.com/ja-jp/iaas/Content/Logging/home.htm)** と **[Grafana](https://grafana.com/)** を統合したログ監視は、 **Grafana** の多彩な機能を活用できる点で有力な選択肢です。  
     本テクニカルTipsは、 **OCIロギング** と **Grafana** を使用してHPC/GPUクラスタのログを効率的に監視する方法を解説します。
 
-- **[OCIモニタリングとGrafanaを使用したHPC/GPUクラスタのメトリック監視方法](/hpc/tech-knowhow/metric-monitoring/)**
+- **[OCIモニタリングとGrafanaを使用したHPC/GPUクラスタのメトリック監視方法](tech-knowhow/metric-monitoring/)**
 
     HPCワークロードや機械学習ワークロードを実行するHPC/GPUクラスタは、ワークロード実行中のCPU/GPU使用率、メモリ使用率、ネットワーク使用帯域等のメトリックを定期的に監視し、高価な計算資源を有効活用することが求められますが、ノード数が多くなるHPC/GPUクラスタでは、これらメトリックの監視が一元的・効率的に行える必要があります。  
     このフレームワーク構築に活用できるソフトウェアはいくつかありますが、 **[OCIモニタリング](https://docs.oracle.com/ja-jp/iaas/Content/Monitoring/home.htm)** と **[Grafana](https://grafana.com/)** を統合したメトリック監視は、 **Grafana** の多彩な機能を活用できる点で有力な選択肢です。  
@@ -456,43 +456,43 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 
 ## 3-4. 機械学習
 
-- **[UbuntuをOSとする機械学習ワークロード向けGPUノード構築方法](/hpc/tech-knowhow/gpu-with-ubuntu/)**
+- **[UbuntuをOSとする機械学習ワークロード向けGPUノード構築方法](tech-knowhow/gpu-with-ubuntu/)**
 
     機械学習ワークロード実行のためのGPU搭載ノードは、NVIDIAが提供する様々なGPU関連ソフトウェアの開発が主に **Ubuntu** で行われていることから、そのOSに **Ubuntu** を使用するのが主流になっていますが、 **Ubuntu** をOSに指定してGPU搭載インスタンスをデプロイする場合、GPUを利用するためのソフトウェアを自身でインストール・セットアップする必要があります。  
     本テクニカルTipsは、 **Ubuntu** をGPU搭載インスタンスと共にデプロイした後GPU利用に必要なソフトウェアをインストール・セットアップすることで、機械学習ワークロード向けGPUノードを構築する方法を解説します。
 
 ## 3-5. ソフトウェア環境
 
-- **[Slurm環境での利用を前提とするUCX通信フレームワークベースのOpenMPI構築方法](/hpc/tech-knowhow/build-openmpi/)**
+- **[Slurm環境での利用を前提とするUCX通信フレームワークベースのOpenMPI構築方法](tech-knowhow/build-openmpi/)**
 
     **[OpenMPI](https://www.open-mpi.org/)** は、最新のMPI言語規格に準拠し、HPC/機械学習ワークロード実行に必要とされる様々な機能を備えたオープンソースのMPI実装です。  
     **OpenMPI** で作成したアプリケーションのHPC/GPUクラスタに於ける実行は、計算リソース有効利用の観点から通常ジョブスケジューラを介したバッチジョブとして行いますが、ジョブスケジューラが **[Slurm](https://slurm.schedmd.com/)** の場合、 **[PMIx](https://pmix.github.io/)** を使用することでMPIアプリケーションの起動や通信初期化のスケーラビリティを向上させることが可能です。  
     また **[UCX](https://openucx.org/)** は、 **OpenMPI** が **[クラスタ・ネットワーク](#5-1-クラスタネットワーク)** を介して高帯域・低遅延のMPIプロセス間通信を実現するために欠かせない通信フレームワークです。  
     本テクニカルTipsは、 **PMIx** を使用する **Slurm** 環境で通信フレームワークに **UCX** の使用を前提とする **OpenMPI** 構築方法を解説します。
 
-- **[Slurmによるリソース管理・ジョブ管理システム構築方法](/hpc/tech-knowhow/setup-slurm-cluster/)**
+- **[Slurmによるリソース管理・ジョブ管理システム構築方法](tech-knowhow/setup-slurm-cluster/)**
 
     HPC/GPUクラスタのリソース管理・ジョブ管理は、ジョブスケジューラを活用することでこれを効率的かつ柔軟に運用することが可能です。近年のHPC/機械学習ワークロードの大規模化は、MPI等を使ったノード間並列ジョブの重要性を増大させ、このような大規模ジョブを様々な運用ポリシーに沿って処理出来る機能をジョブスケジューラに求めています。オープンソースのジョブスケジューラ **[Slurm](https://slurm.schedmd.com/)** は、この要求を満足出来る代表的なジョブスケジューラとして現在人気を集めています。  
     本テクニカルTipsは、HPC/機械学習ワークロードの実行に最適なベアメタルインスタンスを高帯域・低遅延RDMAインターコネクトサービスの **[クラスタ・ネットワーク](#5-1-クラスタネットワーク)** で接続するHPC/GPUクラスタで、リソース管理・ジョブ管理システムを **Slurm** で構築する方法を解説します。
 
-- **[線形代数演算ライブラリインストール・利用方法](/hpc/tech-knowhow/install-blas/)**
+- **[線形代数演算ライブラリインストール・利用方法](tech-knowhow/install-blas/)**
 
     HPCワークロードを実行する際、行列やベクトルの線形代数演算を高速に実行する必要が生じます。  
     これらの演算は、ソースコードを自作することで対応することも出来ますが、オープンソースで配布されている線形代数演算ライブラリである **[BLAS](https://www.netlib.org/blas/)** や **[OpenBLAS](https://github.com/OpenMathLib/OpenBLAS/wiki)** を利用することで、開発工数の削減、保証された計算精度、高速な演算の実行等、様々なメリットを享受することが可能です。  
     本テクニカルTipsは、 **BLAS** と **OpenBLAS** をHPCワークロードの実行に最適なベアメタルインスタンスにインストールし、Fortranのサンプルコードからこれを利用する方法を解説します。
 
-- **[OpenFOAMインストール・利用方法](/hpc/tech-knowhow/install-openfoam/)**
+- **[OpenFOAMインストール・利用方法](tech-knowhow/install-openfoam/)**
 
     **[OpenFOAM](https://www.openfoam.com/)** は、CAE分野で多くの利用実績を持つオープンソースのCFDアプリケーションです。  
     **OpenFOAM** は、メッシュ作成等のプリ処理、ソルバーによる解析処理、及び解析結果を可視化するポスト処理の全てのCFD解析フローを、自身が提供するツール群と外部のツール群を組合せてオープンソースソフトウェアで完結することが可能です。また **OpenFOAM** が提供するソルバーは、MPIで並列化されており、1万コアを超える並列実行の実績も報告されています。  
     本テクニカルTipsは、 **OpenFOAM** とこれを中核とするCFD解析フローに有用なオープンソースのツール群をHPCワークロードの実行に最適なベアメタルインスタンスにインストールし、これを利用する方法を解説します。
 
-- **[Slurmによるリソース管理・ジョブ管理システム運用Tips](/hpc/tech-knowhow/slurm-tips/)**
+- **[Slurmによるリソース管理・ジョブ管理システム運用Tips](tech-knowhow/slurm-tips/)**
 
     オープンソースの **[Slurm](https://slurm.schedmd.com/)** は、HPC/GPUクラスタのリソース管理・ジョブ管理をコストパフォーマンス良く運用するためのジョブスケジューラとして、現在有力な選択肢です。  
     本テクニカルTipsは、構築するHPC/GPUクラスタのリソース管理・ジョブ管理を **Slurm** で効果的に運用するための様々なテクニカルTipsをご紹介します。
 
-- **[Oracle Linuxプラットフォーム・イメージベースのHPCワークロード実行環境構築方法](/hpc/tech-knowhow/build-oraclelinux-hpcenv/)**
+- **[Oracle Linuxプラットフォーム・イメージベースのHPCワークロード実行環境構築方法](tech-knowhow/build-oraclelinux-hpcenv/)**
 
     HPCワークロードは、複数の計算ノードを **[クラスタ・ネットワーク](#5-1-クラスタネットワーク)** でノード間接続するHPCクラスタで実行することが主流ですが、 **[BM.Standard.E6.256](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm#bm-standard)** のような高性能のベアメタル・シェイプは、11 TFLOPSを超える理論性能と3 TBのDDR5メモリを有し、単一ノードでも十分大規模なHPCワークロードを実行することが可能です。  
     このように単一ノードでHPCワークロードを実行する場合は、ベースOSの **Oracle Linux** のバージョンに制約のある **[クラスタネットワーキングイメージ](#5-13-クラスタネットワーキングイメージ)** を使用する必要が無く、 **[プラットフォーム・イメージ](#5-17-プラットフォームイメージ)** から最新の **Oracle Linux** を選択することが可能になります。  
@@ -500,12 +500,12 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 
 ## 3-6. その他
 
-- **[ベアメタル・インスタンスのカーネルダンプ取得方法](/hpc/tech-knowhow/kdump-on-baremetal/)**
+- **[ベアメタル・インスタンスのカーネルダンプ取得方法](tech-knowhow/kdump-on-baremetal/)**
 
     カーネルダンプは、Linuxカーネルに関連する問題を解析する際に重要な情報ですが、ルートファイルシステムを含む **ブート・ボリューム** をiSCSI接続する **ベアメタル・インスタンス** は、 **仮想マシン・インスタンス** と比較してその取得に特別な準備が必要です。  
     本テクニカルTipsは、 **ベアメタル・インスタンス** でカーネルダンプを取得し、これをcrashコマンドで読み込むまでの手順を解説します。
 
-- **[サイト間VPNによるOCIとの拠点間接続方法](/hpc/tech-knowhow/site-to-site-vpn/)**
+- **[サイト間VPNによるOCIとの拠点間接続方法](tech-knowhow/site-to-site-vpn/)**
 
     HPC/機械学習ワークロードをオンプレミスから **OCI** に移行する際、多くのケースでオンプレミスと **OCI** を拠点間接続する必要が生じます。  
     例えば、オンプレミス側の有償CAEアプリケーション用ライセンスサーバに **OCI** 側の計算ノードからライセンス取得のためにアクセスするケースや、オンプレミス側の端末から **OCI** 側のログインノードにログインしインタラクティブ処理を行うケースです。  
@@ -588,7 +588,7 @@ HPC/機械学習ワークロードを実行する際に有益なテクニカル�
 - **クラスタ・ネットワーク** 接続用ネットワークインターフェースへのIPアドレス付与
 
 これらの処理は、前述の802.1X認証関連ユーティリティソフトウェアと **クラスタ・ネットワーク** 設定ユーティリティソフトウェアで行います。  
-この手順は、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[クラスタネットワーキングイメージを使ったクラスタ・ネットワーク接続方法](/hpc/tech-knowhow/howto-connect-clusternetwork/)** を参照してください。
+この手順は、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[クラスタネットワーキングイメージを使ったクラスタ・ネットワーク接続方法](tech-knowhow/howto-connect-clusternetwork/)** を参照してください。
 
 関連する **OCI** 公式ドキュメントは、 **[ここ](https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingclusternetworks.htm)** を参照してください。
 
@@ -801,7 +801,7 @@ $
 802.1X認証関連ユーティリティソフトウェアと **クラスタ・ネットワーク** 設定ユーティリティソフトウェアは、 **[Oracle Cloud Agent](https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/manage-plugins.htm)** のプラグインとしてこれらを提供する **クラスタネットワーキングイメージ** と、個別のRPMパッケージとして提供する **クラスタネットワーキングイメージ** が存在します。  
 また、使用するシェイプがGPUを搭載するかどうかにより、HPC **クラスタネットワーキングイメージ** とGPU **クラスタネットワーキングイメージ** が存在します。  
 またベースOSの **Oracle Linux** は、バージョン7系と8系の **クラスタネットワーキングイメージ** が存在します。  
-これらの組み合わせから自身の用途に合わせて **クラスタネットワーキングイメージ** を適切に選択する方法は、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[クラスタネットワーキングイメージの選び方](/hpc/tech-knowhow/osimage-for-cluster/)** を参照してください。
+これらの組み合わせから自身の用途に合わせて **クラスタネットワーキングイメージ** を適切に選択する方法は、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[クラスタネットワーキングイメージの選び方](tech-knowhow/osimage-for-cluster/)** を参照してください。
 
 **マーケットプレイス** の **クラスタネットワーキングイメージ** は、HPC **クラスタネットワーキングイメージ** は **[ここ](https://cloud.oracle.com/marketplace/application/63394796/)** 、GPU **クラスタネットワーキングイメージ** は  **[ここ](https://cloud.oracle.com/marketplace/application/134254210/)** をクリックしてアクセスします。 **OCI** へのログインを要求された場合は、ログインを完了して下さい。
 
@@ -832,7 +832,7 @@ $
 このソリューションでは、クラスタ管理ノードを **インスタンス・プリンシパル** として **動的グループ** に登録（認証）し、このクラスタ管理ノードから発行するAPIコールを **IAMポリシー** で許可（認可）することで、クラスタ管理ノードからHPC/GPUクラスタのライフサイクルを動的に管理することを可能にします。  
 **[OCI HPCチュートリアル集](#1-oci-hpcチュートリアル集)** で紹介している **[クラスタオートスケーリング](#5-9-クラスタオートスケーリング)** を使用するオンデマンドクラスタソリューションは、この仕組みを使用しています。
 
-このオンデマンドクラスタ実現のための **インスタンス・プリンシパル** 認証の設定方法は、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[オンデマンドクラスタ実現のためのインスタンス・プリンシパル認証設定方法](/hpc/tech-knowhow/instance-principal-auth/)** を参照してください。
+このオンデマンドクラスタ実現のための **インスタンス・プリンシパル** 認証の設定方法は、 **[OCI HPCテクニカルTips集](#3-oci-hpcテクニカルtips集)** の **[オンデマンドクラスタ実現のためのインスタンス・プリンシパル認証設定方法](tech-knowhow/instance-principal-auth/)** を参照してください。
 
 関連する **OCI** 公式ドキュメントは、 **[ここ](https://docs.oracle.com/ja-jp/iaas/Content/Identity/Tasks/callingservicesfrominstances.htm)** を参照してください。
 
