@@ -21,9 +21,9 @@ Autonomous Database(ADB)は、事前定義されたメンテナンス・ウィ�
 また、ADBでは、Oracle Databaseオプション「Real Application Testing(RAT)」に含まれる機能の1つであるSQL Performance Analyzer(SPA)を使用することができます。
 SPAを利用すると、システム変更前後のSQLワークロードの実行統計を比較して変更の影響を測定することができます。詳細はこちらをご覧ください。
 
-[Real Application Testing 参考資料](https://www.oracle.com/jp/a/ocom/docs/jp-db-technight-content/oracle-tech-night-35-docs02.pdf){:target="_blank"}
+[Real Application Testing 参考資料](https://www.oracle.com/jp/a/ocom/docs/jp-db-technight-content/oracle-tech-night-35-docs02.pdf)
 
-[マニュアル：SQL Performance Analyzer](https://docs.oracle.com/cd/E82638_01/ratug/sql-performance-analyzer.html#GUID-8CE976A3-FB73-45FF-9B18-A6AB3F158A95){:target="_blank"}
+[マニュアル：SQL Performance Analyzer](https://docs.oracle.com/cd/E82638_01/ratug/sql-performance-analyzer.html#GUID-8CE976A3-FB73-45FF-9B18-A6AB3F158A95)
 
 
 本記事では、early patchとSPAを併用することで、本番環境へのパッチ適用の影響をテスト環境で事前に確認する手順をご紹介します。
@@ -40,7 +40,7 @@ SPAを利用すると、システム変更前後のSQLワークロードの実�
 **前提条件**
 + ADBインスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。
+    [101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。
 
 <BR>
 
@@ -141,15 +141,15 @@ END;
 ```
 
 このPL/SQLは何度実行しても構いません。実行の際にメモリ中にあるSQLから条件にあったものをSTSにロードします。呼び出しているパッケージに関しては、下記のマニュアルが参考になります。  
-[マニュアル：Oracle Database SQLチューニング・ガイド:SQLチューニング・セットのロード](https://docs.oracle.com/cd/E82638_01/tgsql/managing-sql-tuning-sets.html#GUID-4E5240CD-B021-4728-89A9-95F5B81CBC59){:target="_blank"}
+[マニュアル：Oracle Database SQLチューニング・ガイド:SQLチューニング・セットのロード](https://docs.oracle.com/cd/E82638_01/tgsql/managing-sql-tuning-sets.html#GUID-4E5240CD-B021-4728-89A9-95F5B81CBC59)
 
-[マニュアル：Database PL/SQLパッケージ・プロシージャおよびタイプ・リファレンス:DBMS_SQLTUNEのサブプログラム・グループ](https://docs.oracle.com/cd/E82638_01/arpls/DBMS_SQLTUNE.html#GUID-8DF08AC5-A337-46B3-A30F-6B2511C4153C){:target="_blank"}
+[マニュアル：Database PL/SQLパッケージ・プロシージャおよびタイプ・リファレンス:DBMS_SQLTUNEのサブプログラム・グループ](https://docs.oracle.com/cd/E82638_01/arpls/DBMS_SQLTUNE.html#GUID-8DF08AC5-A337-46B3-A30F-6B2511C4153C)
 
 > **Note**
 >
 > ここで紹介したパッケージとは別の方法として、DBMS_SQLTUNE.CAPTURE_CURSOR_CACHE_SQLSETパッケージを使用して、特定の期間にキャッシュを複数回ポーリングしてカーソルキャッシュからSQL群をSTSにロードする方法もあります。
 >
-> [こちらの記事](https://qiita.com/ora_gonsuke777/items/d2965a105feebac9f25a){:target="_blank"}をご参照ください。
+> [こちらの記事](https://qiita.com/ora_gonsuke777/items/d2965a105feebac9f25a)をご参照ください。
 
 ## 2-4. キャプチャされたSQLステートメントの表示
 STSの中にデータが入力されたので、次のSQLを実行し、キャプチャされたSQLステートメントを照会します。
@@ -360,7 +360,7 @@ select distinct(sql_id) from MYSH.STG_TABLE order by 1;
 ## 6-3. 本番環境ADBで資格情報（クレデンシャル）の作成
 続いて`expdp`を使用してオブジェクト・ストレージにエクスポートします。最初に認証トークンを使用してADBインスタンスに資格情報を作成し、ADBインスタンスがバケットに直接アクセスしてエクスポートできるようにする必要があります。
 
-こちらの手順については、[「クラウド・ストレージからデータをロードしてみよう」](../adb102-dataload/#anchor2){:target="_blank"}から、**「1. OCIオブジェクトストレージへのアクセス情報を取得」**を参考に実施してください。
+こちらの手順については、[「クラウド・ストレージからデータをロードしてみよう」](../adb102-dataload/#anchor2)から、**「1. OCIオブジェクトストレージへのアクセス情報を取得」**を参考に実施してください。
 
 ```sql
 BEGIN
@@ -379,7 +379,7 @@ ALTER DATABASE PROPERTY SET DEFAULT_CREDENTIAL = 'ADMIN.ATPprod_CRED';
 ```
 
 ## 6-4. オブジェクト・ストレージのバケットの作成
-dmpファイルを格納する先であるバケットを作成しておきます。手順については、[OCIオブジェクトストレージへのデータアップロード](../adb102-dataload/#2-2-oci%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%81%B8%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89){:target="_blank"}をご参照ください。今回バケットはAshburnリージョンで作成しています。
+dmpファイルを格納する先であるバケットを作成しておきます。手順については、[OCIオブジェクトストレージへのデータアップロード](../adb102-dataload/#2-2-oci%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%81%B8%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89)をご参照ください。今回バケットはAshburnリージョンで作成しています。
 
 ## 6-5. ステージングテーブルのエクスポート
 `expdp`を使用してエクスポートを実行します。SPAでワークロードを実行するときに、試行モードをTEST EXECUTEにする場合、スキーマ全体のエクスポートが必要です。
@@ -461,11 +461,11 @@ EXEC DBMS_SQLTUNE.DROP_SQLSET('mysh_sts_test');
 <BR>
 
 # 参考資料
-* [共有ExadataインフラストラクチャでのAutonomous Databaseのメンテナンス更新](https://docs.oracle.com/ja-jp/iaas/Content/Database/Concepts/adbsmaintenance.htm){:target="_blank"}
+* [共有ExadataインフラストラクチャでのAutonomous Databaseのメンテナンス更新](https://docs.oracle.com/ja-jp/iaas/Content/Database/Concepts/adbsmaintenance.htm)
 
-* [SQLチューニング・セットのロード](https://docs.oracle.com/cd/E82638_01/tgsql/managing-sql-tuning-sets.html#GUID-4E5240CD-B021-4728-89A9-95F5B81CBC59){:target="_blank"}
+* [SQLチューニング・セットのロード](https://docs.oracle.com/cd/E82638_01/tgsql/managing-sql-tuning-sets.html#GUID-4E5240CD-B021-4728-89A9-95F5B81CBC59)
 
-* [DBMS_SQLTUNEのサブプログラム・グループ](https://docs.oracle.com/cd/E82638_01/arpls/DBMS_SQLTUNE.html#GUID-8DF08AC5-A337-46B3-A30F-6B2511C4153C){:target="_blank"}
+* [DBMS_SQLTUNEのサブプログラム・グループ](https://docs.oracle.com/cd/E82638_01/arpls/DBMS_SQLTUNE.html#GUID-8DF08AC5-A337-46B3-A30F-6B2511C4153C)
 
 
 

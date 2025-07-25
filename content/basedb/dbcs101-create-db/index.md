@@ -64,7 +64,7 @@ Oracle Base Database Service(BaseDB)は、Oracle Cloud Infrastructure の上で�
    - **可用性ドメイン** - 任意 (集合ハンズオン環境を利用している場合は講師の指示に従って選択してください)
    - **シェイプの構成** <img src="coin.png" alt="coin" width="30"/>- 任意 (集合ハンズオン環境を利用している場合は VM.Standard2.1 を選択してください)
       >**SHAPE**の選択時には、使用している環境のサービス・リミットに注意してください。初期状態ではサービス・リミットが0に設定されていて作成できないデータベース・サービスのシェイプも存在します。
-      サービス・リミットについて不明な方は [OCIコンソールにアクセスして基本を理解する - Oracle Cloud Infrastructureを使ってみよう(その1)](../../beginners/getting-started){:target="_blank"} をご確認ください。<br>
+      サービス・リミットについて不明な方は [OCIコンソールにアクセスして基本を理解する - Oracle Cloud Infrastructureを使ってみよう(その1)](../../beginners/getting-started) をご確認ください。<br>
 
       >**RAC** を利用したい場合は **VM.Standard2.2** 以上を選択ください 
   

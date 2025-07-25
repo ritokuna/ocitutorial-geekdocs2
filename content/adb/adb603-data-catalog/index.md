@@ -40,10 +40,10 @@ Oracle Cloud Infrastructure Data Catalogは、そのような企業データの�
 **前提条件**
 + Autonomous Data Warehouse(ADW)インスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。
+    [101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。
 
 + Data Catalogを使用するためのユーザーグループ、ポリシーが設定済みであること
-    <br>※本チュートリアルを進めるうえで必要なポリシーは[こちら](https://docs.oracle.com/ja-jp/iaas/data-catalog/using/policies.htm#policy-examples){:target="_blank"}を参照ください。
+    <br>※本チュートリアルを進めるうえで必要なポリシーは[こちら](https://docs.oracle.com/ja-jp/iaas/data-catalog/using/policies.htm#policy-examples)を参照ください。
 
 <br>
 
@@ -186,7 +186,7 @@ Data Catalogインスタンスの作成にあたり、1つのフォームを埋�
 ## 4-1. 動的グループとポリシーの作成
 OCI Object Storageに対してAPIコールを行うことを許可するポリシーを作成します。
 
-ここの手順については、[こちら](https://oracle-livelabs.github.io/oci-core/data-catalog/workshops/freetier/index.html?customTrackingParam=:ow:lp:cpo::::RC_WWMK211125P00013:llid=919&lab=harvest-object-store){:target="_blank"}をご参照ください。
+ここの手順については、[こちら](https://oracle-livelabs.github.io/oci-core/data-catalog/workshops/freetier/index.html?customTrackingParam=:ow:lp:cpo::::RC_WWMK211125P00013:llid=919&lab=harvest-object-store)をご参照ください。
 
 <br>
 
@@ -200,7 +200,7 @@ OCI Object Storageに対してAPIコールを行うことを許可するポリ�
 + **タイプ**：Oracle Object Storage
 + **URL**：https://swiftobjectstorage.us-ashburn-1.oraclecloud.com
   > このチュートリアルでは、データが格納されている既存のOracle Object Storageバケットにアクセスします。このバケットは、us-ashburn-1リージョンのc4u04テナンシ―の中にあります。
-  > 次の手順では、事前認証済み要求(PAR)を使用して、データへの接続を追加します。PARの詳細は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usingpreauthenticatedrequests.htm){:target="_blank"}をご参照ください。
+  > 次の手順では、事前認証済み要求(PAR)を使用して、データへの接続を追加します。PARの詳細は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usingpreauthenticatedrequests.htm)をご参照ください。
 + **ネームスペース**：c4u04
 
 ![4-1](4-1.png)
@@ -549,9 +549,9 @@ OCI Object Storageに対してAPIコールを行うことを許可するポリ�
 
 # 参考資料
 <!--
-* [Get started with Oracle Cloud Infrastructure Data Catalog](https://oracle.github.io/learning-library/data-management-library/data-catalog/workshops/freetier/?lab=introduction){:target="_blank"} 
+* [Get started with Oracle Cloud Infrastructure Data Catalog](https://oracle.github.io/learning-library/data-management-library/data-catalog/workshops/freetier/?lab=introduction) 
 -->
-* [データ・カタログの概要ドキュメント](https://docs.oracle.com/ja-jp/iaas/data-catalog/using/overview.htm){:target="_blank"}
+* [データ・カタログの概要ドキュメント](https://docs.oracle.com/ja-jp/iaas/data-catalog/using/overview.htm)
 
 <br/>
 以上でこの章は終了です。次の章にお進みください。

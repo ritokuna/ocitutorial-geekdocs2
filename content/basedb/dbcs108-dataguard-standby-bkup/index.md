@@ -23,7 +23,7 @@ Data Guard GroupもしくはData Guard Associationを使用している場合、
 {: .notice--info}
 
 **前提条件 :**
-+ [106: Data Guardを構成しよう](../dbcs106-dataguard){:target="_blank"}を通じてData Guard構成が完了していること
++ [106: Data Guardを構成しよう](../dbcs106-dataguard)を通じてData Guard構成が完了していること
 
 + Oracle Database Autonomous Recovery Service（RCV/ZRCV）およびOCI Object Storageを利用する上での事前準備が完了していること
 
@@ -123,7 +123,7 @@ REDO転送オプションを有効化すると、リアルタイムREDO転送が
 
 「バックアップからのデータベースの作成」ウィンドウで必要項目を入力します。　　
 
-※設定方法は新規作成時と同様です。入力項目は[Oracle CloudでOracle Databaseを使おう](../dbcs101-create-db){:target="_blank"}をご参照下さい。
+※設定方法は新規作成時と同様です。入力項目は[Oracle CloudでOracle Databaseを使おう](../dbcs101-create-db)をご参照下さい。
 
 ![img](dbcs_dgsb11.png)
 
@@ -144,13 +144,13 @@ DBシステムの作成が開始されます。
 
 # 参考資料
 
-* [製品サイト] [Oracle Database Autonomous Recovery Service](https://www.oracle.com/jp/database/zero-data-loss-autonomous-recovery-service/){:target="_blank"} 
+* [製品サイト] [Oracle Database Autonomous Recovery Service](https://www.oracle.com/jp/database/zero-data-loss-autonomous-recovery-service/) 
 
-* [マニュアル] [Data Guard関連付けのスタンバイ・データベースからのバックアップおよびリストア](https://docs.oracle.com/cd/E83857_01/paas/base-database/backup-recover/#GUID-7A773D99-7CA0-4A7F-B57A-2A5DD5E5B3C2){:target="_blank"} 
+* [マニュアル] [Data Guard関連付けのスタンバイ・データベースからのバックアップおよびリストア](https://docs.oracle.com/cd/E83857_01/paas/base-database/backup-recover/#GUID-7A773D99-7CA0-4A7F-B57A-2A5DD5E5B3C2) 
 
-* [マニュアル] [Oracle Database Autonomous Recovery Service](https://docs.oracle.com/cd/E83857_01/paas/recovery-service/index.html){:target="_blank"} 
+* [マニュアル] [Oracle Database Autonomous Recovery Service](https://docs.oracle.com/cd/E83857_01/paas/recovery-service/index.html) 
 
-* [チュートリアル] [Backup and Restore from a Standby Database with Oracle Database Autonomous Recovery Service on Oracle Base Database Service](https://docs.oracle.com/en/learn/backup-and-restore-standby-db/){:target="_blank"} 
+* [チュートリアル] [Backup and Restore from a Standby Database with Oracle Database Autonomous Recovery Service on Oracle Base Database Service](https://docs.oracle.com/en/learn/backup-and-restore-standby-db/) 
 <br>
 
 <br>

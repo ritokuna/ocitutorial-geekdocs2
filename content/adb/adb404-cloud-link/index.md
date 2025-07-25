@@ -33,7 +33,7 @@ header:
 **前提条件**
 + ADBインスタンスを2つ(例：atp01, atp02)構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。
+    [101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。
 
  
 <BR>
@@ -272,7 +272,7 @@ header:
 <a id="anchor5"></a>
 
 # 注意点
-尚、クラウド・リンクを使用する際の注意点は[マニュアル](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-cloud-links.html#GUID-5CABFB6F-370D-4B9E-BC88-DB94D221CE53){:target="_blank"}をご参照ください。
+尚、クラウド・リンクを使用する際の注意点は[マニュアル](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-cloud-links.html#GUID-5CABFB6F-370D-4B9E-BC88-DB94D221CE53)をご参照ください。
 
 <a id="anchor6"></a>
 
@@ -285,8 +285,8 @@ header:
 <a id="anchor7"></a>
 # 参考資料
 
-* [マニュアル](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-cloud-links.html#GUID-918B48B3-0D1C-4CD5-AA04-380C043573B9){:target="_blank"}
-* [ブログ記事](https://qiita.com/500InternalServerError/items/85d9dd89688edca45af0){:target="_blank"}
+* [マニュアル](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-cloud-links.html#GUID-918B48B3-0D1C-4CD5-AA04-380C043573B9)
+* [ブログ記事](https://qiita.com/500InternalServerError/items/85d9dd89688edca45af0)
 
 <BR/>
 以上でこの章は終了です。次の章にお進みください。

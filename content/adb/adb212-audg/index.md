@@ -218,7 +218,7 @@ Autonomous Data Guard には、本記事でご紹介した以外にもいくつ�
 2. クロステナンシのAutonomous Data Guard
    Autonomous Data Guard では、プライマリと異なるテナンシにスタンバイ・データベースを作成することができます。Autonomous Data Guard の本来の目的であるスイッチオーバー、フェイルオーバーを異なるテナンシにできることに加え、Autonomous Database を他のテナンシに移行する際にもこちらの機能を利用することができます。
 
-   具体的な手順については、[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/autonomous-data-guard-cross-tenancy.html#GUID-D53D86E6-9A6E-4E6D-8516-3394B3F1CB2C){:target="_blank"}をご参照ください。
+   具体的な手順については、[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/autonomous-data-guard-cross-tenancy.html#GUID-D53D86E6-9A6E-4E6D-8516-3394B3F1CB2C)をご参照ください。
 
 3. スタンバイ・データベースに関するイベント通知
    Autonomous Data Guard でスタンバイ・データベースを構成する場合、OCI EventsやOCI Notificationsサービスと組み合わせて、以下のようなイベント通知をすることができます。ユーザーはこれらを受け取って、障害発生時の対応や状況確認をよりスムーズに行うことができます。
@@ -228,7 +228,7 @@ Autonomous Data Guard には、本記事でご紹介した以外にもいくつ�
    + 手動フェイルオーバーの開始/終了
    + スイッチオーバーの開始/終了
    
-   EventsやNotificationsとの連携方法については、[こちら](../adb503-monitoring/){:target="_blank"}をご参照ください。
+   EventsやNotificationsとの連携方法については、[こちら](../adb503-monitoring/)をご参照ください。
 
 <br>
 <a id="anchor2"></a>

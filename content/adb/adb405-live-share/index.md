@@ -25,11 +25,11 @@ header:
 **前提条件**
 + ADBインスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。
+    [101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。
 
 + ADBインスタンスがにデータ共有のユーザーが作成済みであること
     <br>※ADBインタンスにユーザー作成方法については、
-    [101:ADBインスタンスを作成してみよう 3-2. データベース・ユーザーを作成してみよう](../adb101-provisioning/#3-2-%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86database-actions){:target="_blank"} を参照ください。
+    [101:ADBインスタンスを作成してみよう 3-2. データベース・ユーザーを作成してみよう](../adb101-provisioning/#3-2-%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86database-actions) を参照ください。
     データ共有ツールを使うには、データベース・ユーザーに DWROLEロール が必要です。
   
 <BR>
@@ -75,7 +75,7 @@ Database Action 起動パッドで Data Studio > データ共有 をクリック
 
    ![img1-5.png](img1_5.png)
 
-+ 詳しい手順は、[データ共有ツールへのアクセスおよび有効化](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/access-adp-share.html){:target="_blank"} を参照ください。
++ 詳しい手順は、[データ共有ツールへのアクセスおよび有効化](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/access-adp-share.html) を参照ください。
 
 <BR>
 
@@ -123,7 +123,7 @@ Database Action 起動パッドで Data Studio > データ共有 をクリック
    ![img2-6.png](img2_6.png)
 
 
-+ 詳しい手順は、[ライブ共有の提供](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/adp-provide-share.html#GUID-3A742879-F5DE-46C1-8E17-8DFCAB3A9494){:target="_blank"} を参照ください。
++ 詳しい手順は、[ライブ共有の提供](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/adp-provide-share.html#GUID-3A742879-F5DE-46C1-8E17-8DFCAB3A9494) を参照ください。
 
 共有の提供ができました。
 
@@ -197,7 +197,7 @@ USER_NAMEは共有を消費するユーザー名に書き換えてください�
 
    ![img3_z.png](img3_z.png)
 
-+ 詳しい手順は、 [ライブ共有の消費](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/adp-consume-share.html#GUID-B9AE9AAA-691B-4D8C-B0D7-7C91F3E67E19){:target="_blank"} を参照ください。
++ 詳しい手順は、 [ライブ共有の消費](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/adp-consume-share.html#GUID-B9AE9AAA-691B-4D8C-B0D7-7C91F3E67E19) を参照ください。
 
 画面上部に「ライブ共有プロバイダへのアクセス権がありあせん」と表示される場合、その文字をクリックすると表示されるスクリプトを実行権限のあるユーザー（ADMIN等）で実行します。
 
@@ -246,7 +246,7 @@ USER_NAMEは共有を消費するユーザー名に書き換えてください�
 
 # 参考資料
 
-* [Autonomous Database Cloud 技術詳細](https://speakerdeck.com/oracle4engineer/autonomous-database-cloud-ji-shu-xiang-xi){:target="_blank"}
+* [Autonomous Database Cloud 技術詳細](https://speakerdeck.com/oracle4engineer/autonomous-database-cloud-ji-shu-xiang-xi)
 
 <BR/>
 以上でこの章は終了です。次の章にお進みください。

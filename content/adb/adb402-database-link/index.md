@@ -44,11 +44,11 @@ Autonomous Database では以下の4つのパターンでDatabase Linkを作成�
 **前提条件**
 + ADBインスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。
+    [101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。
 
 + BaseDBインスタンスを構成済み、かつサンプルスキーマをインストール済みであること
     <br>※手順については、
-    [301 : 移行元となるデータベースを作成しよう](../adb301-create-source-db/){:target="_blank"} を参考に、BaseDBインスタンスを作成し、HRスキーマを作成してください。
+    [301 : 移行元となるデータベースを作成しよう](../adb301-create-source-db/) を参考に、BaseDBインスタンスを作成し、HRスキーマを作成してください。
 
 <br>
 
@@ -369,7 +369,7 @@ chmod 604 /tmp/cwallet.sso
 
 ### 1-2-2. Object Storageへのウォレットのアップロード
 
-[102:ADBにデータをロードしよう(Database Actions)](../adb102-dataload/){:target="_blank"}の「2.OCIオブジェクトストレージへのデータアップロード」を参考に、ダウンロードしたウォレットをObject Storageにアップロードします。
+[102:ADBにデータをロードしよう(Database Actions)](../adb102-dataload/)の「2.OCIオブジェクトストレージへのデータアップロード」を参考に、ダウンロードしたウォレットをObject Storageにアップロードします。
 
 <br>
 
@@ -392,7 +392,7 @@ END;
 * credential_name: データベースに保存した認証情報を識別するための名前、任意
 * username: Oracle Object Storageにアクセスするためのユーザー名
 * password: 認証トークン
-ユーザー名、認証トークンの生成については、[102:ADBにデータをロードしよう(Database Actions)](../adb102-dataload/){:target="_blank"}の「1.OCIオブジェクトストレージへのアクセス情報を取得」を参考にしてください。
+ユーザー名、認証トークンの生成については、[102:ADBにデータをロードしよう(Database Actions)](../adb102-dataload/)の「1.OCIオブジェクトストレージへのアクセス情報を取得」を参考にしてください。
 
 1. Object Storageにアップロードしたウォレットをディレクトリ・オブジェクトに配置します。
 ```sql
@@ -598,7 +598,7 @@ END;
    >
    > この設定を以下のように有効化している場合、CREATE_DATABASE_LINKのprivate_targetをTRUEに指定する必要はありません。
    >
-   > こちらの設定について、詳細は[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/private-endpoints-autonomous.html#GUID-9F76DD5E-85A3-4F5E-A88D-3D4D131FC2CA){:target="_blank"}をご参照ください。
+   > こちらの設定について、詳細は[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/private-endpoints-autonomous.html#GUID-9F76DD5E-85A3-4F5E-A88D-3D4D131FC2CA)をご参照ください。
    ```sql
    ALTER DATABASE PROPERTY SET ROUTE_OUTBOUND_CONNECTIONS = 'PRIVATE_ENDPOINT';
    ```
@@ -631,7 +631,7 @@ SELECT * FROM COUNTRIES@HR_LINK;
 
 * Oracle Database(非ADB)からADBへのDatabase Linkによる連携
 
-  別のOracle Databaseをソースとして、ターゲットをAutonomous DatabaseにしたDatabase Linkを作成できます。詳細な手順については、[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/database-links-inbound.html#GUID-EB369724-29CE-452E-8EC1-2E0B33AE0A49){:target="_blank"} をご参照ください。
+  別のOracle Databaseをソースとして、ターゲットをAutonomous DatabaseにしたDatabase Linkを作成できます。詳細な手順については、[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/database-links-inbound.html#GUID-EB369724-29CE-452E-8EC1-2E0B33AE0A49) をご参照ください。
 
 <br>
 
@@ -640,12 +640,12 @@ SELECT * FROM COUNTRIES@HR_LINK;
   ADBではOracle Database以外のデータベースへDatabase Linkを作成できます。ここでは以下の2つの構成が可能です。
   + Oracle管理の異機種間接続
   
-    この構成ではOracle Database Gatewayを作成する必要はありません。2024/8現在、[Amazon Redshift](https://qiita.com/500InternalServerError/items/d6faad7bbadf3697ee76){:target="_blank"}、[MySQL](https://qiita.com/500InternalServerError/items/d5dc1268f0c8259146df){:target="_blank"}、[PostgreSQL](https://qiita.com/500InternalServerError/items/c6a85703c3e6454de2c0){:target="_blank"}、Snowflake、Google Bigquery、MongoDB等がサポートされています。またNW構成については、Oracle DatabaseとのDatabase Linkと同様に、パブリックもプライベート構成でも可能です。
+    この構成ではOracle Database Gatewayを作成する必要はありません。2024/8現在、[Amazon Redshift](https://qiita.com/500InternalServerError/items/d6faad7bbadf3697ee76)、[MySQL](https://qiita.com/500InternalServerError/items/d5dc1268f0c8259146df)、[PostgreSQL](https://qiita.com/500InternalServerError/items/c6a85703c3e6454de2c0)、Snowflake、Google Bigquery、MongoDB等がサポートされています。またNW構成については、Oracle DatabaseとのDatabase Linkと同様に、パブリックもプライベート構成でも可能です。
     
-    ターゲットDBのタイプによって、必須ポートやパラメータ設定が異なります。詳細の手順や制限事項については[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/database-links-other-databases-oracle-managed.html#GUID-51E46547-E6A3-4D12-8392-31723B37896B){:target="_blank"}をご参照ください。
+    ターゲットDBのタイプによって、必須ポートやパラメータ設定が異なります。詳細の手順や制限事項については[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/database-links-other-databases-oracle-managed.html#GUID-51E46547-E6A3-4D12-8392-31723B37896B)をご参照ください。
   + 顧客管理の異機種間接続
 
-    顧客管理の異機種間接続では、顧客がOracle Database Gatewayを作成する必要があります。2024/8現在、SQL Server等のデータベースへのDatabase Linkはこちらを利用する必要があります。詳細は[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/database-links-other-databases-customer-managed.html#GUID-DE1B1E26-0AB8-44CF-8A9E-D42E7628ADF2){:target="_blank"}をご参照ください。
+    顧客管理の異機種間接続では、顧客がOracle Database Gatewayを作成する必要があります。2024/8現在、SQL Server等のデータベースへのDatabase Linkはこちらを利用する必要があります。詳細は[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/database-links-other-databases-customer-managed.html#GUID-DE1B1E26-0AB8-44CF-8A9E-D42E7628ADF2)をご参照ください。
 
 <br>
 
@@ -659,7 +659,7 @@ SELECT * FROM COUNTRIES@HR_LINK;
 
 # 参考資料
 
-* [Autonomous Database Cloud 技術詳細](https://speakerdeck.com/oracle4engineer/autonomous-database-cloud-ji-shu-xiang-xi){:target="_blank"}
+* [Autonomous Database Cloud 技術詳細](https://speakerdeck.com/oracle4engineer/autonomous-database-cloud-ji-shu-xiang-xi)
 
 <br>
 以上でこの章は終了です。次の章にお進みください。

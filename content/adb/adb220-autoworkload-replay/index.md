@@ -42,15 +42,15 @@ Autonomous Database(ADB)は、毎週末事前定義されたメンテナンス�
 **前提条件**
 + ADBインスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。
+    [101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。
 
 + 開発者向けの仮想マシンが構成済みであること
     <br>※作成方法については、
-    [204: 開発者向け仮想マシンのセットアップ方法](../adb204-setup-VM){:target="_blank"} を参照ください。
+    [204: 開発者向け仮想マシンのセットアップ方法](../adb204-setup-VM) を参照ください。
 
 + 作成した仮想マシンからADBへSQL*Plusで接続ができること
     <br>※接続方法については、
-    [104: クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet){:target="_blank"} を参照ください。
+    [104: クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet) を参照ください。
 
 <br>
 
@@ -121,7 +121,7 @@ Wallet_ATPRD01.zip
 sqlplus admin/Welcome12345#@ATPRD01_tp
 ```
 
-> ここでADBに接続できない場合、[104: クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet){:target="_blank"} を参照して再度設定してください。
+> ここでADBに接続できない場合、[104: クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet) を参照して再度設定してください。
 
 カレント・ディレクトリを確認します。
 ```sh
@@ -346,7 +346,7 @@ END;
 
 それではこれらの設定をしていきます。
 
-まずは通知先の設定をしていきます。[こちら](https://oracle-japan.github.io/ocitutorials/intermediates/monitoring-resources/#4-%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0%E3%81%AE%E9%80%9A%E7%9F%A5%E5%85%88%E3%81%AE%E4%BD%9C%E6%88%90){:target="_blank"}を参考に、メールアドレス等で通知を受け取れるようにします。
+まずは通知先の設定をしていきます。[こちら](https://oracle-japan.github.io/ocitutorials/intermediates/monitoring-resources/#4-%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0%E3%81%AE%E9%80%9A%E7%9F%A5%E5%85%88%E3%81%AE%E4%BD%9C%E6%88%90)を参考に、メールアドレス等で通知を受け取れるようにします。
 
 続いてイベントの設定をしていきます。
 

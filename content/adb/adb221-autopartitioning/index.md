@@ -24,11 +24,11 @@ APIとして**DBMS_AUTO_PARTITION**パッケージが提供されており、3�
 
 **前提条件 :**
  + バージョンが19cのAutonomous Databaseインスタンスが構成済みであること  
-   ADBインタンスの作成方法については、[「101:ADBインスタンスを作成してみよう」](../adb101-provisioning){:target="_blank"} を参照ください。
+   ADBインタンスの作成方法については、[「101:ADBインスタンスを作成してみよう」](../adb101-provisioning) を参照ください。
  + Always FreeまたはDeveloper ADBインスタンスを利用すること  
      自動パーティション化の対象は表のサイズがAlways Free/DeveloperADBインスタンスでは5GB以上、商用ADBインスタンスでは64GB以上である必要があります。商用ADBインスタンスの場合は5GBを64GBに置き換えてください。
   + SQLコマンドを実行するユーザー・インタフェースはSQL\*Plusを利用すること  
-    環境は、[「204:開発者向け仮想マシンのセットアップ方法」](../adb204-setup-VM/){:target="_blank"} で作成できます。また、ADBへの接続方法は [「104: クレデンシャル・ウォレットを利用して接続してみよう」](../adb104-connect-using-wallet){:target="_blank"} を参照ください。
+    環境は、[「204:開発者向け仮想マシンのセットアップ方法」](../adb204-setup-VM/) で作成できます。また、ADBへの接続方法は [「104: クレデンシャル・ウォレットを利用して接続してみよう」](../adb104-connect-using-wallet) を参照ください。
  + ユーザーはADMINユーザーで実行すること  
     Autonomous Databaseへの接続文字列は「atpdev01_medium」、各ユーザのパスワードはすべて「Welcome12345#」とします。
  
@@ -109,7 +109,7 @@ SIZE_IN_MEGABYTES
 <br>
 
 # 3. 自動パーティション化の対象になるかを検証
-作成したAPART表が自動パーティション化の対象になるかを検証します。検証に合格するためには[こちらのドキュメントに記載されている条件](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/ref-dbms_auto_partition-package.html#GUID-FFB58355-5A90-4506-AF5F-8615A0A3CCEF){:target="_blank"}を満たす必要があります。  
+作成したAPART表が自動パーティション化の対象になるかを検証します。検証に合格するためには[こちらのドキュメントに記載されている条件](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/ref-dbms_auto_partition-package.html#GUID-FFB58355-5A90-4506-AF5F-8615A0A3CCEF)を満たす必要があります。  
 検証にはDBMS_AUTO_PARTITIONパッケージの**VALIDATE_CANDICATE_TABLE**ファンクションを利用します。
 
 ```sql
@@ -282,12 +282,12 @@ PL/SQL procedure successfully completed.
 + REPORT ONLY : 推奨事項の生成のみ（デフォルト）
 + OFF         : 新しい推奨事項の生成と推奨パーティション方法によるパーティション化実施を無効にする
 
-そのほかのCONFIGUREプロシージャのパラメータは[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/ref-dbms_auto_partition-package.html#GUID-D16AEDE8-FF7B-49A8-B58D-A47F2E73D4F1){:target="_blank"}を参照ください。
+そのほかのCONFIGUREプロシージャのパラメータは[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/ref-dbms_auto_partition-package.html#GUID-D16AEDE8-FF7B-49A8-B58D-A47F2E73D4F1)を参照ください。
 
 
 ## 6-2 パーティション化の推奨事項の生成
 次にパーティション化の推奨事項を生成するために、DBMS_AUTO_PARTITIONパッケージの**RECOMMENDED_PARTITION_METHOD**ファンクションを実行します。  
-本チュートリアルでは表を指定してパーティション化をしますが、自動取得されているワークロードを対象にパーティション化対象になる表を検索し推奨事項を生成することも可能です。パラメータの詳細については[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/ref-dbms_auto_partition-package.html#GUID-A07E1888-33A5-4883-BE09-550CF176385D){:target="_blank"}をご参照ください。
+本チュートリアルでは表を指定してパーティション化をしますが、自動取得されているワークロードを対象にパーティション化対象になる表を検索し推奨事項を生成することも可能です。パラメータの詳細については[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/ref-dbms_auto_partition-package.html#GUID-A07E1888-33A5-4883-BE09-550CF176385D)をご参照ください。
 
 ```sql
  set timing on
@@ -373,7 +373,7 @@ RECOMMENDATION_ID                PARTITION_METHOD                               
 ```
  
 ## 7-2 推奨事項レポートのファイル出力
-またDBMS_AUTO_PARTITIONパッケージの**REPORT_ACTIVITY**ファンクションと**REPORT_LAST_ACTIVITY**ファンクションを利用すると、期間や形式を選択してレポートをファイル出力することができます。指定できるパラメータについては[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/ref-dbms_auto_partition-package.html#GUID-E5ADABC6-7EE8-40C4-82F4-FBBC70FF3167){:target="_blank"}をご参照ください。  
+またDBMS_AUTO_PARTITIONパッケージの**REPORT_ACTIVITY**ファンクションと**REPORT_LAST_ACTIVITY**ファンクションを利用すると、期間や形式を選択してレポートをファイル出力することができます。指定できるパラメータについては[こちら](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/ref-dbms_auto_partition-package.html#GUID-E5ADABC6-7EE8-40C4-82F4-FBBC70FF3167)をご参照ください。  
 例えば、次のSQLは最新の推奨事項のレポートを出力します。
 
 ```sql
@@ -566,11 +566,11 @@ APPLY_TIMESTAMP_START          APPLY_TIMESTAMP_END
 
 # 参考資料
 
-+ 『Oracle Autonomous Databaseサーバーレスの使用』["Autonomous Databaseでの自動パーティション化の管理"](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/mdw-managing-automatic-partitioning-autonomous-database.html#GUID-03973BB7-BD09-4E5E-B47F-430D7CC949D6){:target="_blank"}
++ 『Oracle Autonomous Databaseサーバーレスの使用』["Autonomous Databaseでの自動パーティション化の管理"](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/mdw-managing-automatic-partitioning-autonomous-database.html#GUID-03973BB7-BD09-4E5E-B47F-430D7CC949D6)
 
-+ [津島博士のパフォーマンス講座 Oracle Partitioingの基本と最新情報](https://speakerdeck.com/oracle4engineer/technology-night78-oracle-partitioning){:target="_blank"}
++ [津島博士のパフォーマンス講座 Oracle Partitioingの基本と最新情報](https://speakerdeck.com/oracle4engineer/technology-night78-oracle-partitioning)
 
-+ [Livelabs:Automatic Partitioning in Autonomous Database](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=935){:target="_blank"}
++ [Livelabs:Automatic Partitioning in Autonomous Database](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=935)
 
 
 以上でこの章は終了です。次の章にお進みください。

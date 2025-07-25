@@ -28,7 +28,7 @@ ExaDB-XSは、Exadata Database Service on Dedicated Infrastructure (ExaDB-D)と�
 
 + **サービス制限の確認・引き上げのリクエスト**
 
-    ExaDB-XSを利用するには、まずサービス制限を引き上げる必要があります。サービス制限については[もしもみなみんがDBをクラウドで動かしてみたら - 第16回 サービス制限について](https://blogs.oracle.com/otnjp/post/minamin-cloud-016-servicelimits){:target="_blank"}を参照ください。
+    ExaDB-XSを利用するには、まずサービス制限を引き上げる必要があります。サービス制限については[もしもみなみんがDBをクラウドで動かしてみたら - 第16回 サービス制限について](https://blogs.oracle.com/otnjp/post/minamin-cloud-016-servicelimits)を参照ください。
 
 
 <br>
@@ -47,10 +47,10 @@ ExaDB-XSは、Exadata Database Service on Dedicated Infrastructure (ExaDB-D)と�
 <a id="anchor1"></a>
 
 # 1. VMクラスタおよびデータベースの作成
-[ExascaleインフラストラクチャでのOracle Exadata Database Serviceのプロビジョニング](https://docs.oracle.com/ja/learn/exadb-xs-db/index.html){:target="_blank"}を参考に、ExaDB-XSのVMクラスタを作成し、その上にコンテナ・データベースをプロビジョニングします。
+[ExascaleインフラストラクチャでのOracle Exadata Database Serviceのプロビジョニング](https://docs.oracle.com/ja/learn/exadb-xs-db/index.html)を参考に、ExaDB-XSのVMクラスタを作成し、その上にコンテナ・データベースをプロビジョニングします。
 
 > **タスク2：コンテナ・データベースのプロビジョニング**のステップ3の**「データベース・バックアップの構成」**でバックアップ保存先を設定します。
-> その際、デフォルト設定の Autonomous Recovery Service を使用する場合は、[ Autonomous Recovery Service (RCV/ZRCV) をセットアップしよう](/ocitutorials/basedb/dbcs107-zrcv/){:target="_blank"}を参考に、セットアップを行ってください。
+> その際、デフォルト設定の Autonomous Recovery Service を使用する場合は、[ Autonomous Recovery Service (RCV/ZRCV) をセットアップしよう](/ocitutorials/basedb/dbcs107-zrcv/)を参考に、セットアップを行ってください。
 > オブジェクト・ストレージを選択する場合は、セットアップ作業は不要です。
 >
 > ![](console_01.png)
@@ -335,8 +335,8 @@ ExaDB-XSは、Exadata Database Service on Dedicated Infrastructure (ExaDB-D)と�
 <a id="anchor11"></a>
 
 # 参考資料
-+ [Oracle Exadata Database Service on Exascale Infrastructureの紹介](https://blogs.oracle.com/oracle4engineer/post/ja-introducing-oracle-exadata-database-service-on-exascale-infrastructure){:target="_blank"}
-+ [ExascaleインフラストラクチャでのOracle Exadata Database Serviceのプロビジョニング](https://docs.oracle.com/ja/learn/exadb-xs-db/index.html){:target="_blank"}
++ [Oracle Exadata Database Service on Exascale Infrastructureの紹介](https://blogs.oracle.com/oracle4engineer/post/ja-introducing-oracle-exadata-database-service-on-exascale-infrastructure)
++ [ExascaleインフラストラクチャでのOracle Exadata Database Serviceのプロビジョニング](https://docs.oracle.com/ja/learn/exadb-xs-db/index.html)
 
 <br/>
 

@@ -116,7 +116,7 @@ Always Freeの範囲内でも十分に確認できる題材となっているの
 
 1. 必要データのダウンロード
 
-    今回利用するワークショップ用のデータを[こちら](https://github.com/r-deguchi/random-acct-txn){:target="_blank"}から**random-acct-txn-data.zip**というファイルをダウンロードします。
+    今回利用するワークショップ用のデータを[こちら](https://github.com/r-deguchi/random-acct-txn)から**random-acct-txn-data.zip**というファイルをダウンロードします。
 
     ダウンロードができたら、unzipしておきましょう。unzipすると下記のようなデータが確認可能となっており、mac OS用のデータも入っています。
     ![dataunzip.jpg](dataunzip.jpg)

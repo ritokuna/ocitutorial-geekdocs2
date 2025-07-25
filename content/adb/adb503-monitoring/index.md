@@ -22,7 +22,7 @@ Autonomous Databaseはデータベースの様々な管理タスクをADB自身�
 **前提条件**
 + ADBインスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。  
+    [101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。  
     なお本記事では、後続の章でCPU使用率が閾値を超えた際の挙動を確認するため、**ECPU数は4、auto scalingは無効** で作成しています。
 
 <BR>
@@ -42,7 +42,7 @@ Autonomous Databaseに対する監視・通知を行うツールはいくつか�
 単体のADBインスタンスに対しては、OCIモニタリングとOCI Eventsを使ってメトリック監視/イベント監視をすることができます。
 
 ## 2-1. アラームの通知先の作成
-監視設定の前に通知先を作成しておく必要があります。[こちら](https://oracle-japan.github.io/ocitutorials/intermediates/monitoring-resources/#4-%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0%E3%81%AE%E9%80%9A%E7%9F%A5%E5%85%88%E3%81%AE%E4%BD%9C%E6%88%90){:target="_blank"} を参考に、トピックの作成・サブスクリプションの作成を行います。
+監視設定の前に通知先を作成しておく必要があります。[こちら](https://oracle-japan.github.io/ocitutorials/intermediates/monitoring-resources/#4-%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0%E3%81%AE%E9%80%9A%E7%9F%A5%E5%85%88%E3%81%AE%E4%BD%9C%E6%88%90) を参考に、トピックの作成・サブスクリプションの作成を行います。
 
 <br>
 
@@ -51,7 +51,7 @@ OCIモニタリングでは、OCI上の各種リソースの性能や状態の�
 
 今回は、ADBのCPUの閾値を超えた際に通知が来るよう設定し、その挙動を確認します。
 
-1. まずは[こちら](https://oracle-japan.github.io/ocitutorials/intermediates/monitoring-resources/#4-%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0%E3%81%AE%E9%80%9A%E7%9F%A5%E5%85%88%E3%81%AE%E4%BD%9C%E6%88%90){:target="_blank"} を参考に、アラームの通知先の作成をします。
+1. まずは[こちら](https://oracle-japan.github.io/ocitutorials/intermediates/monitoring-resources/#4-%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%A0%E3%81%AE%E9%80%9A%E7%9F%A5%E5%85%88%E3%81%AE%E4%BD%9C%E6%88%90) を参考に、アラームの通知先の作成をします。
 
 1. 次にアラームの定義の作成をします。ハンバーガーメニューの**Observability & Management** の **[アラーム定義]** をクリックします。
 ![monitoring1イメージ](monitoring1.png)
@@ -190,7 +190,7 @@ OCIではメトリック監視とは別に、あらかじめ指定されたイ�
 > 
 > イベント・タイプ: Information - AJDストレージ超過、APEXアップグレード可能/開始/終了、新規DB接続、非アクティブDB接続超過、長期バックアップ開始/終了/スケジューリング、メンテンナンス開始/終了/設定、オペレーター・アクセス、ワークロード・キャプチャ開始/終了、ワークロード・リプレイ開始/終了
 > 
-> その他のイベント条件の詳細は[こちら](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-database-events.html#GUID-8DBAD1C3-55BE-49F8-AB43-AB3EA708AF03){:target="_blank"}
+> その他のイベント条件の詳細は[こちら](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-database-events.html#GUID-8DBAD1C3-55BE-49F8-AB43-AB3EA708AF03)
 
 上記の手順に沿って、ADBに対してイベント・タイプCriticalのルールを作成しておくと、以下のようなメールが届くことがあります。  
 この例は、ADBがダウンした場合の通知です。
@@ -221,7 +221,7 @@ Autonomous Databaseサービス関連の問題について、以下の手順で�
 
 > （参考）
 > OCIには他にもテナント管理者のみが受け取れる通知がいくつか存在します。
-> [こちら](https://qiita.com/NICAREGI/items/30dec52ba4d48c78675c){:target="_blank"} にまとめられている記事がございますので、ご参照ください。
+> [こちら](https://qiita.com/NICAREGI/items/30dec52ba4d48c78675c) にまとめられている記事がございますので、ご参照ください。
 
 
 <br>
@@ -244,7 +244,7 @@ Enterprise Manager13.4 RU4(13.4.0.4)以降でAutonomous Databaseに対応して�
 
 ![em_sampleイメージ](em_sample.png)
 
-ADBに対する使用手順は[Enterprise Manager Cloud Control 『Oracle Autonomous Database管理者ガイド』](https://docs.oracle.com/cd/F33143_01/emadb/index.html){:target="_blank"} をご参照ください。
+ADBに対する使用手順は[Enterprise Manager Cloud Control 『Oracle Autonomous Database管理者ガイド』](https://docs.oracle.com/cd/F33143_01/emadb/index.html) をご参照ください。
 
 <br>
 
@@ -253,7 +253,7 @@ Database Managementでは、オンプレミスおよびクラウドデータベ�
 
 ![database_managementイメージ](database_management.png)
 
-設定手順については、[こちら](https://docs.oracle.com/ja-jp/iaas/database-management/doc/enable-database-management-autonomous-databases.html){:target="_blank"} をご参照ください。
+設定手順については、[こちら](https://docs.oracle.com/ja-jp/iaas/database-management/doc/enable-database-management-autonomous-databases.html) をご参照ください。
 
 <br>
 
@@ -265,9 +265,9 @@ Database Managementでは、オンプレミスおよびクラウドデータベ�
 
 # 参考資料
 
-- [モニタリング機能でOCIのリソースを監視する](https://oracle-japan.github.io/ocitutorials/intermediates/monitoring-resources/){:target="_blank"}
+- [モニタリング機能でOCIのリソースを監視する](https://oracle-japan.github.io/ocitutorials/intermediates/monitoring-resources/)
 
-- [イベントの管理](https://docs.oracle.com/ja-jp/iaas/Content/Events/Task/managingrules.htm){:target="_blank"}
+- [イベントの管理](https://docs.oracle.com/ja-jp/iaas/Content/Events/Task/managingrules.htm)
 
 <br>
 以上でこの章は終了です。次の章にお進みください。

@@ -23,7 +23,7 @@ header:
 **前提条件** 
 
 * ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。  
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。  
 * 以下にリンクされているファイルをダウンロードしていること
 	+ [liquid.csv](../adb208-oml-notebook/ADB-OML-Tutorial/liquid.csv)
 	+ [order_items.csv](../adb208-oml-notebook/ADB-OML-Tutorial/order_items.csv)

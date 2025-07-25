@@ -25,7 +25,7 @@ Oracle Spatial Studio (Spatial Studioとも呼ばれます)は、Oracle Database
 **前提条件**
 + ADBインスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。  
+    [101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。  
 
 <BR>
 
@@ -76,7 +76,7 @@ TO studio_repo;
 
 ## 1-4. ウォレットのダウンロード
 Spatial Studioが、作成したADBリポジトリ用スキーマに接続するには、ウォレットが必要です。
-[104 : クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet/){:target="_blank"} を参考に、ウォレットをダウンロードします。
+[104 : クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet/) を参考に、ウォレットをダウンロードします。
 
 ## 1-5. マーケットプレイスからSpatial Studioを選択する
 1. 左上のハンバーガーメニューをクリックして、[マーケットプレイス]を選択します。
@@ -92,7 +92,7 @@ Spatial Studioが、作成したADBリポジトリ用スキーマに接続する
 1. スタックに任意の名前と説明を追加し、コンパートメントを選択します。
 ![stack_informationイメージ](stack_information.jpg)
 
-1. 可用性ドメインとインスタンスのシェイプを選択します。Compute Shapeの詳細は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm){:target="_blank"} です。
+1. 可用性ドメインとインスタンスのシェイプを選択します。Compute Shapeの詳細は[こちら](https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm) です。
 ![spatial_computeイメージ](spatial_compute.jpg)
 
 1. HTTPSポートとSpatial Studio Adminのユーザー名をデフォルトから変更することができます。Spatial Studio Adminの認証には、OCI Vault またはパスワードを使用できます。下の画像は、パスワードを使った例です。なお、本番環境では、OCI Vault を使用することをお勧めします。
@@ -138,7 +138,7 @@ Spatial Studioが、作成したADBリポジトリ用スキーマに接続する
 1. 『1-4. ウォレットのダウンロード』で保存したウォレットファイルを選択（またはドラッグ＆ドロップ）します。読み込み後、[OK]をクリックします。
 ![upload_walletイメージ](upload_wallet.jpg)
 
-1. 『1-1. リポジトリ用にスキーマを作成する』で作成したユーザー名（studio_repo）とパスワード、およびサービスを入力します。今回は、サービスレベルはmediumに設定しておきます。接続サービスについては、[こちら](../adb201-service-names/){:target="_blank"}もご参照ください。以下の画像のように入力し、[OK]をクリックします。
+1. 『1-1. リポジトリ用にスキーマを作成する』で作成したユーザー名（studio_repo）とパスワード、およびサービスを入力します。今回は、サービスレベルはmediumに設定しておきます。接続サービスについては、[こちら](../adb201-service-names/)もご参照ください。以下の画像のように入力し、[OK]をクリックします。
     <div style="text-align: center"><img src="specify_metadata_schema.jpg"></div> 
 1. Spatial Studioがスキーマへの初期接続を行い、いくつかのメタデータ・テーブルを作成します。完了すると、Getting Started情報とともにSpatial Studioが開きます。以下の画像のように表示されれば、ログイン成功です。
 ![getting_startedイメージ](getting_started.jpg)
@@ -149,7 +149,7 @@ Spatial Studioが、作成したADBリポジトリ用スキーマに接続する
 
 # 2. 地理空間データを含むCSV形式ファイルのデータベースへのロード
 ## 2-1. 駅の場所データのダウンロード
-日本の全駅データを[こちら](https://ekidata.jp/){:target="_blank"}からダウンロードします。なお、会員登録（無料）が必要です。  
+日本の全駅データを[こちら](https://ekidata.jp/)からダウンロードします。なお、会員登録（無料）が必要です。  
 以下の画像のように、最新の駅データのcsvファイルをダウンロードします。
 ![station_dataイメージ](station_data.jpg)
 
@@ -202,8 +202,8 @@ Spatial Studioが、作成したADBリポジトリ用スキーマに接続する
 続いて東京都の境界データと国勢調査の年齢階層データ、先ほどロードした全国の駅データを使って、Spatial Studioで分析をしてみましょう。
 
 ## 3-1. 境界データ/小地域（東京都）のダウンロード
-[こちら](https://www.e-stat.go.jp/gis/statmap-search?page=1&type=2&aggregateUnitForBoundary=A&toukeiCode=00200521&toukeiYear=2015&serveyId=A002005212015&prefCode=13&coordsys=1&format=shape&datum=2000){:target="_blank"} から東京都の境界データのShapefileをダウンロードします。  
-[利用規約](https://www.e-stat.go.jp/terms-of-use){:target="_blank"}を読んでzipファイルを展開します。
+[こちら](https://www.e-stat.go.jp/gis/statmap-search?page=1&type=2&aggregateUnitForBoundary=A&toukeiCode=00200521&toukeiYear=2015&serveyId=A002005212015&prefCode=13&coordsys=1&format=shape&datum=2000) から東京都の境界データのShapefileをダウンロードします。  
+[利用規約](https://www.e-stat.go.jp/terms-of-use)を読んでzipファイルを展開します。
 > （補足）
 > Shapefile（シェープファイル）とは、Esri社が提唱する、GISデータのフォーマットの1つです。  
 > https://www.esrij.com/gis-guide/esri-dataformat/shapefile/  
@@ -211,7 +211,7 @@ Spatial Studioが、作成したADBリポジトリ用スキーマに接続する
 
 ![tokyo_shpイメージ](tokyo_shp.jpg)
 
-出典：[政府統計の総合窓口(e-Stat)](https://www.e-stat.go.jp/){:target="_blank"}
+出典：[政府統計の総合窓口(e-Stat)](https://www.e-stat.go.jp/)
 
 以下の4つのファイルが展開されます。
 + h27ka13.dbf
@@ -222,7 +222,7 @@ Spatial Studioが、作成したADBリポジトリ用スキーマに接続する
 <br>
 
 ## 3-2. 国勢調査の年齢階層データのダウンロード
-[こちら](https://github.com/r-deguchi/age_group_tokyo){:target="_blank"} から東京都の年齢階層データ（age_group_tokyo.csv）をダウンロードします。合わせてテーブル定義書も確認します。  
+[こちら](https://github.com/r-deguchi/age_group_tokyo) から東京都の年齢階層データ（age_group_tokyo.csv）をダウンロードします。合わせてテーブル定義書も確認します。  
 ※ 政府統計の総合窓口(e-Stat)『平成２７年国勢調査 人口等基本集計 年齢（５歳階級）、男女別人口、総年齢及び平均年齢（外国人－特掲）－町丁・字等』のデータを一部加工して作成しています。
 
 <br>
@@ -298,7 +298,7 @@ group by b.station_name;
 ```
 
 + sdo_anyinteract：表内のジオメトリに、特定のジオメトリとの位相関係があるかどうかを確認する、つまり東京都の小地域の空間データと駅の座標位置になんらかの位相関係があればTRUEを返します。
-+ sdo_geometry：Oracleのデータベース上に点やポリゴンを収容するオブジェクト型です。引数の2001は二次元の点を表し、8307はWGS84経度/緯度座標系に関連付けられています。詳しくは[こちら](https://docs.oracle.com/cd/F19136_01/spatl/spatial-datatypes-metadata.html#GUID-683FF8C5-A773-4018-932D-2AF6EC8BC119){:target="_blank"} をご参照ください。
++ sdo_geometry：Oracleのデータベース上に点やポリゴンを収容するオブジェクト型です。引数の2001は二次元の点を表し、8307はWGS84経度/緯度座標系に関連付けられています。詳しくは[こちら](https://docs.oracle.com/cd/F19136_01/spatl/spatial-datatypes-metadata.html#GUID-683FF8C5-A773-4018-932D-2AF6EC8BC119) をご参照ください。
 + sdo_point_type：点ジオメトリの座標を格納するオブジェクト型です。
 
 10秒ほど待つと、以下のような結果が返されます。東京都の各駅周辺の地域の年齢階層別の人口が表示されています。
@@ -378,8 +378,8 @@ Oracle Spatial StudioはAutonomous Databaseに標準で含まれております�
 <BR/>
 
 # 参考資料
-+ 『Oracle Autonomous Database Serverlessの使用』 [Autonomous DatabaseでのOracle Spatialの使用](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/spatial-autonomous-database.html#GUID-2090A775-E049-4695-B371-E583313A5F8C){:target="_blank"}
-+ Oracle Database 『開発者ガイド』 [20 空間演算子](https://docs.oracle.com/cd/E96517_01/spatl/spatial-operators-reference.html#GUID-85422854-5133-4F1D-BF0E-228CA6EDAF87){:target="_blank"}
++ 『Oracle Autonomous Database Serverlessの使用』 [Autonomous DatabaseでのOracle Spatialの使用](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/spatial-autonomous-database.html#GUID-2090A775-E049-4695-B371-E583313A5F8C)
++ Oracle Database 『開発者ガイド』 [20 空間演算子](https://docs.oracle.com/cd/E96517_01/spatl/spatial-operators-reference.html#GUID-85422854-5133-4F1D-BF0E-228CA6EDAF87)
 
 
 以上でこの章は終了です。次の章にお進みください。

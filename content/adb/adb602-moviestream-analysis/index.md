@@ -30,9 +30,9 @@ MovieStreamはビジネスを成長させるため、顧客の視聴傾向や適
 
 **前提条件：**
 + ADBインスタンスが構成済みであること
-    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。  
+    <br>※ADBインタンスを作成方法については、[101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。  
 
-+ [601: ADWでMovieStreamデータのロード・更新をしよう](../adb601-moviestream-load){:target="_blank"}のチュートリアルを完了していること
++ [601: ADWでMovieStreamデータのロード・更新をしよう](../adb601-moviestream-load)のチュートリアルを完了していること
 
 <br>
 
@@ -103,7 +103,7 @@ ORDER BY TO_CHAR(day, 'D');
 **SUM(actual_price * quantity_sold) OVER ()**で、すべての行の総計を計算します。
 
 > （参考）
-> ウィンドウ関数についてさらに詳しく知りたい場合は、[こちら](https://docs.oracle.com/cd/E82638_01/dwhsg/sql-analysis-reporting-data-warehouses.html#GUID-20EFBF1E-F79D-4E4A-906C-6E496EECA684){:target="_blank"}をご参照ください。
+> ウィンドウ関数についてさらに詳しく知りたい場合は、[こちら](https://docs.oracle.com/cd/E82638_01/dwhsg/sql-analysis-reporting-data-warehouses.html#GUID-20EFBF1E-F79D-4E4A-906C-6E496EECA684)をご参照ください。
 
 では、これらの2つの計算を組み合わせて、各曜日の割合を計算します。
 
@@ -249,7 +249,7 @@ ORDER BY 1;
 ここでは、売上データを分析するためのRFM（Recency Frequency Monetary）クエリを作成します。この一般的に使用されている顧客指標では、以前のクエリで使用したSQL分析関数のいくつかを組み合わせ、WITH句を使用してより複雑なクエリを作成します。
 
 > （補足）
-> RFMの詳細については、Wikipediaのこの[ページ](https://en.wikipedia.org/wiki/RFM_(market_research)){:target="_blank"}を参照してください。
+> RFMの詳細については、Wikipediaのこの[ページ](https://en.wikipedia.org/wiki/RFM_(market_research))を参照してください。
 
 RFM分析を利用して、顧客の行動に関する理解を深めます。RFMは、顧客価値の分析に非常によく使われる手法です。一般的な顧客マーケティング、ダイレクトマーケティング、小売業などでよく使われています。
 
@@ -271,7 +271,7 @@ GROUP BY customer_id, customer_name, country, gender, age, income_band;
 
 1. 3~4秒で実行され、以下のような結果が返されます。
 ![bin_result1イメージ](bin_result1.png)
-RFM_MONETARY列は、カテゴリーの番号を示しています。この列の値が1であれば、その顧客が低支出の顧客であることを示し、5であれば高支出の顧客であることを示します。SQLドキュメントでNTILE関数の使用に関する詳細を見るには、[こちら](https://docs.oracle.com/cd/F19136_01/sqlrf/NTILE.html){:target="_blank"}をクリックしてください。
+RFM_MONETARY列は、カテゴリーの番号を示しています。この列の値が1であれば、その顧客が低支出の顧客であることを示し、5であれば高支出の顧客であることを示します。SQLドキュメントでNTILE関数の使用に関する詳細を見るには、[こちら](https://docs.oracle.com/cd/F19136_01/sqlrf/NTILE.html)をクリックしてください。
 
 ## 4-2. 顧客の頻度別分類
 1. 顧客がどのくらいの頻度で映画を視聴しているかを調べます。各顧客が視聴した映画の数を計算し、その計算結果を5つに分けます。
@@ -488,7 +488,7 @@ order by mr.customer_id, first_quarter, family_movies, sf_movies;
 <a id="anchor6"></a>
 
 # 6. 機械学習モデルの適用
-Autonomous Data Warehouseには、機械学習アルゴリズムが組み込まれています。ここでは、ビジネス上の問題を解決するための機械学習モデルの使用について簡単にご紹介します。ADWでの機械学習については、[こちら](../adb107-machine-learning/){:target="_blank"}もご参照ください。
+Autonomous Data Warehouseには、機械学習アルゴリズムが組み込まれています。ここでは、ビジネス上の問題を解決するための機械学習モデルの使用について簡単にご紹介します。ADWでの機械学習については、[こちら](../adb107-machine-learning/)もご参照ください。
 
 本記事では、自分のアカウントに対して「残高不足」になる可能性の高い顧客を人口統計学的に特定します。これが特定できれば、顧客がアカウントをよりよく管理できるようになります。
 
@@ -570,13 +570,13 @@ ORDER BY RANK;
 <br>
 
 # おわりに
-本記事では、[601: ADWでMovieStreamデータのロード・更新をしよう](../adb601-moviestream-load){:target="_blank"}に続く内容として、MOVIE_SALESデータの分析の手法をいくつかご紹介しました。今回ご紹介した方法以外にも、Autonomous Data Warehouseにはデータ分析に有用な機能が多数備わっています。データのロード、変換、管理、そして分析まで、全てを1つのデータベースで行うことができるのはAutonomous Data Warehouseならでは、と言えます。このチュートリアルを参考に、ぜひ一度"**完全自律型データベース**"を体験してみてください。
+本記事では、[601: ADWでMovieStreamデータのロード・更新をしよう](../adb601-moviestream-load)に続く内容として、MOVIE_SALESデータの分析の手法をいくつかご紹介しました。今回ご紹介した方法以外にも、Autonomous Data Warehouseにはデータ分析に有用な機能が多数備わっています。データのロード、変換、管理、そして分析まで、全てを1つのデータベースで行うことができるのはAutonomous Data Warehouseならでは、と言えます。このチュートリアルを参考に、ぜひ一度"**完全自律型データベース**"を体験してみてください。
 
 <br>
 
 # 参考資料
-+ LiveLabs [Analyze MovieStream data in Oracle Autonomous Database using SQL Workshop](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/view-workshop?wid=852){:target="_blank"}
-+ Oracle Big Data Blog [Structured vs. Unstructured Data](https://blogs.oracle.com/bigdata/post/structured-vs-unstructured-data){:target="_blank"}
++ LiveLabs [Analyze MovieStream data in Oracle Autonomous Database using SQL Workshop](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/view-workshop?wid=852)
++ Oracle Big Data Blog [Structured vs. Unstructured Data](https://blogs.oracle.com/bigdata/post/structured-vs-unstructured-data)
 
 
 以上で、この章は終了です。  

@@ -31,7 +31,7 @@ Autonomous Databaseでは自動バックアップがオンラインで取得さ�
 **前提条件**
 + ADBインスタンスが構成済みであること
     <br>※ADBインタンスの作成方法については、
-    [101:ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照ください。  
+    [101:ADBインスタンスを作成してみよう](../adb101-provisioning) を参照ください。  
 
 <BR>
 
@@ -160,7 +160,7 @@ CURRENT_TIMESTAMP
 > （補足）現在時刻を問い合わせる際によく利用されるsysdateおよびsystimestamp関数ですが、Autonomous DatabaseはOSタイムゾーンがUTC固定となるため、返り値が日本時間（JST、+9:00)とはならない点にご留意ください。
 >
 >返り値をJSTで取得したい場合、DBのタイムゾーンをJSTに変更後、SYSDATE_AT_DBTIMEZONEパラメータをTRUEに変更することで、sysdateおよびsystimestampをDBのタイムゾーンで返すようにすることができます。
->詳しい手順は[こちら](https://qiita.com/500InternalServerError/items/c893dfe46a6c45975c72){:target="_blank"}をご参照ください。
+>詳しい手順は[こちら](https://qiita.com/500InternalServerError/items/c893dfe46a6c45975c72)をご参照ください。
 
 <BR>
 
@@ -212,7 +212,7 @@ Taro Oracleにリストアされていることが確認できました。
 
 Autonomous Databaseでは、自動バックアップを補完するために長期バックアップを作成することもでき、Autonomous Databaseの長期バックアップはAutonomous Database Backup Storageで3ヶ月〜10間保持されます。自動バックアップと異なり、コンソール/APIを使用して、週次、月次、若しくは年次でスケジューリングをする必要があります。
 
-長期バックアップについては、[Autonomous Databaseで長期バックアップを作成する](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/backup-long-term.html){:target="_blank"} を参照ください。  
+長期バックアップについては、[Autonomous Databaseで長期バックアップを作成する](https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/backup-long-term.html) を参照ください。  
 
 また、Autonomous Databaseのバックアップ・リストアの手法一覧は下記でご確認いただけます。
 

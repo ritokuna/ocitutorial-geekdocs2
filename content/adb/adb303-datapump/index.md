@@ -15,7 +15,7 @@ header:
 
 Oracle Databaseのデータ移行として、ここでは従来からよく利用されるData Pumpを利用してAutonomous Databaseに移行する手順をご紹介します。
 
-先の[「301 : 移行元となるデータベースを作成しよう」](../adb301-create-source-db){:target="_blank"}にて事前に作成しておいたBaseDBインスタンス上のHRスキーマを、以下の流れに沿ってAutonomous Databaseに移行してみたいと思います。
+先の[「301 : 移行元となるデータベースを作成しよう」](../adb301-create-source-db)にて事前に作成しておいたBaseDBインスタンス上のHRスキーマを、以下の流れに沿ってAutonomous Databaseに移行してみたいと思います。
 
 ![イメージ](img100.png)
 
@@ -41,8 +41,8 @@ Oracle Databaseのデータ移行として、ここでは従来からよく利�
 <BR>
 
 **前提条件 :**
-+ [「204: マーケットプレイスからの仮想マシンのセットアップ方法」](../adb204-setup-VM/){:target="_blank"}を完了していること
-+ [「301 : 移行元となるデータベースを作成しよう」](../adb301-create-source-db){:target="_blank"}を完了していること
++ [「204: マーケットプレイスからの仮想マシンのセットアップ方法」](../adb204-setup-VM/)を完了していること
++ [「301 : 移行元となるデータベースを作成しよう」](../adb301-create-source-db)を完了していること
 
 
 
@@ -146,7 +146,7 @@ vi expdp_hr.sh
     > - dumpfile句に指定するファイル名にはワイルドカード（%u）を付けてください。複数のファイルを同時に出力することで高速化が可能です。
     > - filesize句は5GBよりも小さい値を指定してください。ブラウザ経由でオブジェクトストレージに転送できるデータは1ファイル辺り最大5GBの制限があるためです。
     > - excludeオプションを利用することで、不要なオブジェクトを除いてエクスポートすることが可能です。例えばADWを利用するような分析系のアプリの場合において、性能観点で付与した索引はExadataを利用すると不要になることが多いため、IndexをExcludeの引数に指定します。
-    > - 詳細は[「マニュアル(Autonomous DatabaseでのOracle Data Pumpを使用したデータのインポート)」](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/load-data-data-pump.html#GUID-30DB1EEA-DB45-49EA-9E97-DF49A9968E24){:target="_blank"}を参照ください。
+    > - 詳細は[「マニュアル(Autonomous DatabaseでのOracle Data Pumpを使用したデータのインポート)」](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/load-data-data-pump.html#GUID-30DB1EEA-DB45-49EA-9E97-DF49A9968E24)を参照ください。
 
 
 ## 1-3. エクスポートを実施
@@ -182,7 +182,7 @@ chmod +x expdp_hr.sh
 # 2. オブジェクトストレージへのアクセストークンを取得
 次に、オブジェクトストレージへのアクセストークンを取得します。（尚、既にトークンを取得済みであれば本手順はスキップ可能です）
 
-[**「クラウド・ストレージからデータをロードしてみよう」**](../adb102-dataload/#anchor2){:target="_blank"}から、**「1. OCIオブジェクトストレージへのアクセス情報を取得」**を参考に実施してください。
+[**「クラウド・ストレージからデータをロードしてみよう」**](../adb102-dataload/#anchor2)から、**「1. OCIオブジェクトストレージへのアクセス情報を取得」**を参考に実施してください。
 
 <BR>
 
@@ -192,7 +192,7 @@ chmod +x expdp_hr.sh
 
 次に、手元にコピーしてきたダンプファイル(export_hr_xx.dmp)をオブジェクト・ストレージの任意のバケットにアップロードし、アクセスURLを取得します。
 
-[**「クラウド・ストレージからデータをロードしてみよう」**](../adb102-dataload/#anchor2){:target="_blank"}から、**「2. OCIオブジェクトストレージへのデータアップロード」**を参考に実施してください。
+[**「クラウド・ストレージからデータをロードしてみよう」**](../adb102-dataload/#anchor2)から、**「2. OCIオブジェクトストレージへのデータアップロード」**を参考に実施してください。
 
 
 > * 通常Data Pumpを利用する場合、ディレクトリ・オブジェクトを作成しそこからインポートしますが、ADBは仕様上OS領域にアクセスできないため、オブジェクトストレージ経由でロードする必要があります。
@@ -205,7 +205,7 @@ chmod +x expdp_hr.sh
 # 4. Autonomous Databaseへのインポート
 
 それではオブジェクトストレージ上のダンプファイルをADBインスタンスにインポートしてみましょう。
-以降では[「204: マーケットプレイスからの仮想マシンのセットアップ方法 」](../adb204-setup-VM/){:target="_blank"}にて作成した仮想マシンにログインして実施します。
+以降では[「204: マーケットプレイスからの仮想マシンのセットアップ方法 」](../adb204-setup-VM/)にて作成した仮想マシンにログインして実施します。
   
 （ここまでの手順にて、移行元データベースとして利用していたBaseDBインスタンスではないことにご注意ください。）
 
@@ -356,8 +356,8 @@ Data Pumpを利用したAutonomous Database へのデータ移行についてご
 
 # 参考資料
 
-* [Autonomous Database Cloud 技術詳細](https://speakerdeck.com/oracle4engineer/autonomous-database-cloud-ji-shu-xiang-xi){:target="_blank"}
-* [マニュアル(Autonomous DatabaseでのOracle Data Pumpを使用したデータのインポート)](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/load-data-data-pump.html#GUID-30DB1EEA-DB45-49EA-9E97-DF49A9968E24){:target="_blank"}
+* [Autonomous Database Cloud 技術詳細](https://speakerdeck.com/oracle4engineer/autonomous-database-cloud-ji-shu-xiang-xi)
+* [マニュアル(Autonomous DatabaseでのOracle Data Pumpを使用したデータのインポート)](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/load-data-data-pump.html#GUID-30DB1EEA-DB45-49EA-9E97-DF49A9968E24)
 
 
 <br/>

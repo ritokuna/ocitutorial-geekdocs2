@@ -24,7 +24,7 @@ Autonomous Databaseではワークロードを監視して、自動的に索引�
 
 **前提条件：**
 + ATPインスタンスが構成済みであること
-    <br>※ATPンタンスの作成方法については、[ADBインスタンスを作成してみよう](../adb101-provisioning){:target="_blank"} を参照してください。
+    <br>※ATPンタンスの作成方法については、[ADBインスタンスを作成してみよう](../adb101-provisioning) を参照してください。
 - **ワークロード・タイプ：** トランザクション処理
 - **ECPU数：** 4
 - **ストレージ：** 1024
@@ -54,10 +54,10 @@ Autonomous Databaseではワークロードを監視して、自動的に索引�
 
 ## 1-1. SQL*PlusでADBに接続する
 
-1. [SQL＊Plusを使った接続](../adb104-connect-using-wallet/#anchor3-1){:target="_blank"}を参考に、TeraTerm上でSQL＊Plusを用いて、ATPインスタンスに接続してください。<br>
+1. [SQL＊Plusを使った接続](../adb104-connect-using-wallet/#anchor3-1)を参考に、TeraTerm上でSQL＊Plusを用いて、ATPインスタンスに接続してください。<br>
 接続する際のスキーマ名は**ADMIN**としてください。
 
-    ここで、以前本チュートリアルを実施したことがある場合は、本章の4-1の手順2[自動索引の削除](../adb219-autoindexing/#anchor4-1-2){:target="_blank"}を行ってください。初めて行う場合は、次のステップに進んでください。
+    ここで、以前本チュートリアルを実施したことがある場合は、本章の4-1の手順2[自動索引の削除](../adb219-autoindexing/#anchor4-1-2)を行ってください。初めて行う場合は、次のステップに進んでください。
 
 <br>
 
@@ -106,7 +106,7 @@ Autonomous Databaseではワークロードを監視して、自動的に索引�
     exec dbms_auto_index.configure('AUTO_INDEX_MODE', 'IMPLEMENT')
     ```
 <br>
-DBMS_AUTO_INDEXパッケージの詳細については、[Database Administrator’s Guide, 21.7.3 Configuring Automatic Indexing in an Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-indexes.html#GUID-A8B4BB05-2711-497A-8276-127076DAA518){:target="_blank"}をご確認ください。
+DBMS_AUTO_INDEXパッケージの詳細については、[Database Administrator’s Guide, 21.7.3 Configuring Automatic Indexing in an Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-indexes.html#GUID-A8B4BB05-2711-497A-8276-127076DAA518)をご確認ください。
 <br>
 
     >**参考**
@@ -325,7 +325,7 @@ Automatic Indexingのプロセスはすべて自動で管理されるため、�
     ```
     >**補足**
     >
-    >なお、個別で自動索引を指定して削除することも可能です。[PL/SQLパッケージおよびタイプ・リファレンス, 30 DBMS_AUTO_INDEDX](https://docs.oracle.com/cd/F19136_01/arpls/DBMS_AUTO_INDEX.html){:target="_blank"}をご確認ください。
+    >なお、個別で自動索引を指定して削除することも可能です。[PL/SQLパッケージおよびタイプ・リファレンス, 30 DBMS_AUTO_INDEDX](https://docs.oracle.com/cd/F19136_01/arpls/DBMS_AUTO_INDEX.html)をご確認ください。
 
 <br>
 
@@ -344,11 +344,11 @@ Automatic Indexingのプロセスはすべて自動で管理されるため、�
 <br>
 
 # 参考資料
-+ LiveLabs [Automatic Indexing for Oracle Autonomous Database](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=3328&p210_wec=&session=16116036714220){:target="_blank"}
++ LiveLabs [Automatic Indexing for Oracle Autonomous Database](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=3328&p210_wec=&session=16116036714220)
 
     このLivelabsのLab5: View Automatic Indexing Detailsでは、本チュートリアルでは行わなかったスキーマ指定の方法や、作成された自動索引の詳細確認、Automatic Indexingのアクション詳細確認にも触れています。
 
-+ [Database Administrator’s Guide, 21.7 Managing Automatic Indexes](https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-indexes.html#GUID-D1285CD5-95C0-4E74-8F26-A02018EA7999){:target="_blank"}
++ [Database Administrator’s Guide, 21.7 Managing Automatic Indexes](https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-indexes.html#GUID-D1285CD5-95C0-4E74-8F26-A02018EA7999)
 
 
 以上で、この章は終了です。  

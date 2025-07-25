@@ -17,7 +17,7 @@ DBMS_CLOUDはオブジェクト・ストレージのデータを操作するた�
 
 DBMS_CLOUDはAutonomous Database (ADB) に実装されているPL/SQLパッケージですが、手動インストールすることでBaseDBでも利用可能です。  
 
-ADBでDBMS_CLOUDを利用する方法は[202: コマンドラインから大量データをロードしてみよう(DBMS_CLOUD)](../../adb/adb202-dataload-dbms-cloud){:target="_blank"}で学ぶことができます。  
+ADBでDBMS_CLOUDを利用する方法は[202: コマンドラインから大量データをロードしてみよう(DBMS_CLOUD)](../../adb/adb202-dataload-dbms-cloud)で学ぶことができます。  
 
 ここでは、DBMS_CLOUDパッケージを利用してObject StorageのデータをBase Database Service (BaseDB)から外部表として参照する手順をご紹介します。　　
 
@@ -31,12 +31,12 @@ ADBでDBMS_CLOUDを利用する方法は[202: コマンドラインから大量�
 
 + PDBにユーザーが作成されていて、そのユーザーに接続可能であること
 
-+ [101: Oracle Cloud で Oracle Database を使おう](../dbcs101-create-db){:target="_blank"} を通じて Oracle Database の作成が完了していること
++ [101: Oracle Cloud で Oracle Database を使おう](../dbcs101-create-db) を通じて Oracle Database の作成が完了していること
 
 + 以下にリンクされているサンプルデータのCSVファイルをダウンロードしていること
 	+ [サンプルデータファイルのダウンロードリンク](/ocitutorials/basedb/dbcs202-dbms-cloud/ocitutorials_sales.csv)
 
-+ [その7 - オブジェクト・ストレージを使う](../../beginners/object-storage){:target="_blank"} を通じてバケットの作成・データファイル(CSV)のアップロードが完了していること
++ [その7 - オブジェクト・ストレージを使う](../../beginners/object-storage) を通じてバケットの作成・データファイル(CSV)のアップロードが完了していること
    
 
 <br>
@@ -100,7 +100,7 @@ ADBでDBMS_CLOUDを利用する方法は[202: コマンドラインから大量�
 9 | dbc_certs.tar | 証明書 | [ダウンロード](https://objectstorage.us-phoenix-1.oraclecloud.com/p/QsLX1mx9A-vnjjohcC7TIK6aTDFXVKr0Uogc2DAN-Rd7j6AagsmMaQ3D3Ti4a9yU/n/adwcdemo/b/CERTS/o/dbc_certs.tar) | /home/oracle/cert |
 
 <!-- **参考**
-DBMS_CLOUDパッケージで使用可能なスクリプトは[SQLサンプル(GitHub)](https://github.com/oracle-devrel/technology-engineering/tree/main/data-platform/core-converged-db/hybrid-partitioned/dbms_cloud/files){:target="_blank"}からもダウンロード可能です。
+DBMS_CLOUDパッケージで使用可能なスクリプトは[SQLサンプル(GitHub)](https://github.com/oracle-devrel/technology-engineering/tree/main/data-platform/core-converged-db/hybrid-partitioned/dbms_cloud/files)からもダウンロード可能です。
 {: .notice--info} -->
 
 ## 2. OCIユーザ確認と認証トークンの作成
@@ -603,7 +603,7 @@ SSL_WALLET      /opt/oracle/dcs/commonstore/wallets/ssl  Location of SSL Wallet
 <br>
 
 ※`<リージョン識別子>`はリージョン識別子に置き換えます。
-各リージョンのリージョン識別子は[リージョンおよび可用性ドメインについて](https://docs.oracle.com/ja-jp/iaas/Content/General/Concepts/regions.htm){:target="_blank"}から確認できます。
+各リージョンのリージョン識別子は[リージョンおよび可用性ドメインについて](https://docs.oracle.com/ja-jp/iaas/Content/General/Concepts/regions.htm)から確認できます。
 環境に合ったものを使用してください。
 
 編集後、SYSユーザでCDBかPDBにログインし、**verify_aces.sql**を実行します。
@@ -992,7 +992,7 @@ P,"Partners","Others"
 以下は、先ほど作成したクレデンシャルを利用し、オブジェクト・ストレージのバケットにアクセスするコマンドです。
 <br>
 このコマンドで、バケットの中に正常にアクセスできるか確認します。※URLにはファイル名を含める必要はありません
-URIの詳細は[こちら](https://docs.oracle.com/ja-jp/iaas/autonomous-database/doc/cloud-storage-uris.html){:target="_blank"}
+URIの詳細は[こちら](https://docs.oracle.com/ja-jp/iaas/autonomous-database/doc/cloud-storage-uris.html)
 ```sql
 select * from dbms_cloud.list_objects(<'クレデンシャル名'>,'<オブジェクト・ストレージのバケットのURL>');
 ```
@@ -1032,7 +1032,7 @@ define username='SCOTT'|define username='USER1'
 GET_PAGE('https://objectstorage.eu-frankfurt-1.customer-oci.com');|GET_PAGE('https://objectstorage.<リージョン識別子>.oci.customer-oci.com');
 
 ※`<リージョン識別子>`はリージョン識別子に置き換えます。
-各リージョンのリージョン識別子は[リージョンおよび可用性ドメインについて](https://docs.oracle.com/ja-jp/iaas/Content/General/Concepts/regions.htm){:target="_blank"}から確認できます。
+各リージョンのリージョン識別子は[リージョンおよび可用性ドメインについて](https://docs.oracle.com/ja-jp/iaas/Content/General/Concepts/regions.htm)から確認できます。
 環境に合ったものを使用してください。
 
 編集後、USER1ユーザでPDBにログインし、**validate_user_config.sql**を実行します。
@@ -1181,7 +1181,7 @@ P Partners             Others</code>
 
 DBMS_CLOUDパッケージではデータをBaseDBにコピーする機能もご利用いただけます。
 <br>
-DBMS_CLOUDパッケージの詳しい機能はこちらの[マニュアル](https://docs.oracle.com/cd/F19136_01/arpls/DBMS_CLOUD.html){:target="_blank"} をご参照ください。
+DBMS_CLOUDパッケージの詳しい機能はこちらの[マニュアル](https://docs.oracle.com/cd/F19136_01/arpls/DBMS_CLOUD.html) をご参照ください。
 <br>
 以上で、この章の作業は完了です。
 
@@ -1189,9 +1189,9 @@ DBMS_CLOUDパッケージの詳しい機能はこちらの[マニュアル](http
 
 # 参考資料
 
-* [マニュアル] [PL/SQLパッケージおよびタイプ・リファレンス：37 DBMS_CLOUD](https://docs.oracle.com/cd/F19136_01/arpls/DBMS_CLOUD.html#GUID-6CCC322D-26A9-47E7-8FF5-5FF23807C968){:target="_blank"} 
+* [マニュアル] [PL/SQLパッケージおよびタイプ・リファレンス：37 DBMS_CLOUD](https://docs.oracle.com/cd/F19136_01/arpls/DBMS_CLOUD.html#GUID-6CCC322D-26A9-47E7-8FF5-5FF23807C968) 
 
-* [ブログ] [全てのデータベース・サービスからオブジェクト・ストレージへのアクセスを可能にするDBMS_CLOUD](https://blogs.oracle.com/oracle4engineer/post/ja-oracle-object-storage-access-for-all-oracle-databases-with-dbmscloud){:target="_blank"} 
+* [ブログ] [全てのデータベース・サービスからオブジェクト・ストレージへのアクセスを可能にするDBMS_CLOUD](https://blogs.oracle.com/oracle4engineer/post/ja-oracle-object-storage-access-for-all-oracle-databases-with-dbmscloud) 
 
 * [MOS note] インストールガイド：How To Setup And Use DBMS_CLOUD Package (Doc ID 2748362.1)
 

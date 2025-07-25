@@ -21,7 +21,7 @@ BaseDBでは長期保管バックアップ機能（LTR）を利用してリカ�
 このチュートリアルではBase Database Service (BaseDB) でOracle Database Autonomous Recovery Service（RCV/ZRCV）の長期保管バックアップ（LTR）を作成する方法を紹介します。
 
 **前提条件 :**
-+ [107: BaseDBにAutonomous Recovery Service (RCV/ZRCV) をセットアップしよう ](../dbcs107-zrcv){:target="_blank"} を通じてリカバリ・サービスのセットアップが完了していること
++ [107: BaseDBにAutonomous Recovery Service (RCV/ZRCV) をセットアップしよう ](../dbcs107-zrcv) を通じてリカバリ・サービスのセットアップが完了していること
 <br>
 
 **注意** チュートリアル内の画面ショットについては現在の画面と異なっている場合があります。
@@ -112,7 +112,7 @@ Data Guard構成ではプライマリ、スタンバイ、どちらからもLTR�
 ![img](dbcs-ltr10.png)
 
 「バックアップからのデータベースの作成」ウィンドウで必要項目を入力します。　　　　  
-※設定方法は新規作成時と同様です。入力項目は[101: Oracle Cloud で Oracle Database を使おう(BaseDB)](../dbcs101-create-db){:target="_blank"}をご参照下さい。
+※設定方法は新規作成時と同様です。入力項目は[101: Oracle Cloud で Oracle Database を使おう(BaseDB)](../dbcs101-create-db)をご参照下さい。
 
 ![img](dbcs-ltr11.png)
 
@@ -133,15 +133,15 @@ Data Guard構成ではプライマリ、スタンバイ、どちらからもLTR�
 
 # 参考資料
 
-* [製品サイト] [Oracle Database Autonomous Recovery Service](https://www.oracle.com/jp/database/zero-data-loss-autonomous-recovery-service/){:target="_blank"} 
+* [製品サイト] [Oracle Database Autonomous Recovery Service](https://www.oracle.com/jp/database/zero-data-loss-autonomous-recovery-service/) 
 
-* [マニュアル] [Oracle Database Autonomous Recovery Service](https://docs.oracle.com/cd/E83857_01/paas/recovery-service/index.html){:target="_blank"} 
+* [マニュアル] [Oracle Database Autonomous Recovery Service](https://docs.oracle.com/cd/E83857_01/paas/recovery-service/index.html) 
 
-* [Blog] [Autonomous Recovery ServiceでOracle Database Servicesの長期保存バックアップにワンクリックで対応可能に](https://blogs.oracle.com/oracle4engineer/post/ja-recovery-service-ltr){:target="_blank"} 
+* [Blog] [Autonomous Recovery ServiceでOracle Database Servicesの長期保存バックアップにワンクリックで対応可能に](https://blogs.oracle.com/oracle4engineer/post/ja-recovery-service-ltr) 
 
-* [Blog] [Autonomous Recovery Service で長期保存バックアップのコストを半減 ](https://blogs.oracle.com/oracle4engineer/post/ja-zrcv-ltr-half-the-cost){:target="_blank"} 
+* [Blog] [Autonomous Recovery Service で長期保存バックアップのコストを半減 ](https://blogs.oracle.com/oracle4engineer/post/ja-zrcv-ltr-half-the-cost) 
 
-* [チュートリアル] [Create Long-Term Backups with Oracle Database Autonomous Recovery Service on Oracle Base Database Service](https://docs.oracle.com/en/learn/basedb-ltr-backup/index.html#introduction){:target="_blank"} 
+* [チュートリアル] [Create Long-Term Backups with Oracle Database Autonomous Recovery Service on Oracle Base Database Service](https://docs.oracle.com/en/learn/basedb-ltr-backup/index.html#introduction) 
 <br>
 
 <br>

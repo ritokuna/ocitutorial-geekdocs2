@@ -23,7 +23,7 @@ Data Guard GroupもしくはData Guard Associationを使用している場合、
 {: .notice--info}
 
 **前提条件 :**
-+ [108 : Data Guardを構成しよう ](../exadb-d108-dataguard/){:target="_blank"}を通じてData Guard構成が完了していること
++ [108 : Data Guardを構成しよう ](../exadb-d108-dataguard/)を通じてData Guard構成が完了していること
 
 + Oracle Database Autonomous Recovery Service（RCV/ZRCV）およびOCI Object Storageを利用する上での事前準備が完了していること
 
@@ -123,7 +123,7 @@ REDO転送オプションを有効化すると、リアルタイムREDO転送が
 
 「バックアップからのデータベースの作成」ウィンドウで必要項目を入力します。　　
 
-※設定方法は新規作成時と同様です。入力項目は[101 : ExaDB-Dを使おう ](../exadb-d101-create-exadb-d/){:target="_blank"}をご参照下さい。
+※設定方法は新規作成時と同様です。入力項目は[101 : ExaDB-Dを使おう ](../exadb-d101-create-exadb-d/)をご参照下さい。
 
 ![img](exadb-d-stbk11.png)
 
@@ -146,13 +146,13 @@ DBシステムの作成が開始されます。
 
 # 参考資料
 
-* [製品サイト] [Oracle Database Autonomous Recovery Service](https://www.oracle.com/jp/database/zero-data-loss-autonomous-recovery-service/){:target="_blank"} 
+* [製品サイト] [Oracle Database Autonomous Recovery Service](https://www.oracle.com/jp/database/zero-data-loss-autonomous-recovery-service/) 
 
-* [マニュアル] [スタンバイ・データベースで自動バックアップを有効にするには](https://docs.oracle.com/cd/F56555_01/ecscm/ecs-using-data-guard.html#GUID-B7B7FA89-0994-454A-9EBE-0F20A1D1E11E){:target="_blank"} 
+* [マニュアル] [スタンバイ・データベースで自動バックアップを有効にするには](https://docs.oracle.com/cd/F56555_01/ecscm/ecs-using-data-guard.html#GUID-B7B7FA89-0994-454A-9EBE-0F20A1D1E11E) 
 
-* [マニュアル] [Oracle Database Autonomous Recovery Service](https://docs.oracle.com/cd/E83857_01/paas/recovery-service/index.html){:target="_blank"} 
+* [マニュアル] [Oracle Database Autonomous Recovery Service](https://docs.oracle.com/cd/E83857_01/paas/recovery-service/index.html) 
 
-* [チュートリアル] [Backup and Restore from a Standby Database with Oracle Database Autonomous Recovery Service on Oracle Exadata Database Service on Dedicated Infrastructure](https://docs.oracle.com/en/learn/backup-and-restore-exadata/index.html){:target="_blank"} 
+* [チュートリアル] [Backup and Restore from a Standby Database with Oracle Database Autonomous Recovery Service on Oracle Exadata Database Service on Dedicated Infrastructure](https://docs.oracle.com/en/learn/backup-and-restore-exadata/index.html) 
 <br>
 
 <br>

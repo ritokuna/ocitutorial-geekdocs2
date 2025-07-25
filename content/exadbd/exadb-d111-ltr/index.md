@@ -21,7 +21,7 @@ ExaDB-Dでは長期保管バックアップ機能（LTR）を利用してリカ�
 このチュートリアルではExadata Database Service on Dedicated Infrastructure (ExaDB-D) でOracle Database Autonomous Recovery Service（RCV/ZRCV）の長期保管バックアップ（LTR）を作成する方法を紹介します。
 
 **前提条件 :**
-+ [109 : ExaDB-DでAutonomous Recovery Service (RCV/ZRCV) をセットアップしよう](../exadb-d109-zrcv){:target="_blank"} を通じてリカバリ・サービスのセットアップが完了していること
++ [109 : ExaDB-DでAutonomous Recovery Service (RCV/ZRCV) をセットアップしよう](../exadb-d109-zrcv) を通じてリカバリ・サービスのセットアップが完了していること
 <br>
 
 **注意** チュートリアル内の画面ショットについては現在の画面と異なっている場合があります。
@@ -113,7 +113,7 @@ Data Guard構成ではプライマリ、スタンバイ、どちらからもLTR�
 ![img](exadb-d-ltr10.png)
 
 「バックアップからのデータベースの作成」ウィンドウで必要項目を入力します。　　　　  
-※設定方法は新規作成時と同様です。入力項目は[101 : ExaDB-Dを使おう](../exadb-d101-create-exadb-d){:target="_blank"}をご参照下さい。
+※設定方法は新規作成時と同様です。入力項目は[101 : ExaDB-Dを使おう](../exadb-d101-create-exadb-d)をご参照下さい。
 
 ![img](exadb-d-ltr11.png)
 
@@ -136,15 +136,15 @@ Data Guard構成ではプライマリ、スタンバイ、どちらからもLTR�
 
 # 参考資料
 
-* [製品サイト] [Oracle Database Autonomous Recovery Service](https://www.oracle.com/jp/database/zero-data-loss-autonomous-recovery-service/){:target="_blank"} 
+* [製品サイト] [Oracle Database Autonomous Recovery Service](https://www.oracle.com/jp/database/zero-data-loss-autonomous-recovery-service/) 
 
-* [マニュアル] [Oracle Database Autonomous Recovery Service](https://docs.oracle.com/cd/E83857_01/paas/recovery-service/index.html){:target="_blank"} 
+* [マニュアル] [Oracle Database Autonomous Recovery Service](https://docs.oracle.com/cd/E83857_01/paas/recovery-service/index.html) 
 
-* [Blog] [Autonomous Recovery ServiceでOracle Database Servicesの長期保存バックアップにワンクリックで対応可能に](https://blogs.oracle.com/oracle4engineer/post/ja-recovery-service-ltr){:target="_blank"} 
+* [Blog] [Autonomous Recovery ServiceでOracle Database Servicesの長期保存バックアップにワンクリックで対応可能に](https://blogs.oracle.com/oracle4engineer/post/ja-recovery-service-ltr) 
 
-* [Blog] [Autonomous Recovery Service で長期保存バックアップのコストを半減 ](https://blogs.oracle.com/oracle4engineer/post/ja-zrcv-ltr-half-the-cost){:target="_blank"} 
+* [Blog] [Autonomous Recovery Service で長期保存バックアップのコストを半減 ](https://blogs.oracle.com/oracle4engineer/post/ja-zrcv-ltr-half-the-cost) 
 
-* [チュートリアル] [Create Long-Term Backups with Oracle Database Autonomous Recovery Service on Oracle Exadata Database Service on Dedicated Infrastructure](https://docs.oracle.com/en/learn/ExaDB-D-ltr-backup/index.html#introduction){:target="_blank"} 
+* [チュートリアル] [Create Long-Term Backups with Oracle Database Autonomous Recovery Service on Oracle Exadata Database Service on Dedicated Infrastructure](https://docs.oracle.com/en/learn/ExaDB-D-ltr-backup/index.html#introduction) 
 <br>
 
 <br>

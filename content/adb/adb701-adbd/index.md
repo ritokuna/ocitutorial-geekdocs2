@@ -82,7 +82,7 @@ ADB-Dを配置するネットワーク環境を作成します。
 
 ![ネットワーク構成](network.png)
 
-仮想クラウドネットワークの作成方法についての詳細は [クラウドに仮想ネットワーク(VCN)を作る](https://oracle-japan.github.io/ocitutorials/beginners/creating-vcn/){:target="_blank"} を参照ください。
+仮想クラウドネットワークの作成方法についての詳細は [クラウドに仮想ネットワーク(VCN)を作る](https://oracle-japan.github.io/ocitutorials/beginners/creating-vcn/) を参照ください。
 
 メニューから**ネットワーキング**→**仮想クラウド・ネットワーク**を選択肢、**VCNウィザードの起動**をクリックします。
 
@@ -422,7 +422,7 @@ ACDのアイコンが緑色になったらプロビジョニング完了です�
 
 **Autonomous Databaseの作成**で必要な項目を入力します。  
 設定項目は次の表を参考にしてください。  
-なお、Autonomous Databaseの作成方法については [101: ADBインスタンスを作成してみよう](../adb101-provisioning/){:target="_blank"} で詳細に説明していますので、重複する部分の説明は割愛します。
+なお、Autonomous Databaseの作成方法については [101: ADBインスタンスを作成してみよう](../adb101-provisioning/) で詳細に説明していますので、重複する部分の説明は割愛します。
 
 <table>
     <thead>
@@ -525,7 +525,7 @@ ADBのアイコンが緑色になったらプロビジョニング完了です�
 
 ![データベース接続](DatabaseConn.png)
 
-接続を行う仮想マシンの設定は[204: 開発者向け仮想マシンのセットアップ方法](../adb204-setup-VM/){:target="_blank"}を参照ください。TLSがついている接続サービスはADB-Sに接続する場合と同様の方法で接続ができます。またTLSがついていない接続サービスはウォレットなしで接続することが可能です。
+接続を行う仮想マシンの設定は[204: 開発者向け仮想マシンのセットアップ方法](../adb204-setup-VM/)を参照ください。TLSがついている接続サービスはADB-Sに接続する場合と同様の方法で接続ができます。またTLSがついていない接続サービスはウォレットなしで接続することが可能です。
 
 <br>
 
@@ -590,7 +590,7 @@ EI、AVM、ACDは四半期に一回自動メンテナンスが行われます。
 # 参考資料
 + ドキュメント：[Oracle Autonomous Database on Dedicated Exadata Infrastructure](https://docs.oracle.com/en/cloud/paas/autonomous-database/dedicated/adbab/#Overview-0)
 
-+ LiveLabs: [Oracle Autonomous Database Dedicated for Fleet Administrators Workshop](https://docs.oracle.com/pls/topic/lookup?ctx=en/cloud/paas/autonomous-database/dedicated/iywpw&id=adbd_ll_fa){:target="_blank"} 
++ LiveLabs: [Oracle Autonomous Database Dedicated for Fleet Administrators Workshop](https://docs.oracle.com/pls/topic/lookup?ctx=en/cloud/paas/autonomous-database/dedicated/iywpw&id=adbd_ll_fa) 
 
     + Cloud@CustomerでのプロビジョニングやAutonomous Data Guardなど様々なADB-Dの機能も含んだワークショップです。
 

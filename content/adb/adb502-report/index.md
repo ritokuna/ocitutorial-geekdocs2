@@ -362,7 +362,7 @@ DB上で発生したエラーや障害の情報は、アラートファイルと
     >  </tr>
     >  </table>
     >
-    > <br>※詳細は、本ハンズオンガイドの [104: クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet/){:target="_blank"} の、[3-3. SQL Developer を使った接続](../adb104-connect-using-wallet#anchor3-3) を参照ください。
+    > <br>※詳細は、本ハンズオンガイドの [104: クレデンシャル・ウォレットを利用して接続してみよう](../adb104-connect-using-wallet/) の、[3-3. SQL Developer を使った接続](../adb104-connect-using-wallet#anchor3-3) を参照ください。
     > 
 
 2. 表示から**DBA**をクリックし、画面左下にDBAビューを表示します。
