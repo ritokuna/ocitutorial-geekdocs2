@@ -43,7 +43,7 @@ jobs:
             const createParams = {
               owner: context.repo.owner,
               repo: context.repo.repo,
-              base: 'master',
+              base: 'main',
               head: headRef,
               title: `${headRef.substring(0,1).toUpperCase()}${headRef.substring(1)}`
             }
