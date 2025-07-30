@@ -1,5 +1,5 @@
 defaultContentLanguage = 'ja'
-baseURL = 'https://oracle-japan.github.io/ocitutorials/'
+baseURL = 'https://ritokuna.github.io/ocitutorial-geekdocs2/'
 # languageCode = 'ja'
 title = 'OCIチュートリアル'
 theme = "hugo-geekdoc"
@@ -16,7 +16,7 @@ enableRobotsTXT = true
 
 enableGitInfo = true
 
-geekdocRepo = "https://github.com/oracle-japan/ocitutorial-geekdocs"
+geekdocRepo = "https://github.com/ritokuna/ocitutorial-geekdocs2"
 
 # Needed for mermaid shortcodes
 [markup]

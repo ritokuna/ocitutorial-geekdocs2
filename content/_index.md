@@ -1,5 +1,5 @@
 ---
-title: Oracle Cloud Infrastructure チュートリアル
+title: Oracle Cloud Infrastructure チュートリアル tokunaga
 geekdocNav: false
 geekdocAlign: left
 geekdocAnchor: false
