@@ -13,7 +13,7 @@ geekdocAnchor: false
 
 <br>
 
-## チュートリアルコンテンツ一覧
+## チュートリアルコンテンツ一覧 Aさん更新
 
 {{< columns >}}
 
